@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtac0til4v3bm"]
+
+[ext_resource type="Script" path="res://SwingDoor.gd" id="1_gmknj"]
+[ext_resource type="Material" uid="uid://dvbljson58jaa" path="res://Materials/swingDoorClose.tres" id="2_uqu1e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
+size = Vector3(1, 0.001, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_7k7my"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1x0cr"]
+size = Vector3(1, 0.1, 1)
+
+[node name="SwingDoor" type="StaticBody3D"]
+transform = Transform3D(1.91068e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0, 0.5, 5.5)
+disable_mode = 2
+script = ExtResource("1_gmknj")
+
+[node name="Barrier" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_wbkpy")
+disabled = true
+
+[node name="Dor" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 1.74845e-07, 1.31134e-07, 1.74845e-07, -1, -1, -4.37114e-08, -1.31134e-07, 0, 0, 0)
+material_override = ExtResource("2_uqu1e")
+mesh = SubResource("QuadMesh_7k7my")
+skeleton = NodePath("")
+
+[node name="e" type="MeshInstance3D" parent="Dor"]
+transform = Transform3D(-1, -8.74228e-08, -8.74228e-08, -8.74228e-08, 1, 4.37113e-07, 8.74227e-08, 4.37113e-07, -1, 0, 0, 0)
+material_override = ExtResource("2_uqu1e")
+mesh = SubResource("QuadMesh_7k7my")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="Collision" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_1x0cr")
+disabled = true
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

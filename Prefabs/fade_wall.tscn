@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5qlbo758b7tl"]
+
+[ext_resource type="Texture2D" uid="uid://b11e40slm5fsh" path="res://Textures/Character/SchoolHouse/WallFade.png" id="1_a7pmf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
+size = Vector3(1, 0.001, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rmhxc"]
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+albedo_texture = ExtResource("1_a7pmf")
+texture_filter = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_7k7my"]
+
+[node name="FadeWall" type="StaticBody3D"]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, -2, 4.5, 28.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_wbkpy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_rmhxc")
+mesh = SubResource("QuadMesh_7k7my")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(-1, -8.74228e-08, -8.74228e-08, -8.74228e-08, 1, 8.74228e-08, 8.74228e-08, 8.74228e-08, -1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_rmhxc")
+mesh = SubResource("QuadMesh_7k7my")
+skeleton = NodePath("../..")

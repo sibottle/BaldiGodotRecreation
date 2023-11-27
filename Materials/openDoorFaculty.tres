@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c02t0cpf6vxta"]
+
+[ext_resource type="Texture2D" uid="uid://ct57ft3hdcsdq" path="res://Textures/Character/SchoolHouse/FacultyDoor_80.png" id="1_dsxby"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+albedo_texture = ExtResource("1_dsxby")
+texture_filter = 0

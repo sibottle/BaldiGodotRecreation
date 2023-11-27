@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dab334bak5sbd"]
+
+[ext_resource type="Texture2D" uid="uid://bvhias83s0w3o" path="res://Textures/Character/SchoolHouse/TileFloor.png" id="1_0unjg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
+size = Vector3(1, 0.001, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nw8bv"]
+shading_mode = 0
+specular_mode = 2
+albedo_texture = ExtResource("1_0unjg")
+uv1_scale = Vector3(2, 2, 2)
+texture_filter = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_7k7my"]
+
+[node name="FloorTile" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_wbkpy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_nw8bv")
+mesh = SubResource("QuadMesh_7k7my")

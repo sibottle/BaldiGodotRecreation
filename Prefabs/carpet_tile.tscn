@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck5udn1vbk3e7"]
+
+[ext_resource type="Texture2D" uid="uid://bi4ycgy3ft7p4" path="res://Textures/Character/SchoolHouse/Carpet.png" id="1_ihf8l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
+size = Vector3(1, 0.001, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6k40m"]
+shading_mode = 0
+specular_mode = 2
+albedo_texture = ExtResource("1_ihf8l")
+texture_filter = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_7k7my"]
+
+[node name="CarpetTile" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_wbkpy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_6k40m")
+mesh = SubResource("QuadMesh_7k7my")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://u1yja1yogvqo"]
+
+[ext_resource type="Texture2D" uid="uid://c8hwhymuvwt5c" path="res://Textures/Character/SchoolHouse/SwingDoor0.png" id="1_1cmp6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
+size = Vector3(1, 0.001, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bnv5t"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+albedo_texture = ExtResource("1_1cmp6")
+texture_filter = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_7k7my"]
+
+[node name="ExitSwingDoor" type="StaticBody3D"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0, 0.5, -0.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_wbkpy")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 1.74845e-07, 1.31134e-07, 1.74845e-07, -1, -1, -4.37114e-08, -1.31134e-07, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_bnv5t")
+mesh = SubResource("QuadMesh_7k7my")
+skeleton = NodePath("")

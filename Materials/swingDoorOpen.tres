@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b4xep125vb0q6"]
+
+[ext_resource type="Texture2D" uid="uid://sno02dwg1qgd" path="res://Textures/Character/SchoolHouse/SwingDoor60.png" id="1_5y68f"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+albedo_texture = ExtResource("1_5y68f")
+texture_filter = 0
