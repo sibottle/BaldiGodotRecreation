@@ -1,4 +1,4 @@
-[gd_scene load_steps=158 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=161 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/floor_tile.tscn" id="1_6kwly"]
 [ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
@@ -27,6 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://dv6uk3gs145ev" path="res://Textures/Character/Baldi/Baldi_Slap0006-sharedassets2.assets-357.png" id="18_he3dq"]
 [ext_resource type="Script" path="res://UIScript.gd" id="19_bt202"]
 [ext_resource type="Texture2D" uid="uid://byxphpytrp8gx" path="res://Textures/Character/Baldi/Baldi_Slap0012-sharedassets2.assets-131.png" id="19_h3q47"]
+[ext_resource type="Script" path="res://Playtime.gd" id="19_p2lvf"]
+[ext_resource type="Texture2D" uid="uid://66ioa7t8tu1j" path="res://Textures/Character/Playtime/Normal/PlaytimeModel.webp" id="20_wkbae"]
 [ext_resource type="Texture2D" uid="uid://o1kr4gt072lb" path="res://Textures/Character/Baldi/Baldi_Slap0018-sharedassets2.assets-235.png" id="20_wvf66"]
 [ext_resource type="Texture2D" uid="uid://dimt4xqivkmjl" path="res://Textures/mario.png" id="22_ubfpi"]
 [ext_resource type="Texture2D" uid="uid://ch4f2ichdel87" path="res://Textures/Character/UI/ItemSlots.png" id="27_ydix2"]
@@ -177,6 +179,21 @@ radius = 0.15
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_5yggl"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_a2vlh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_wkbae")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i0vgs"]
+radius = 0.1
+height = 0.5
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_ltsp7"]
 animations = [{
 "frames": [{
@@ -199,10 +216,6 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i0vgs"]
-radius = 0.1
-height = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qla2b"]
 radius = 0.1
@@ -608,10 +621,10 @@ navigation_mesh = SubResource("NavigationMesh_it2ih")
 
 [node name="Floor" type="Node" parent="School/NavMesh"]
 
-[node name="FloorTile" parent="School/NavMesh/Floor" instance=ExtResource("1_6kwly")]
-
 [node name="FloorTile2" parent="School/NavMesh/Floor" instance=ExtResource("1_6kwly")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="FloorTile" parent="School/NavMesh/Floor" instance=ExtResource("1_6kwly")]
 
 [node name="FloorTile3" parent="School/NavMesh/Floor" instance=ExtResource("1_6kwly")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
@@ -6724,6 +6737,35 @@ visible = false
 pixel_size = 0.1
 billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="Playtime" type="CharacterBody3D" parent="." groups=["npc"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 17)
+script = ExtResource("19_p2lvf")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Playtime"]
+path_desired_distance = 0.1
+target_desired_distance = 0.1
+path_max_distance = 2.01
+height = 0.5
+radius = 0.2
+neighbor_distance = 5.0
+debug_use_custom = true
+debug_path_custom_color = Color(1, 0, 0, 1)
+debug_path_custom_point_size = 17.64
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="Playtime"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.0664806, 0.271911, 0.00424957)
+billboard = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_a2vlh")
+speed_scale = 2.0
+
+[node name="PlaytimeTrigger" type="Area3D" parent="Playtime" groups=["npc"]]
+
+[node name="V" type="CollisionShape3D" parent="Playtime/PlaytimeTrigger"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("CapsuleShape3D_i0vgs")
+disabled = true
 
 [node name="Baldi" type="CharacterBody3D" parent="." groups=["npc"]]
 unique_name_in_owner = true
