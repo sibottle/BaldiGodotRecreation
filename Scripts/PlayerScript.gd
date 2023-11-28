@@ -7,6 +7,8 @@ const RUNSPEED = 1.6
 const JUMP_VELOCITY = 4.5
 const MOUSE_SENS = 0.01
 
+var running = false
+
 var stamina = 100
 
 @onready var cam = get_node("Camera3D")
@@ -35,13 +37,17 @@ func _physics_process(delta):
 	if direction:
 		var speed = SPEED
 		if Input.is_action_pressed("run") and stamina > 0:
+			running = true
 			stamina -= 0.2
 			speed = RUNSPEED
 			if stamina <= 0:
 				stamina = -5
+		else:
+			running = false
 		velocity.x = direction.x * speed
 		velocity.z = direction.z * speed
 	else:
+		running = false
 		if stamina < 100:
 			stamina += 0.2
 		velocity.x = 0

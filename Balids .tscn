@@ -1,4 +1,4 @@
-[gd_scene load_steps=161 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=163 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/floor_tile.tscn" id="1_6kwly"]
 [ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
@@ -30,6 +30,8 @@
 [ext_resource type="Script" path="res://Playtime.gd" id="19_p2lvf"]
 [ext_resource type="Texture2D" uid="uid://66ioa7t8tu1j" path="res://Textures/Character/Playtime/Normal/PlaytimeModel.webp" id="20_wkbae"]
 [ext_resource type="Texture2D" uid="uid://o1kr4gt072lb" path="res://Textures/Character/Baldi/Baldi_Slap0018-sharedassets2.assets-235.png" id="20_wvf66"]
+[ext_resource type="Script" path="res://Principal.gd" id="21_kekmd"]
+[ext_resource type="Texture2D" uid="uid://bnbjp40npaytu" path="res://Textures/Character/Principal.webp" id="21_x4glv"]
 [ext_resource type="Texture2D" uid="uid://dimt4xqivkmjl" path="res://Textures/mario.png" id="22_ubfpi"]
 [ext_resource type="Texture2D" uid="uid://ch4f2ichdel87" path="res://Textures/Character/UI/ItemSlots.png" id="27_ydix2"]
 [ext_resource type="Texture2D" uid="uid://b26ijhof81c7p" path="res://Textures/Character/UI/YCTP2_NoButtons-sharedassets2.assets-344.png" id="28_bnc8w"]
@@ -6763,6 +6765,34 @@ speed_scale = 2.0
 [node name="PlaytimeTrigger" type="Area3D" parent="Playtime" groups=["npc"]]
 
 [node name="V" type="CollisionShape3D" parent="Playtime/PlaytimeTrigger"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("CapsuleShape3D_i0vgs")
+disabled = true
+
+[node name="Principal" type="CharacterBody3D" parent="." groups=["npc"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+script = ExtResource("21_kekmd")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Principal"]
+path_desired_distance = 0.1
+target_desired_distance = 0.1
+path_max_distance = 2.01
+height = 0.5
+radius = 0.2
+neighbor_distance = 5.0
+debug_use_custom = true
+debug_path_custom_color = Color(1, 0, 0, 1)
+debug_path_custom_point_size = 17.64
+
+[node name="Sprite3D" type="Sprite3D" parent="Principal"]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0.397685, 0)
+billboard = 2
+texture_filter = 0
+texture = ExtResource("21_x4glv")
+
+[node name="PrincipalTrigger" type="Area3D" parent="Principal" groups=["npc"]]
+
+[node name="V" type="CollisionShape3D" parent="Principal/PrincipalTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_i0vgs")
 disabled = true
