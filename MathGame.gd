@@ -30,14 +30,48 @@ func _process(delta):
 func reset():
 	$LineEdit.text = ""
 	
-	var a = randi() % 10
-	var b = randi() % 10
-	var c = randi() % 2
-	
-	if c == 0: questionAnswer = a + b
-	else: questionAnswer = a - b
-	
-	text.text = str("SOLVE MATH Q",currentQuestion,":\n\n",a,"+" if c == 0 else "-",b,"=")
+	if %GameController.noteBookCount > 1 and currentQuestion == 3:
+		var a = (randi() + 1) % 9999
+		var b = (randi() + 1) % 9999
+		var c = (randi() + 1) % 9999
+		var sign = randi() % 2
+		if sign == 0:
+			text.text = str(
+				"SOLVE MATH Q",
+				currentQuestion,
+				":\n\n",
+				a,
+				"+(",
+				b,
+				"X",
+				c,
+				"=")
+		else:
+			text.text = str(
+				"SOLVE MATH Q",
+				currentQuestion,
+				":\n\n(",
+				a,
+				"/",
+				b,
+				")+",
+				c,
+				"=")
+	else:
+		var a = randi() % 10
+		var b = randi() % 10
+		var c = randi() % 2
+		
+		if c == 0: questionAnswer = a + b
+		else: questionAnswer = a - b
+		text.text = str(
+			"SOLVE MATH Q",
+			currentQuestion,
+			":\n\n",
+			a,
+			"+" if c == 0 else "-",
+			b,
+			"=")
 	
 func checkAnswer():
 	if currentQuestion >= 4: return

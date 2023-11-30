@@ -5,7 +5,7 @@ var isOpen = false
 
 @export var requiredNotebooks : int = 2
 
-@onready var doorCollider = get_node("Area3D/Collision")
+@onready var doorCollider = $Barrier
 @onready var doorVisual = self.get_node("Dor")
 @onready var doorVisual2 = self.get_node("Dor/e")
 

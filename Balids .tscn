@@ -1,4 +1,4 @@
-[gd_scene load_steps=163 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=165 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/floor_tile.tscn" id="1_6kwly"]
 [ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
@@ -606,6 +606,11 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r7530"]
+
+[sub_resource type="Theme" id="Theme_cdeyc"]
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_r7530")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_neaj8"]
 texture = ExtResource("28_bnc8w")
@@ -7003,6 +7008,7 @@ offset_right = 220.5
 offset_bottom = 186.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_cdeyc")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_placeholder_color = Color(0.529412, 0.529412, 0.529412, 1)
 theme_override_colors/selection_color = Color(0, 0, 0, 0)
@@ -7016,7 +7022,6 @@ virtual_keyboard_type = 2
 clear_button_enabled = true
 selecting_enabled = false
 flat = true
-caret_mid_grapheme = false
 
 [node name="Label" type="Label" parent="UI/MathGame"]
 layout_mode = 1
