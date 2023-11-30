@@ -193,7 +193,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i0vgs"]
-radius = 0.1
+radius = 0.125
 height = 0.5
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ltsp7"]

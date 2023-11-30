@@ -63,7 +63,6 @@ func _physics_process(delta):
 		query.collide_with_areas = true
 
 		var result = space_state.intersect_ray(query)
-		print(result)
 		
 		if result && result.collider.get_parent().has_meta("blueDoor"):
 			result.collider.get_parent().doorOpen()
