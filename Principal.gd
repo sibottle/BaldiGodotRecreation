@@ -39,7 +39,7 @@ func _physics_process(delta):
 	if angry:
 		speed = runSpeed
 		agent.target_position = %Player.global_transform.origin
-		if origin.distance_to(%Player.global_transform.origin) < 0.25:
+		if origin.distance_to(%Player.global_transform.origin) < 0.5:
 			catch()
 	else:
 		speed = normalSpeed

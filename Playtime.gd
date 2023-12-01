@@ -4,6 +4,7 @@ var speed = 3
 var normalSpeed = 1
 var runSpeed = 2
 var viewDistance = 5
+var playingTime = 0
 
 @onready var agent : NavigationAgent3D = $NavigationAgent3D
 @onready var sprite : AnimatedSprite3D = $AnimatedSprite3D
@@ -22,13 +23,22 @@ func _physics_process(delta):
 	query.exclude = [self]
 	query.collide_with_areas = false
 	var result = space_state.intersect_ray(query)
-	if result && origin.distance_to(%Player.global_transform.origin) < viewDistance && result.collider.has_meta("player"):
+	if playingTime <= 0 && !%Player.jumprope && result && origin.distance_to(%Player.global_transform.origin) < viewDistance && result.collider.has_meta("player"):
 		speed = runSpeed
 		agent.target_position = %Player.global_transform.origin
+		if origin.distance_to(%Player.global_transform.origin) < 0.5:
+			catch()
 	else:
-		speed = normalSpeed
-	
+		if !%Player.jumprope:
+			speed = normalSpeed
 	
 	var direction = agent.get_next_path_position() - global_transform.origin
 	velocity = direction.normalized() * speed
 	move_and_slide()
+
+func catch():
+	speed = 0
+	%Player.jumprope = true
+	agent.target_position = %Player.global_transform.origin - %Player.global_transform.basis.z
+	global_transform.origin = agent.get_final_position()
+	pass
