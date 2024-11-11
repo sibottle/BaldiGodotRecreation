@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://h61bvi2ryr2q"]
 
-[ext_resource type="Texture2D" uid="uid://uwu3gswu5upt" path="res://Textures/Character/SchoolHouse/Window.png" id="1_tx2oj"]
+[ext_resource type="Texture2D" uid="uid://uwu3gswu5upt" path="res://Textures/SchoolHouse/Window.png" id="1_tx2oj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
 size = Vector3(1, 0.001, 1)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dg00bou33xige"]
 
-[ext_resource type="Texture2D" uid="uid://coyru1wuilga5" path="res://Textures/Character/SchoolHouse/Grass.png" id="1_tmw6d"]
+[ext_resource type="Texture2D" uid="uid://coyru1wuilga5" path="res://Textures/SchoolHouse/Grass.png" id="1_tmw6d"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
 size = Vector3(1, 0.001, 1)

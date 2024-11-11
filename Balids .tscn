@@ -1,4 +1,4 @@
-[gd_scene load_steps=165 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=190 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/floor_tile.tscn" id="1_6kwly"]
 [ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
@@ -9,19 +9,19 @@
 [ext_resource type="PackedScene" uid="uid://h61bvi2ryr2q" path="res://Prefabs/window_tile.tscn" id="4_vtrio"]
 [ext_resource type="PackedScene" uid="uid://dvk8gbe5vtarj" path="res://Prefabs/ceiling_tile.tscn" id="5_qs63q"]
 [ext_resource type="PackedScene" uid="uid://dg00bou33xige" path="res://Prefabs/grass_tile.tscn" id="7_le5bm"]
-[ext_resource type="Texture2D" uid="uid://cww0rgw5i1t6f" path="res://Textures/Character/SchoolHouse/SchoolRulesPoster.png" id="8_a8tup"]
+[ext_resource type="Texture2D" uid="uid://cww0rgw5i1t6f" path="res://Textures/SchoolHouse/SchoolRulesPoster.png" id="8_a8tup"]
 [ext_resource type="PackedScene" uid="uid://u1yja1yogvqo" path="res://Prefabs/exit_swing_door.tscn" id="8_d6sgb"]
 [ext_resource type="FontFile" uid="uid://daa0oi7r01rb8" path="res://pixel-sans.ttf" id="9_a4rgo"]
 [ext_resource type="PackedScene" uid="uid://b5qlbo758b7tl" path="res://Prefabs/fade_wall.tscn" id="9_exj8s"]
 [ext_resource type="PackedScene" uid="uid://dwtkemc4tut0j" path="res://Prefabs/door_tile.tscn" id="9_miigy"]
-[ext_resource type="Texture2D" uid="uid://ps44mavikjkx" path="res://Textures/Character/SchoolHouse/WhiteBrickWall.png" id="9_w5wct"]
+[ext_resource type="Texture2D" uid="uid://ps44mavikjkx" path="res://Textures/SchoolHouse/WhiteBrickWall.png" id="9_w5wct"]
 [ext_resource type="Texture2D" uid="uid://bxmugfmuexe1" path="res://Textures/Character/Baldi/Baldi_Wave0099.png" id="10_ab1ul"]
 [ext_resource type="PackedScene" uid="uid://dtac0til4v3bm" path="res://Prefabs/swing_door.tscn" id="10_cq45a"]
 [ext_resource type="Texture2D" uid="uid://c0eff3fo7h35i" path="res://Textures/Skybox/baldiSkyboxPanorama.png" id="13_g1jge"]
 [ext_resource type="Script" path="res://Baldi.gd" id="14_w7qhh"]
 [ext_resource type="Texture2D" uid="uid://dh7m5up3kfq7w" path="res://Textures/Character/Baldi/Baldi_Slap0024-sharedassets2.assets-401.png" id="15_mv814"]
-[ext_resource type="Texture2D" uid="uid://bvsg78up16x1" path="res://Textures/Character/SchoolHouse/ExitSign.png" id="15_ybn7g"]
-[ext_resource type="Texture2D" uid="uid://c2jjh8eafsjo4" path="res://Textures/Character/Notebooks/blackNotebook.png" id="16_i6ddl"]
+[ext_resource type="Texture2D" uid="uid://bvsg78up16x1" path="res://Textures/SchoolHouse/ExitSign.png" id="15_ybn7g"]
+[ext_resource type="Texture2D" uid="uid://c2jjh8eafsjo4" path="res://Textures/Notebooks/blackNotebook.png" id="16_i6ddl"]
 [ext_resource type="Script" path="res://Notebook.gd" id="16_ygmnp"]
 [ext_resource type="Texture2D" uid="uid://dtwl3k0cuuwk1" path="res://Textures/Character/Baldi/Baldi_Slap0000-sharedassets2.assets-283.png" id="17_dw0xm"]
 [ext_resource type="Texture2D" uid="uid://dv6uk3gs145ev" path="res://Textures/Character/Baldi/Baldi_Slap0006-sharedassets2.assets-357.png" id="18_he3dq"]
@@ -31,108 +31,132 @@
 [ext_resource type="Texture2D" uid="uid://66ioa7t8tu1j" path="res://Textures/Character/Playtime/Normal/PlaytimeModel.webp" id="20_wkbae"]
 [ext_resource type="Texture2D" uid="uid://o1kr4gt072lb" path="res://Textures/Character/Baldi/Baldi_Slap0018-sharedassets2.assets-235.png" id="20_wvf66"]
 [ext_resource type="Script" path="res://Principal.gd" id="21_kekmd"]
-[ext_resource type="Texture2D" uid="uid://bnbjp40npaytu" path="res://Textures/Character/Principal.webp" id="21_x4glv"]
+[ext_resource type="Texture2D" uid="uid://bnbjp40npaytu" path="res://Textures/Principal.webp" id="21_x4glv"]
 [ext_resource type="Texture2D" uid="uid://dimt4xqivkmjl" path="res://Textures/mario.png" id="22_ubfpi"]
-[ext_resource type="Texture2D" uid="uid://ch4f2ichdel87" path="res://Textures/Character/UI/ItemSlots.png" id="27_ydix2"]
-[ext_resource type="Texture2D" uid="uid://b26ijhof81c7p" path="res://Textures/Character/UI/YCTP2_NoButtons-sharedassets2.assets-344.png" id="28_bnc8w"]
-[ext_resource type="Texture2D" uid="uid://dbruy4nje3wvo" path="res://Textures/Character/UI/Baldi/Bald_Frown0000-sharedassets2.assets-174.png" id="28_fb0uy"]
-[ext_resource type="Texture2D" uid="uid://cgdjnatha3jnf" path="res://Textures/Character/UI/Baldi/Bald_Frown0001-sharedassets2.assets-182.png" id="29_engxy"]
+[ext_resource type="Texture2D" uid="uid://ch4f2ichdel87" path="res://Textures/UI/ItemSlots.png" id="27_ydix2"]
+[ext_resource type="Texture2D" uid="uid://b26ijhof81c7p" path="res://Textures/UI/YCTP2_NoButtons-sharedassets2.assets-344.png" id="28_bnc8w"]
+[ext_resource type="Texture2D" uid="uid://dbruy4nje3wvo" path="res://Textures/UI/Baldi/Bald_Frown0000-sharedassets2.assets-174.png" id="28_fb0uy"]
+[ext_resource type="Texture2D" uid="uid://cgdjnatha3jnf" path="res://Textures/UI/Baldi/Bald_Frown0001-sharedassets2.assets-182.png" id="29_engxy"]
 [ext_resource type="Script" path="res://MathGame.gd" id="30_nj28a"]
-[ext_resource type="Texture2D" uid="uid://ovi0ppowfdpe" path="res://Textures/Character/UI/Baldi/Bald_Frown0002-sharedassets2.assets-98.png" id="30_x76hv"]
-[ext_resource type="Texture2D" uid="uid://cat42pwu1johy" path="res://Textures/Character/UI/Baldi/Bald_Frown0003-sharedassets2.assets-519.png" id="31_n5ejp"]
-[ext_resource type="Texture2D" uid="uid://bbgj5lghp1faf" path="res://Textures/Character/UI/Baldi/Bald_Frown0004-sharedassets2.assets-155.png" id="32_647fs"]
-[ext_resource type="Texture2D" uid="uid://6eqgvjetn8k1" path="res://Textures/Character/UI/Baldi/Bald_Frown0005-sharedassets2.assets-371.png" id="33_ghkva"]
-[ext_resource type="Texture2D" uid="uid://4vtw0mfo0px3" path="res://Textures/Character/UI/Baldi/Bald_Frown0006-sharedassets2.assets-194.png" id="34_18gj0"]
-[ext_resource type="Texture2D" uid="uid://bv2jpdjrcibi0" path="res://Textures/Character/UI/Baldi/Bald_Frown0007-sharedassets2.assets-432.png" id="35_48c2v"]
-[ext_resource type="Texture2D" uid="uid://cwq47olwk7vui" path="res://Textures/Character/UI/Baldi/Bald_Frown0008-sharedassets2.assets-145.png" id="36_j2bfw"]
-[ext_resource type="Texture2D" uid="uid://bsvxpqf3t573e" path="res://Textures/Character/UI/Baldi/Bald_Frown0009-sharedassets2.assets-322.png" id="37_uay0d"]
-[ext_resource type="Texture2D" uid="uid://d02cjxki4mk0h" path="res://Textures/Character/UI/Baldi/Bald_Frown0010-sharedassets2.assets-231.png" id="38_52sdy"]
-[ext_resource type="Texture2D" uid="uid://coq8mdhgrtmbb" path="res://Textures/Character/UI/Baldi/Bald_Frown0011-sharedassets2.assets-107.png" id="39_5p0jt"]
-[ext_resource type="Texture2D" uid="uid://cyr5qnw7aifiq" path="res://Textures/Character/UI/Baldi/Bald_Frown0012-sharedassets2.assets-189.png" id="40_0y3qi"]
-[ext_resource type="Texture2D" uid="uid://vll2cnhnuoeg" path="res://Textures/Character/UI/Baldi/Bald_Frown0013-sharedassets2.assets-509.png" id="41_6p2nl"]
-[ext_resource type="Texture2D" uid="uid://bqyon58fdjdg4" path="res://Textures/Character/UI/Baldi/Bald_Frown0014-sharedassets2.assets-368.png" id="42_0ehck"]
-[ext_resource type="Texture2D" uid="uid://d5kepebgjyq2" path="res://Textures/Character/UI/Baldi/Bald_Frown0015-sharedassets2.assets-278.png" id="43_0k5up"]
-[ext_resource type="Texture2D" uid="uid://ddufxeersgr3b" path="res://Textures/Character/UI/Baldi/Bald_Frown0016-sharedassets2.assets-458.png" id="44_i2yrt"]
-[ext_resource type="Texture2D" uid="uid://b42rphhwb137k" path="res://Textures/Character/UI/Baldi/Bald_Frown0017-sharedassets2.assets-418.png" id="45_yo6sf"]
-[ext_resource type="Texture2D" uid="uid://b834a7i1m0dtk" path="res://Textures/Character/UI/Baldi/Bald_Frown0018-sharedassets2.assets-281.png" id="46_15l7g"]
-[ext_resource type="Texture2D" uid="uid://0qku5fqlovju" path="res://Textures/Character/UI/Baldi/Bald_Frown0019-sharedassets2.assets-158.png" id="47_6kqf6"]
-[ext_resource type="Texture2D" uid="uid://ba50bhfomvspu" path="res://Textures/Character/UI/Baldi/Bald_Frown0020-sharedassets2.assets-152.png" id="48_ec66q"]
-[ext_resource type="Texture2D" uid="uid://806cxjeik0g2" path="res://Textures/Character/UI/Baldi/Bald_Frown0021-sharedassets2.assets-114.png" id="49_gdlp1"]
-[ext_resource type="Texture2D" uid="uid://cmdipptjc7k4s" path="res://Textures/Character/UI/Baldi/Bald_Frown0022-sharedassets2.assets-105.png" id="50_t8inq"]
-[ext_resource type="Texture2D" uid="uid://c4od18vmh5xjg" path="res://Textures/Character/UI/Baldi/Bald_Frown0023-sharedassets2.assets-347.png" id="51_1p6yf"]
-[ext_resource type="Texture2D" uid="uid://be3g3fqyldhbl" path="res://Textures/Character/UI/Baldi/Bald_Frown0024-sharedassets2.assets-376.png" id="52_goakt"]
-[ext_resource type="Texture2D" uid="uid://dukkwn0kwdnod" path="res://Textures/Character/UI/Baldi/Bald_Frown0025-sharedassets2.assets-475.png" id="53_gufil"]
-[ext_resource type="Texture2D" uid="uid://caqog6srnt50f" path="res://Textures/Character/UI/Baldi/Bald_Frown0026-sharedassets2.assets-518.png" id="54_nwfnd"]
-[ext_resource type="Texture2D" uid="uid://ia2445o5j8a2" path="res://Textures/Character/UI/Baldi/Bald_Frown0027-sharedassets2.assets-237.png" id="55_x85aq"]
-[ext_resource type="Texture2D" uid="uid://kbe2jg0k8k6h" path="res://Textures/Character/UI/Baldi/Bald_Frown0028-sharedassets2.assets-234.png" id="56_6kbq4"]
-[ext_resource type="Texture2D" uid="uid://c47lo7od46ivf" path="res://Textures/Character/UI/Baldi/Bald_Frown0029-sharedassets2.assets-351.png" id="57_kmidd"]
-[ext_resource type="Texture2D" uid="uid://dm25yiexo4pjf" path="res://Textures/Character/UI/Baldi/Bald_Frown0030-sharedassets2.assets-142.png" id="58_g1ap1"]
-[ext_resource type="Texture2D" uid="uid://c2lwxpebr3juk" path="res://Textures/Character/UI/Baldi/Bald_Frown0031-sharedassets2.assets-226.png" id="59_4i2go"]
-[ext_resource type="Texture2D" uid="uid://iknyykj4b0ek" path="res://Textures/Character/UI/Baldi/Bald_Frown0032-sharedassets2.assets-383.png" id="60_fayer"]
-[ext_resource type="Texture2D" uid="uid://b2w0dms3ab8rp" path="res://Textures/Character/UI/Baldi/Bald_Frown0033-sharedassets2.assets-250.png" id="61_2artj"]
-[ext_resource type="Texture2D" uid="uid://bsha5daiimn0e" path="res://Textures/Character/UI/Baldi/Bald_Frown0034-sharedassets2.assets-346.png" id="62_nhrn2"]
-[ext_resource type="Texture2D" uid="uid://cvyfxpfiljniv" path="res://Textures/Character/UI/Baldi/Bald_Frown0035-sharedassets2.assets-225.png" id="63_f3npc"]
-[ext_resource type="Texture2D" uid="uid://bausxijubryhs" path="res://Textures/Character/UI/Baldi/Bald_Frown0036-sharedassets2.assets-390.png" id="64_00jss"]
-[ext_resource type="Texture2D" uid="uid://dog1xcua7basj" path="res://Textures/Character/UI/Baldi/Bald_Frown0037-sharedassets2.assets-160.png" id="65_oeos5"]
-[ext_resource type="Texture2D" uid="uid://csdpx401d7hwd" path="res://Textures/Character/UI/Baldi/Bald_Frown0038-sharedassets2.assets-336.png" id="66_nci61"]
-[ext_resource type="Texture2D" uid="uid://dlh4ljpdh8byk" path="res://Textures/Character/UI/Baldi/Bald_Frown0039-sharedassets2.assets-367.png" id="67_iu203"]
-[ext_resource type="Texture2D" uid="uid://b34wsm4tp31ao" path="res://Textures/Character/UI/Baldi/Bald_Frown0040-sharedassets2.assets-384.png" id="68_sx3dt"]
-[ext_resource type="Texture2D" uid="uid://bqsjgwjxnnjlb" path="res://Textures/Character/UI/Baldi/Bald_Frown0041-sharedassets2.assets-355.png" id="69_urp0h"]
-[ext_resource type="Texture2D" uid="uid://bsck3150pkhvr" path="res://Textures/Character/UI/Baldi/Bald_Frown0042-sharedassets2.assets-232.png" id="70_7y3bc"]
-[ext_resource type="Texture2D" uid="uid://bmn81lbonrsy1" path="res://Textures/Character/UI/Baldi/Bald_Frown0043-sharedassets2.assets-479.png" id="71_twj10"]
-[ext_resource type="Texture2D" uid="uid://b3cv1821u1a2c" path="res://Textures/Character/UI/Baldi/Bald_Frown0044-sharedassets2.assets-440.png" id="72_ye4ff"]
-[ext_resource type="Texture2D" uid="uid://cd4radtv071hs" path="res://Textures/Character/UI/Baldi/Bald_Frown0045-sharedassets2.assets-407.png" id="73_wpr3f"]
-[ext_resource type="Texture2D" uid="uid://b6wc6mgqjeqp3" path="res://Textures/Character/UI/Baldi/Bald_Frown0046-sharedassets2.assets-187.png" id="74_spwye"]
-[ext_resource type="Texture2D" uid="uid://ubbpgc28oykv" path="res://Textures/Character/UI/Baldi/Bald_Frown0047-sharedassets2.assets-516.png" id="75_7m1h3"]
-[ext_resource type="Texture2D" uid="uid://ku742o8jcpox" path="res://Textures/Character/UI/Baldi/Bald_Frown0048-sharedassets2.assets-530.png" id="76_yuh2t"]
-[ext_resource type="Texture2D" uid="uid://4bii6pr21mn1" path="res://Textures/Character/UI/Baldi/Bald_Frown0049-sharedassets2.assets-375.png" id="77_lhkjb"]
-[ext_resource type="Texture2D" uid="uid://ds6c5845cews2" path="res://Textures/Character/UI/Baldi/Bald_Frown0050-sharedassets2.assets-520.png" id="78_25f0o"]
-[ext_resource type="Texture2D" uid="uid://041652to1hr0" path="res://Textures/Character/UI/Baldi/Bald_Frown0051-sharedassets2.assets-331.png" id="79_gkvid"]
-[ext_resource type="Texture2D" uid="uid://be45ivo0pt16c" path="res://Textures/Character/UI/Baldi/Bald_Frown0052-sharedassets2.assets-291.png" id="80_01bxi"]
-[ext_resource type="Texture2D" uid="uid://chjunrau0cmxy" path="res://Textures/Character/UI/Baldi/Bald_Frown0053-sharedassets2.assets-266.png" id="81_im48s"]
-[ext_resource type="Texture2D" uid="uid://c1bxw8uptlevt" path="res://Textures/Character/UI/Baldi/Bald_Frown0054-sharedassets2.assets-125.png" id="82_5rjvr"]
-[ext_resource type="Texture2D" uid="uid://u1kqtl2ehfp5" path="res://Textures/Character/UI/Baldi/Bald_Frown0055-sharedassets2.assets-503.png" id="83_0xg1c"]
-[ext_resource type="Texture2D" uid="uid://c6x1kfnyl7kss" path="res://Textures/Character/UI/Baldi/Bald_Frown0056-sharedassets2.assets-80.png" id="84_0hw8p"]
-[ext_resource type="Texture2D" uid="uid://dqlpbhk53cjk3" path="res://Textures/Character/UI/Baldi/Bald_Frown0057-sharedassets2.assets-220.png" id="85_a2ynk"]
-[ext_resource type="Texture2D" uid="uid://cdv5afsmr30tu" path="res://Textures/Character/UI/Baldi/Bald_Frown0058-sharedassets2.assets-113.png" id="86_rxyma"]
-[ext_resource type="Texture2D" uid="uid://cs7p6olhludqk" path="res://Textures/Character/UI/Baldi/Bald_Frown0059-sharedassets2.assets-95.png" id="87_1gam5"]
-[ext_resource type="Texture2D" uid="uid://bd1c5sdsmcdw3" path="res://Textures/Character/UI/Baldi/Bald_Frown0060-sharedassets2.assets-67.png" id="88_j5dpo"]
-[ext_resource type="Texture2D" uid="uid://jlv4p8dfk4fe" path="res://Textures/Character/UI/Baldi/Bald_Frown0061-sharedassets2.assets-524.png" id="89_kbm7m"]
-[ext_resource type="Texture2D" uid="uid://d1mx5rht3bi3n" path="res://Textures/Character/UI/Baldi/Bald_Frown0062-sharedassets2.assets-263.png" id="90_fqokc"]
-[ext_resource type="Texture2D" uid="uid://ct1575mch1oga" path="res://Textures/Character/UI/Baldi/Bald_Frown0063-sharedassets2.assets-260.png" id="91_bkete"]
-[ext_resource type="Texture2D" uid="uid://dwxyeld8ust3n" path="res://Textures/Character/UI/Baldi/Bald_Frown0064-sharedassets2.assets-238.png" id="92_msc2a"]
-[ext_resource type="Texture2D" uid="uid://ba6nkk1asg5kx" path="res://Textures/Character/UI/Baldi/Bald_Frown0065-sharedassets2.assets-93.png" id="93_auf1k"]
-[ext_resource type="Texture2D" uid="uid://d4mbfmmso17lm" path="res://Textures/Character/UI/Baldi/Bald_Frown0066-sharedassets2.assets-239.png" id="94_86x8v"]
-[ext_resource type="Texture2D" uid="uid://dy1qywmeeiefl" path="res://Textures/Character/UI/Baldi/Bald_Frown0067-sharedassets2.assets-90.png" id="95_wbnjo"]
-[ext_resource type="Texture2D" uid="uid://beb3cbo173a1b" path="res://Textures/Character/UI/Baldi/Bald_Frown0068-sharedassets2.assets-261.png" id="96_lf23v"]
-[ext_resource type="Texture2D" uid="uid://dr1dhso77f8d0" path="res://Textures/Character/UI/Baldi/Bald_Frown0069-sharedassets2.assets-373.png" id="97_1cnrf"]
-[ext_resource type="Texture2D" uid="uid://b3e5583m06jm3" path="res://Textures/Character/UI/Baldi/Bald_Frown0070-sharedassets2.assets-350.png" id="98_oo72e"]
-[ext_resource type="Texture2D" uid="uid://bl3okjad3xuu1" path="res://Textures/Character/UI/Baldi/Bald_Frown0071-sharedassets2.assets-455.png" id="99_h0kq0"]
-[ext_resource type="Texture2D" uid="uid://58fg0mfhpnwj" path="res://Textures/Character/UI/Baldi/Baldi_Talk0000-sharedassets2.assets-456.png" id="100_ivd6k"]
-[ext_resource type="Texture2D" uid="uid://b4x4tlsuty72a" path="res://Textures/Character/UI/Baldi/Baldi_Talk0001-sharedassets2.assets-334.png" id="101_esqpp"]
-[ext_resource type="Texture2D" uid="uid://dgr7yxww0igi7" path="res://Textures/Character/UI/Baldi/Baldi_Talk0002-sharedassets2.assets-273.png" id="102_g56uj"]
-[ext_resource type="Texture2D" uid="uid://l5fhg81ednp2" path="res://Textures/Character/UI/Baldi/Baldi_Talk0003-sharedassets2.assets-517.png" id="103_hm08h"]
-[ext_resource type="Texture2D" uid="uid://mq0u2t4ec5yi" path="res://Textures/Character/UI/Baldi/Baldi_Talk0004-sharedassets2.assets-339.png" id="104_eoo8f"]
-[ext_resource type="Texture2D" uid="uid://cmxhsf5qvqclt" path="res://Textures/Character/UI/Baldi/Baldi_Talk0005-sharedassets2.assets-271.png" id="105_yful2"]
-[ext_resource type="Texture2D" uid="uid://cm871n1625awa" path="res://Textures/Character/UI/Baldi/Baldi_Talk0006-sharedassets2.assets-128.png" id="106_g842j"]
-[ext_resource type="Texture2D" uid="uid://cjj36rn7ntlsn" path="res://Textures/Character/UI/Baldi/Baldi_Talk0007-sharedassets2.assets-508.png" id="107_7u08l"]
-[ext_resource type="Texture2D" uid="uid://dix6n2ao5qgoj" path="res://Textures/Character/UI/Baldi/Baldi_Talk0008-sharedassets2.assets-316.png" id="108_ghdta"]
-[ext_resource type="Texture2D" uid="uid://cgh5wvdmgtdvd" path="res://Textures/Character/UI/Baldi/Baldi_Talk0009-sharedassets2.assets-184.png" id="109_dbjqb"]
-[ext_resource type="Texture2D" uid="uid://uffcfcf6s8lq" path="res://Textures/Character/UI/Baldi/Baldi_Talk0010-sharedassets2.assets-385.png" id="110_ednsl"]
-[ext_resource type="Texture2D" uid="uid://dx645ii8n82ol" path="res://Textures/Character/UI/Baldi/Baldi_Talk0011-sharedassets2.assets-100.png" id="111_8vhx3"]
-[ext_resource type="Texture2D" uid="uid://ctmj3tsaxgdr7" path="res://Textures/Character/UI/Baldi/Baldi_Talk0012-sharedassets2.assets-525.png" id="112_yc6l4"]
-[ext_resource type="Texture2D" uid="uid://7msy2d7gvhxd" path="res://Textures/Character/UI/Baldi/Baldi_Talk0013-sharedassets2.assets-97.png" id="113_ld1uv"]
-[ext_resource type="Texture2D" uid="uid://q2rscqq5fjhk" path="res://Textures/Character/UI/Baldi/Baldi_Talk0014-sharedassets2.assets-485.png" id="114_elwk7"]
-[ext_resource type="Texture2D" uid="uid://5giq2imc8tbn" path="res://Textures/Character/UI/Baldi/Baldi_Talk0015-sharedassets2.assets-408.png" id="115_iij04"]
-[ext_resource type="Texture2D" uid="uid://cvnxcjjy6jnhy" path="res://Textures/Character/UI/Baldi/Baldi_Talk0016-sharedassets2.assets-397.png" id="116_b0r84"]
-[ext_resource type="Texture2D" uid="uid://dqmfi74yhjrcd" path="res://Textures/Character/UI/Baldi/Baldi_Talk0017-sharedassets2.assets-365.png" id="117_b4viu"]
-[ext_resource type="Texture2D" uid="uid://d0hut7g0iy25y" path="res://Textures/Character/UI/Baldi/Baldi_Talk0018-sharedassets2.assets-297.png" id="118_ssdj0"]
-[ext_resource type="Texture2D" uid="uid://bce5xsgir5lb2" path="res://Textures/Character/UI/Baldi/Baldi_Talk0019-sharedassets2.assets-73.png" id="119_kdhnj"]
-[ext_resource type="Texture2D" uid="uid://hvlxsf8d05vm" path="res://Textures/Character/UI/Baldi/Baldi_Talk0020-sharedassets2.assets-288.png" id="120_kmtbr"]
-[ext_resource type="Texture2D" uid="uid://c1to5htk1vnff" path="res://Textures/Character/UI/Baldi/Baldi_Talk0021-sharedassets2.assets-162.png" id="121_ksigi"]
-[ext_resource type="Texture2D" uid="uid://erf0ryqhljsw" path="res://Textures/Character/UI/Baldi/Baldi_Talk0022-sharedassets2.assets-149.png" id="122_b3ur3"]
-[ext_resource type="Texture2D" uid="uid://bykbswmhe00cb" path="res://Textures/Character/UI/Baldi/Baldi_Talk0023-sharedassets2.assets-81.png" id="123_me3ec"]
-[ext_resource type="Texture2D" uid="uid://dovus8jl0mn5l" path="res://Textures/Character/UI/Check-sharedassets1.assets-27.png" id="127_rqr44"]
+[ext_resource type="Texture2D" uid="uid://ovi0ppowfdpe" path="res://Textures/UI/Baldi/Bald_Frown0002-sharedassets2.assets-98.png" id="30_x76hv"]
+[ext_resource type="Texture2D" uid="uid://cat42pwu1johy" path="res://Textures/UI/Baldi/Bald_Frown0003-sharedassets2.assets-519.png" id="31_n5ejp"]
+[ext_resource type="Texture2D" uid="uid://bbgj5lghp1faf" path="res://Textures/UI/Baldi/Bald_Frown0004-sharedassets2.assets-155.png" id="32_647fs"]
+[ext_resource type="Texture2D" uid="uid://6eqgvjetn8k1" path="res://Textures/UI/Baldi/Bald_Frown0005-sharedassets2.assets-371.png" id="33_ghkva"]
+[ext_resource type="Texture2D" uid="uid://4vtw0mfo0px3" path="res://Textures/UI/Baldi/Bald_Frown0006-sharedassets2.assets-194.png" id="34_18gj0"]
+[ext_resource type="Script" path="res://JumpRope.gd" id="34_wf1nl"]
+[ext_resource type="Texture2D" uid="uid://bv2jpdjrcibi0" path="res://Textures/UI/Baldi/Bald_Frown0007-sharedassets2.assets-432.png" id="35_48c2v"]
+[ext_resource type="Texture2D" uid="uid://b8668bm15k730" path="res://Textures/UI/Rope0031.png" id="35_sslwy"]
+[ext_resource type="Texture2D" uid="uid://cwq47olwk7vui" path="res://Textures/UI/Baldi/Bald_Frown0008-sharedassets2.assets-145.png" id="36_j2bfw"]
+[ext_resource type="Texture2D" uid="uid://beasvq2pm76c3" path="res://Textures/UI/Rope0032.png" id="36_ppfuh"]
+[ext_resource type="Texture2D" uid="uid://n6iaew2quyy3" path="res://Textures/UI/Rope0033.png" id="37_imfnf"]
+[ext_resource type="Texture2D" uid="uid://bsvxpqf3t573e" path="res://Textures/UI/Baldi/Bald_Frown0009-sharedassets2.assets-322.png" id="37_uay0d"]
+[ext_resource type="Texture2D" uid="uid://1r83axsgxqj6" path="res://Textures/UI/Rope0034.png" id="38_1hn7w"]
+[ext_resource type="Texture2D" uid="uid://d02cjxki4mk0h" path="res://Textures/UI/Baldi/Bald_Frown0010-sharedassets2.assets-231.png" id="38_52sdy"]
+[ext_resource type="Texture2D" uid="uid://coq8mdhgrtmbb" path="res://Textures/UI/Baldi/Bald_Frown0011-sharedassets2.assets-107.png" id="39_5p0jt"]
+[ext_resource type="Texture2D" uid="uid://ckevttwukjag4" path="res://Textures/UI/Rope0035.png" id="39_dkucl"]
+[ext_resource type="Texture2D" uid="uid://cyr5qnw7aifiq" path="res://Textures/UI/Baldi/Bald_Frown0012-sharedassets2.assets-189.png" id="40_0y3qi"]
+[ext_resource type="Texture2D" uid="uid://yyxox56c8qnr" path="res://Textures/UI/Rope0036.png" id="40_io10h"]
+[ext_resource type="Texture2D" uid="uid://vll2cnhnuoeg" path="res://Textures/UI/Baldi/Bald_Frown0013-sharedassets2.assets-509.png" id="41_6p2nl"]
+[ext_resource type="Texture2D" uid="uid://ccmotj303sde1" path="res://Textures/UI/Rope0037.png" id="41_07www"]
+[ext_resource type="Texture2D" uid="uid://bqyon58fdjdg4" path="res://Textures/UI/Baldi/Bald_Frown0014-sharedassets2.assets-368.png" id="42_0ehck"]
+[ext_resource type="Texture2D" uid="uid://bkr6vqy6f20tj" path="res://Textures/UI/Rope0038.png" id="42_7jv61"]
+[ext_resource type="Texture2D" uid="uid://d5kepebgjyq2" path="res://Textures/UI/Baldi/Bald_Frown0015-sharedassets2.assets-278.png" id="43_0k5up"]
+[ext_resource type="Texture2D" uid="uid://dtsb58ylqvxid" path="res://Textures/UI/Rope0039.png" id="43_bqm3x"]
+[ext_resource type="Texture2D" uid="uid://ddufxeersgr3b" path="res://Textures/UI/Baldi/Bald_Frown0016-sharedassets2.assets-458.png" id="44_i2yrt"]
+[ext_resource type="Texture2D" uid="uid://dpplcqufg2g6y" path="res://Textures/UI/Rope0040.png" id="44_xp6ff"]
+[ext_resource type="Texture2D" uid="uid://cvrw7iidblim" path="res://Textures/UI/Rope0041.png" id="45_s3jgm"]
+[ext_resource type="Texture2D" uid="uid://b42rphhwb137k" path="res://Textures/UI/Baldi/Bald_Frown0017-sharedassets2.assets-418.png" id="45_yo6sf"]
+[ext_resource type="Texture2D" uid="uid://b834a7i1m0dtk" path="res://Textures/UI/Baldi/Bald_Frown0018-sharedassets2.assets-281.png" id="46_15l7g"]
+[ext_resource type="Texture2D" uid="uid://hvd3g7cxqcgn" path="res://Textures/UI/Rope0042.png" id="46_q37n7"]
+[ext_resource type="Texture2D" uid="uid://0qku5fqlovju" path="res://Textures/UI/Baldi/Bald_Frown0019-sharedassets2.assets-158.png" id="47_6kqf6"]
+[ext_resource type="Texture2D" uid="uid://c22ebt1wkqg4p" path="res://Textures/UI/Rope0043.png" id="47_k1pnm"]
+[ext_resource type="Texture2D" uid="uid://c4rcwnneacehs" path="res://Textures/UI/Rope0044.png" id="48_5oj42"]
+[ext_resource type="Texture2D" uid="uid://ba50bhfomvspu" path="res://Textures/UI/Baldi/Bald_Frown0020-sharedassets2.assets-152.png" id="48_ec66q"]
+[ext_resource type="Texture2D" uid="uid://rlbffshuetmg" path="res://Textures/UI/Rope0045.png" id="49_4q3rd"]
+[ext_resource type="Texture2D" uid="uid://806cxjeik0g2" path="res://Textures/UI/Baldi/Bald_Frown0021-sharedassets2.assets-114.png" id="49_gdlp1"]
+[ext_resource type="Texture2D" uid="uid://db0p4cpt3555p" path="res://Textures/UI/Rope0046.png" id="50_nk14u"]
+[ext_resource type="Texture2D" uid="uid://cmdipptjc7k4s" path="res://Textures/UI/Baldi/Bald_Frown0022-sharedassets2.assets-105.png" id="50_t8inq"]
+[ext_resource type="Texture2D" uid="uid://c4od18vmh5xjg" path="res://Textures/UI/Baldi/Bald_Frown0023-sharedassets2.assets-347.png" id="51_1p6yf"]
+[ext_resource type="Texture2D" uid="uid://be3g3fqyldhbl" path="res://Textures/UI/Baldi/Bald_Frown0024-sharedassets2.assets-376.png" id="52_goakt"]
+[ext_resource type="Texture2D" uid="uid://dukkwn0kwdnod" path="res://Textures/UI/Baldi/Bald_Frown0025-sharedassets2.assets-475.png" id="53_gufil"]
+[ext_resource type="Texture2D" uid="uid://caqog6srnt50f" path="res://Textures/UI/Baldi/Bald_Frown0026-sharedassets2.assets-518.png" id="54_nwfnd"]
+[ext_resource type="Texture2D" uid="uid://ia2445o5j8a2" path="res://Textures/UI/Baldi/Bald_Frown0027-sharedassets2.assets-237.png" id="55_x85aq"]
+[ext_resource type="Texture2D" uid="uid://kbe2jg0k8k6h" path="res://Textures/UI/Baldi/Bald_Frown0028-sharedassets2.assets-234.png" id="56_6kbq4"]
+[ext_resource type="Texture2D" uid="uid://c47lo7od46ivf" path="res://Textures/UI/Baldi/Bald_Frown0029-sharedassets2.assets-351.png" id="57_kmidd"]
+[ext_resource type="Texture2D" uid="uid://dm25yiexo4pjf" path="res://Textures/UI/Baldi/Bald_Frown0030-sharedassets2.assets-142.png" id="58_g1ap1"]
+[ext_resource type="Texture2D" uid="uid://c2lwxpebr3juk" path="res://Textures/UI/Baldi/Bald_Frown0031-sharedassets2.assets-226.png" id="59_4i2go"]
+[ext_resource type="Texture2D" uid="uid://iknyykj4b0ek" path="res://Textures/UI/Baldi/Bald_Frown0032-sharedassets2.assets-383.png" id="60_fayer"]
+[ext_resource type="Texture2D" uid="uid://b2w0dms3ab8rp" path="res://Textures/UI/Baldi/Bald_Frown0033-sharedassets2.assets-250.png" id="61_2artj"]
+[ext_resource type="Texture2D" uid="uid://bsha5daiimn0e" path="res://Textures/UI/Baldi/Bald_Frown0034-sharedassets2.assets-346.png" id="62_nhrn2"]
+[ext_resource type="Texture2D" uid="uid://cvyfxpfiljniv" path="res://Textures/UI/Baldi/Bald_Frown0035-sharedassets2.assets-225.png" id="63_f3npc"]
+[ext_resource type="Texture2D" uid="uid://bausxijubryhs" path="res://Textures/UI/Baldi/Bald_Frown0036-sharedassets2.assets-390.png" id="64_00jss"]
+[ext_resource type="Texture2D" uid="uid://dog1xcua7basj" path="res://Textures/UI/Baldi/Bald_Frown0037-sharedassets2.assets-160.png" id="65_oeos5"]
+[ext_resource type="Texture2D" uid="uid://csdpx401d7hwd" path="res://Textures/UI/Baldi/Bald_Frown0038-sharedassets2.assets-336.png" id="66_nci61"]
+[ext_resource type="Texture2D" uid="uid://dlh4ljpdh8byk" path="res://Textures/UI/Baldi/Bald_Frown0039-sharedassets2.assets-367.png" id="67_iu203"]
+[ext_resource type="Texture2D" uid="uid://b34wsm4tp31ao" path="res://Textures/UI/Baldi/Bald_Frown0040-sharedassets2.assets-384.png" id="68_sx3dt"]
+[ext_resource type="Texture2D" uid="uid://bqsjgwjxnnjlb" path="res://Textures/UI/Baldi/Bald_Frown0041-sharedassets2.assets-355.png" id="69_urp0h"]
+[ext_resource type="Texture2D" uid="uid://bsck3150pkhvr" path="res://Textures/UI/Baldi/Bald_Frown0042-sharedassets2.assets-232.png" id="70_7y3bc"]
+[ext_resource type="Texture2D" uid="uid://bmn81lbonrsy1" path="res://Textures/UI/Baldi/Bald_Frown0043-sharedassets2.assets-479.png" id="71_twj10"]
+[ext_resource type="Texture2D" uid="uid://b3cv1821u1a2c" path="res://Textures/UI/Baldi/Bald_Frown0044-sharedassets2.assets-440.png" id="72_ye4ff"]
+[ext_resource type="Texture2D" uid="uid://cd4radtv071hs" path="res://Textures/UI/Baldi/Bald_Frown0045-sharedassets2.assets-407.png" id="73_wpr3f"]
+[ext_resource type="Texture2D" uid="uid://b6wc6mgqjeqp3" path="res://Textures/UI/Baldi/Bald_Frown0046-sharedassets2.assets-187.png" id="74_spwye"]
+[ext_resource type="Texture2D" uid="uid://ubbpgc28oykv" path="res://Textures/UI/Baldi/Bald_Frown0047-sharedassets2.assets-516.png" id="75_7m1h3"]
+[ext_resource type="Texture2D" uid="uid://ku742o8jcpox" path="res://Textures/UI/Baldi/Bald_Frown0048-sharedassets2.assets-530.png" id="76_yuh2t"]
+[ext_resource type="Texture2D" uid="uid://4bii6pr21mn1" path="res://Textures/UI/Baldi/Bald_Frown0049-sharedassets2.assets-375.png" id="77_lhkjb"]
+[ext_resource type="Texture2D" uid="uid://ds6c5845cews2" path="res://Textures/UI/Baldi/Bald_Frown0050-sharedassets2.assets-520.png" id="78_25f0o"]
+[ext_resource type="Texture2D" uid="uid://041652to1hr0" path="res://Textures/UI/Baldi/Bald_Frown0051-sharedassets2.assets-331.png" id="79_gkvid"]
+[ext_resource type="Texture2D" uid="uid://be45ivo0pt16c" path="res://Textures/UI/Baldi/Bald_Frown0052-sharedassets2.assets-291.png" id="80_01bxi"]
+[ext_resource type="Texture2D" uid="uid://chjunrau0cmxy" path="res://Textures/UI/Baldi/Bald_Frown0053-sharedassets2.assets-266.png" id="81_im48s"]
+[ext_resource type="Texture2D" uid="uid://c1bxw8uptlevt" path="res://Textures/UI/Baldi/Bald_Frown0054-sharedassets2.assets-125.png" id="82_5rjvr"]
+[ext_resource type="Texture2D" uid="uid://u1kqtl2ehfp5" path="res://Textures/UI/Baldi/Bald_Frown0055-sharedassets2.assets-503.png" id="83_0xg1c"]
+[ext_resource type="Texture2D" uid="uid://c6x1kfnyl7kss" path="res://Textures/UI/Baldi/Bald_Frown0056-sharedassets2.assets-80.png" id="84_0hw8p"]
+[ext_resource type="Texture2D" uid="uid://dqlpbhk53cjk3" path="res://Textures/UI/Baldi/Bald_Frown0057-sharedassets2.assets-220.png" id="85_a2ynk"]
+[ext_resource type="Texture2D" uid="uid://cdv5afsmr30tu" path="res://Textures/UI/Baldi/Bald_Frown0058-sharedassets2.assets-113.png" id="86_rxyma"]
+[ext_resource type="Texture2D" uid="uid://cs7p6olhludqk" path="res://Textures/UI/Baldi/Bald_Frown0059-sharedassets2.assets-95.png" id="87_1gam5"]
+[ext_resource type="Texture2D" uid="uid://bd1c5sdsmcdw3" path="res://Textures/UI/Baldi/Bald_Frown0060-sharedassets2.assets-67.png" id="88_j5dpo"]
+[ext_resource type="Texture2D" uid="uid://jlv4p8dfk4fe" path="res://Textures/UI/Baldi/Bald_Frown0061-sharedassets2.assets-524.png" id="89_kbm7m"]
+[ext_resource type="Texture2D" uid="uid://d1mx5rht3bi3n" path="res://Textures/UI/Baldi/Bald_Frown0062-sharedassets2.assets-263.png" id="90_fqokc"]
+[ext_resource type="Texture2D" uid="uid://ct1575mch1oga" path="res://Textures/UI/Baldi/Bald_Frown0063-sharedassets2.assets-260.png" id="91_bkete"]
+[ext_resource type="Texture2D" uid="uid://dwxyeld8ust3n" path="res://Textures/UI/Baldi/Bald_Frown0064-sharedassets2.assets-238.png" id="92_msc2a"]
+[ext_resource type="Texture2D" uid="uid://ba6nkk1asg5kx" path="res://Textures/UI/Baldi/Bald_Frown0065-sharedassets2.assets-93.png" id="93_auf1k"]
+[ext_resource type="Texture2D" uid="uid://d4mbfmmso17lm" path="res://Textures/UI/Baldi/Bald_Frown0066-sharedassets2.assets-239.png" id="94_86x8v"]
+[ext_resource type="Texture2D" uid="uid://dy1qywmeeiefl" path="res://Textures/UI/Baldi/Bald_Frown0067-sharedassets2.assets-90.png" id="95_wbnjo"]
+[ext_resource type="Texture2D" uid="uid://beb3cbo173a1b" path="res://Textures/UI/Baldi/Bald_Frown0068-sharedassets2.assets-261.png" id="96_lf23v"]
+[ext_resource type="Texture2D" uid="uid://dr1dhso77f8d0" path="res://Textures/UI/Baldi/Bald_Frown0069-sharedassets2.assets-373.png" id="97_1cnrf"]
+[ext_resource type="Texture2D" uid="uid://b3e5583m06jm3" path="res://Textures/UI/Baldi/Bald_Frown0070-sharedassets2.assets-350.png" id="98_oo72e"]
+[ext_resource type="Texture2D" uid="uid://bl3okjad3xuu1" path="res://Textures/UI/Baldi/Bald_Frown0071-sharedassets2.assets-455.png" id="99_h0kq0"]
+[ext_resource type="Texture2D" uid="uid://58fg0mfhpnwj" path="res://Textures/UI/Baldi/Baldi_Talk0000-sharedassets2.assets-456.png" id="100_ivd6k"]
+[ext_resource type="Texture2D" uid="uid://b4x4tlsuty72a" path="res://Textures/UI/Baldi/Baldi_Talk0001-sharedassets2.assets-334.png" id="101_esqpp"]
+[ext_resource type="Texture2D" uid="uid://dgr7yxww0igi7" path="res://Textures/UI/Baldi/Baldi_Talk0002-sharedassets2.assets-273.png" id="102_g56uj"]
+[ext_resource type="Texture2D" uid="uid://l5fhg81ednp2" path="res://Textures/UI/Baldi/Baldi_Talk0003-sharedassets2.assets-517.png" id="103_hm08h"]
+[ext_resource type="Texture2D" uid="uid://mq0u2t4ec5yi" path="res://Textures/UI/Baldi/Baldi_Talk0004-sharedassets2.assets-339.png" id="104_eoo8f"]
+[ext_resource type="Texture2D" uid="uid://cmxhsf5qvqclt" path="res://Textures/UI/Baldi/Baldi_Talk0005-sharedassets2.assets-271.png" id="105_yful2"]
+[ext_resource type="Texture2D" uid="uid://cm871n1625awa" path="res://Textures/UI/Baldi/Baldi_Talk0006-sharedassets2.assets-128.png" id="106_g842j"]
+[ext_resource type="Texture2D" uid="uid://cjj36rn7ntlsn" path="res://Textures/UI/Baldi/Baldi_Talk0007-sharedassets2.assets-508.png" id="107_7u08l"]
+[ext_resource type="Texture2D" uid="uid://dix6n2ao5qgoj" path="res://Textures/UI/Baldi/Baldi_Talk0008-sharedassets2.assets-316.png" id="108_ghdta"]
+[ext_resource type="Texture2D" uid="uid://cgh5wvdmgtdvd" path="res://Textures/UI/Baldi/Baldi_Talk0009-sharedassets2.assets-184.png" id="109_dbjqb"]
+[ext_resource type="Texture2D" uid="uid://uffcfcf6s8lq" path="res://Textures/UI/Baldi/Baldi_Talk0010-sharedassets2.assets-385.png" id="110_ednsl"]
+[ext_resource type="Texture2D" uid="uid://dx645ii8n82ol" path="res://Textures/UI/Baldi/Baldi_Talk0011-sharedassets2.assets-100.png" id="111_8vhx3"]
+[ext_resource type="Texture2D" uid="uid://ctmj3tsaxgdr7" path="res://Textures/UI/Baldi/Baldi_Talk0012-sharedassets2.assets-525.png" id="112_yc6l4"]
+[ext_resource type="Texture2D" uid="uid://7msy2d7gvhxd" path="res://Textures/UI/Baldi/Baldi_Talk0013-sharedassets2.assets-97.png" id="113_ld1uv"]
+[ext_resource type="Texture2D" uid="uid://q2rscqq5fjhk" path="res://Textures/UI/Baldi/Baldi_Talk0014-sharedassets2.assets-485.png" id="114_elwk7"]
+[ext_resource type="Texture2D" uid="uid://5giq2imc8tbn" path="res://Textures/UI/Baldi/Baldi_Talk0015-sharedassets2.assets-408.png" id="115_iij04"]
+[ext_resource type="Texture2D" uid="uid://cvnxcjjy6jnhy" path="res://Textures/UI/Baldi/Baldi_Talk0016-sharedassets2.assets-397.png" id="116_b0r84"]
+[ext_resource type="Texture2D" uid="uid://dqmfi74yhjrcd" path="res://Textures/UI/Baldi/Baldi_Talk0017-sharedassets2.assets-365.png" id="117_b4viu"]
+[ext_resource type="Texture2D" uid="uid://d0hut7g0iy25y" path="res://Textures/UI/Baldi/Baldi_Talk0018-sharedassets2.assets-297.png" id="118_ssdj0"]
+[ext_resource type="Texture2D" uid="uid://bce5xsgir5lb2" path="res://Textures/UI/Baldi/Baldi_Talk0019-sharedassets2.assets-73.png" id="119_kdhnj"]
+[ext_resource type="Texture2D" uid="uid://hvlxsf8d05vm" path="res://Textures/UI/Baldi/Baldi_Talk0020-sharedassets2.assets-288.png" id="120_kmtbr"]
+[ext_resource type="Texture2D" uid="uid://c1to5htk1vnff" path="res://Textures/UI/Baldi/Baldi_Talk0021-sharedassets2.assets-162.png" id="121_ksigi"]
+[ext_resource type="Texture2D" uid="uid://erf0ryqhljsw" path="res://Textures/UI/Baldi/Baldi_Talk0022-sharedassets2.assets-149.png" id="122_b3ur3"]
+[ext_resource type="Texture2D" uid="uid://bykbswmhe00cb" path="res://Textures/UI/Baldi/Baldi_Talk0023-sharedassets2.assets-81.png" id="123_me3ec"]
+[ext_resource type="Texture2D" uid="uid://dovus8jl0mn5l" path="res://Textures/UI/Check-sharedassets1.assets-27.png" id="127_rqr44"]
+[ext_resource type="Texture2D" uid="uid://cs1cji7hviicr" path="res://Textures/bowser.png" id="134_llhcl"]
+[ext_resource type="Texture2D" uid="uid://bino1o1mw8hei" path="res://Textures/bowserjr.png" id="135_fs7wx"]
+[ext_resource type="Texture2D" uid="uid://q8mj7mvm3pni" path="res://Textures/goomba.png" id="136_qkc3m"]
+[ext_resource type="Texture2D" uid="uid://deh2d0j0xkh2p" path="res://Textures/koopa.png" id="137_qd32s"]
+[ext_resource type="Texture2D" uid="uid://da3kbn6tl763r" path="res://Textures/luigi.png" id="138_vs44i"]
+[ext_resource type="Texture2D" uid="uid://dkvy1ahclxqlr" path="res://Textures/waluigi.png" id="139_qu2h0"]
+[ext_resource type="Texture2D" uid="uid://7tpu6cbj3yet" path="res://Textures/wario.png" id="140_n2sqx"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_it2ih"]
 vertices = PackedVector3Array(-2.2505, 0.0195, -5.2505, -2.2505, 0.0195, -0.6505, 2.2995, 0.0195, -0.6505, 2.2995, 0.0195, -5.2505, 2.7995, 0.0195, 16.5995, 2.7995, 0.0195, 16.4495, 2.7495, 0.0195, 16.4495, 2.7495, 0.0195, 16.5995, -3.5505, 0.0195, 27.2995, -3.4005, 0.0195, 27.2995, -3.4005, 0.0195, 27.2495, -3.5505, 0.0195, 27.2495, 2.5995, 0.0195, 16.2995, 2.7495, 0.0195, 16.4495, 2.7995, 0.0195, 16.4495, 2.9495, 0.0195, 16.2995, 5.2995, 0.0195, 7.4495, 2.9495, 0.0195, 16.7495, 2.7995, 0.0195, 16.5995, 2.7495, 0.0195, 16.5995, 2.5995, 0.0195, 16.7495, 2.4495, 0.0195, 17.2995, 10.7495, 0.0195, 8.9995, 11.2995, 0.0195, 11.1495, 11.2995, 0.0195, 0.7495, 10.7495, 0.0195, 1.4495, -2.7005, 0.0195, 19.9495, -3.2505, 0.0195, 17.4495, -3.2505, 0.0195, 27.0995, -2.7005, 0.0195, 27.5995, -3.2505, 0.0195, 27.4495, -2.7005, 0.0195, 28.4495, -2.5505, 0.0195, 28.2995, -2.5505, 0.0195, 27.7495, -2.7005, 0.0195, 27.5995, -3.2505, 0.0195, 27.0995, -6.4005, 0.0195, 1.2995, -6.2505, 0.0195, 1.4495, -5.7505, 0.0195, 1.4495, -5.6005, 0.0195, 1.2995, -2.4005, 0.0195, 16.7495, -3.4005, 0.0195, 17.2995, -3.2505, 0.0195, 17.4495, -2.7005, 0.0195, 17.4495, -2.5505, 0.0195, 17.2995, -2.0505, 0.0195, 16.7495, 1.5995, 0.0195, 17.2995, 1.7495, 0.0195, 17.4495, 2.2995, 0.0195, 17.4495, -0.2505, 0.0195, 1.4495, 0.2995, 0.0195, 1.4495, 0.4495, 0.0195, 1.2995, 10.2995, 0.0195, 32.5995, 10.2995, 0.0195, 28.7495, 3.9995, 0.0195, 28.7495, 1.5995, 0.0195, 17.2995, 2.2995, 0.0195, 17.4495, 2.4495, 0.0195, 17.2995, 2.5995, 0.0195, 16.7495, 0.399501, 0.0195, 16.7495, 3.9995, 0.0195, 28.7495, -2.2505, 0.0195, 32.5995, -2.4005, 0.0195, 32.7495, -11.2505, 0.0195, 0.7495, -10.7005, 0.0195, 1.4495, -10.5505, 0.0195, 1.2995, -6.7505, 0.0195, 4.0995, -6.7505, 0.0195, 3.7495, -8.2505, 0.0195, 3.7495, -8.2505, 0.0195, 4.2995, -10.7005, 0.0195, 12.9495, -10.7005, 0.0195, 12.5995, -11.2505, 0.0195, 9.8495, -6.6005, 0.0195, 4.2495, -6.7505, 0.0195, 4.0995, -8.2505, 0.0195, 4.2995, -6.6005, 0.0195, 4.2495, -8.2505, 0.0195, 4.2995, -6.4005, 0.0195, 4.2995, -6.4005, 0.0195, 4.2495, -2.7005, 0.0195, 32.5995, -2.7005, 0.0195, 28.4495, -3.2505, 0.0195, 27.4495, -3.2505, 0.0195, 36.5995, -6.2505, 0.0195, 4.0995, -6.4005, 0.0195, 4.2495, -6.4005, 0.0195, 4.2995, -6.2505, 0.0195, 4.4495, 10.7495, 0.0195, 17.4495, 10.7495, 0.0195, 20.0995, 11.2995, 0.0195, 21.5995, -2.7005, 0.0195, 19.5995, -2.7005, 0.0195, 17.4495, -3.2505, 0.0195, 17.4495, 2.7495, 0.0195, 38.2995, 5.2995, 0.0195, 38.3495, 5.2995, 0.0195, 37.4495, 2.7495, 0.0195, 37.4495, 10.7495, 0.0195, 20.0995, 10.7495, 0.0195, 20.4495, 11.2995, 0.0195, 21.5995, 11.4495, 0.0195, 24.2995, 12.2995, 0.0195, 24.2995, 12.2995, 0.0195, 21.7495, 11.4495, 0.0195, 21.7495, -10.7005, 0.0195, 33.5995, -10.7005, 0.0195, 26.7495, -11.2505, 0.0195, 28.1495, -11.2505, 0.0195, 37.2995, 1.2995, 0.0195, 0.5995, 1.2995, 0.0195, -0.2505, -1.2505, 0.0195, -0.2505, -1.2505, 0.0195, 0.5995, 5.4495, 0.0195, 7.2995, 5.5995, 0.0195, 7.2995, 5.5995, 0.0195, 7.2495, 5.4495, 0.0195, 7.2495, -5.7505, 0.0195, 1.4495, -6.2505, 0.0195, 1.4495, -6.2505, 0.0195, 4.0995, 2.5995, 0.0195, 37.2995, 2.7495, 0.0195, 37.4495, 5.2995, 0.0195, 37.4495, 5.4495, 0.0195, 37.2995, 11.2995, 0.0195, 24.4495, 11.4495, 0.0195, 24.2995, 11.4495, 0.0195, 21.7495, 11.2995, 0.0195, 21.5995, 1.4495, 0.0195, 0.7495, 1.2995, 0.0195, 0.5995, -1.2505, 0.0195, 0.5995, -1.4005, 0.0195, 0.7495, -0.400499, 0.0195, 1.2995, -10.5505, 0.0195, 36.7495, -10.7005, 0.0195, 36.5995, -11.2505, 0.0195, 37.2995, -10.7005, 0.0195, 36.5995, -10.7005, 0.0195, 33.9495, -11.2505, 0.0195, 37.2995, -10.7005, 0.0195, 33.9495, -10.7005, 0.0195, 33.5995, -11.2505, 0.0195, 37.2995, -5.7505, 0.0195, 1.4495, -6.2505, 0.0195, 4.0995, -6.2505, 0.0195, 4.4495, 1.2995, 0.0195, 17.7495, -2.2505, 0.0195, 17.7495, -2.2505, 0.0195, 19.5995, 0.2495, 0.0195, 12.4495, -0.2505, 0.0195, 10.2495, -0.2505, 0.0195, 16.5995, 0.2495, 0.0195, 16.5995, -2.7005, 0.0195, 32.5995, -3.2505, 0.0195, 36.5995, -2.7005, 0.0195, 33.4495, 0.399501, 0.0195, 16.7495, 0.2495, 0.0195, 16.5995, -0.2505, 0.0195, 16.5995, 0.399501, 0.0195, 16.7495, -0.2505, 0.0195, 16.5995, -0.400499, 0.0195, 16.7495, 1.5995, 0.0195, 17.2995, -2.2505, 0.0195, 19.9495, 1.2995, 0.0195, 17.7495, -2.2505, 0.0195, 19.5995, -2.4005, 0.0195, 19.7495, -2.4005, 0.0195, 19.7995, -10.2505, 0.0195, 12.9495, -10.2505, 0.0195, 15.2995, -6.7505, 0.0195, 15.2995, -2.2505, 0.0195, 19.9495, -2.2505, 0.0195, 22.2995, 1.2995, 0.0195, 22.2995, 1.2995, 0.0195, 17.7495, -2.5505, 0.0195, 33.2995, -2.4005, 0.0195, 33.2995, -2.4005, 0.0195, 32.7495, -2.5505, 0.0195, 32.7495, 1.4495, 0.0195, 0.7495, 0.4495, 0.0195, 1.2995, 8.0995, 0.0195, 1.2995, 11.2995, 0.0195, 0.7495, -10.5505, 0.0195, 19.7495, -10.7005, 0.0195, 19.5995, -10.7005, 0.0195, 19.9495, -10.5505, 0.0195, 19.7995, -2.5505, 0.0195, 19.7995, -2.4005, 0.0195, 19.7995, -2.4005, 0.0195, 19.7495, -2.5505, 0.0195, 19.7495, 8.2995, 0.0195, 1.5995, 8.2995, 0.0195, 1.4495, 8.2495, 0.0195, 1.4495, 8.2495, 0.0195, 1.5995, -2.7005, 0.0195, 19.9495, -2.5505, 0.0195, 19.7995, -2.5505, 0.0195, 19.7495, -2.7005, 0.0195, 19.5995, -10.4005, 0.0195, 19.7495, -10.5505, 0.0195, 19.7495, -10.5505, 0.0195, 19.7995, -10.4005, 0.0195, 19.7995, -2.7005, 0.0195, 19.9495, -2.7005, 0.0195, 19.5995, -3.2505, 0.0195, 17.4495, -5.7505, 0.0195, 8.6995, -5.7505, 0.0195, 1.4495, -6.2505, 0.0195, 4.4495, -6.2505, 0.0195, 10.8495, 10.5995, 0.0195, 1.2995, 10.7495, 0.0195, 1.4495, 11.2995, 0.0195, 0.7495, -10.4005, 0.0195, 12.7995, -10.2505, 0.0195, 12.9495, -6.7505, 0.0195, 15.2995, -10.2505, 0.0195, 12.5995, -10.4005, 0.0195, 12.7495, -6.7505, 0.0195, 9.7495, -10.2505, 0.0195, 9.7495, -10.2505, 0.0195, 12.5995, -6.7505, 0.0195, 15.2995, -0.2505, 0.0195, 3.5995, -0.2505, 0.0195, 3.9495, 0.2995, 0.0195, 2.9495, 0.2995, 0.0195, 2.5995, 3.9995, 0.0195, 28.7495, -2.4005, 0.0195, 32.7495, 2.5995, 0.0195, 37.2995, 5.4495, 0.0195, 37.2995, 10.2995, 0.0195, 33.4495, 10.4495, 0.0195, 32.7495, -3.4005, 0.0195, 27.2995, -3.2505, 0.0195, 27.4495, -3.2505, 0.0195, 27.0995, -3.4005, 0.0195, 27.2495, -10.5505, 0.0195, 12.7995, -10.4005, 0.0195, 12.7995, -10.4005, 0.0195, 12.7495, -10.5505, 0.0195, 12.7495, 10.7495, 0.0195, 20.0995, 10.5995, 0.0195, 20.2495, 10.5995, 0.0195, 20.2995, 10.7495, 0.0195, 20.4495, -10.7005, 0.0195, 12.9495, -10.5505, 0.0195, 12.7995, -10.5505, 0.0195, 12.7495, -10.7005, 0.0195, 12.5995, -10.2505, 0.0195, 19.5995, -10.4005, 0.0195, 19.7495, -10.4005, 0.0195, 19.7995, -10.2505, 0.0195, 19.9495, -3.7005, 0.0195, 17.7495, 5.2995, 0.0195, 7.0995, 5.2995, 0.0195, 6.7495, 0.7495, 0.0195, 6.7495, 5.2995, 0.0195, 1.7495, 0.7495, 0.0195, 1.7495, 0.7495, 0.0195, 2.5995, 5.7495, 0.0195, 7.4495, 5.7495, 0.0195, 8.2995, 10.2995, 0.0195, 8.2995, 5.4495, 0.0195, 7.2495, 5.2995, 0.0195, 7.0995, 0.7495, 0.0195, 6.7495, 5.2995, 0.0195, 7.4495, 5.4495, 0.0195, 7.2995, -2.0505, 0.0195, 16.2995, -0.7005, 0.0195, 16.2995, -0.7005, 0.0195, 11.7495, -5.2505, 0.0195, 5.2995, -0.7005, 0.0195, 5.2995, -0.7005, 0.0195, 3.9495, 0.7495, 0.0195, 2.9495, 5.2995, 0.0195, 1.7495, 0.7495, 0.0195, 2.5995, 0.599501, 0.0195, 2.7495, 0.599501, 0.0195, 2.7995, 5.5995, 0.0195, 7.2995, 5.7495, 0.0195, 7.4495, 10.2995, 0.0195, 8.2995, 5.7495, 0.0195, 7.0995, 5.5995, 0.0195, 7.2495, -11.2505, 0.0195, 0.7495, -10.5505, 0.0195, 1.2995, -6.4005, 0.0195, 1.2995, -0.7005, 0.0195, 3.5995, -0.7005, 0.0195, 1.7495, -5.2505, 0.0195, 1.7495, -5.2505, 0.0195, 5.2995, 10.7495, 0.0195, 32.5995, 10.5995, 0.0195, 32.7495, 10.2995, 0.0195, 33.4495, -0.5505, 0.0195, 3.7495, -0.7005, 0.0195, 3.5995, -5.2505, 0.0195, 5.2995, -0.7005, 0.0195, 3.9495, -0.5505, 0.0195, 3.7995, -0.2505, 0.0195, 10.2495, 0.2495, 0.0195, 12.4495, 0.2995, 0.0195, 2.9495, -0.2505, 0.0195, 3.9495, -10.5505, 0.0195, 33.7495, -10.7005, 0.0195, 33.5995, -10.7005, 0.0195, 33.9495, -10.5505, 0.0195, 33.7995, -0.400499, 0.0195, 3.7495, -0.5505, 0.0195, 3.7495, -0.5505, 0.0195, 3.7995, -0.400499, 0.0195, 3.7995, 10.4495, 0.0195, 20.2995, 10.5995, 0.0195, 20.2995, 10.5995, 0.0195, 20.2495, 10.4495, 0.0195, 20.2495, -0.2505, 0.0195, 3.5995, -0.400499, 0.0195, 3.7495, -0.400499, 0.0195, 3.7995, -0.2505, 0.0195, 3.9495, -10.4005, 0.0195, 33.7495, -10.5505, 0.0195, 33.7495, -10.5505, 0.0195, 33.7995, -10.4005, 0.0195, 33.7995, -2.2005, 0.0195, 16.4495, -2.0505, 0.0195, 16.2995, -0.7005, 0.0195, 11.7495, -2.4005, 0.0195, 16.2995, -2.2505, 0.0195, 16.4495, -1.4005, 0.0195, 0.7495, -11.2505, 0.0195, 0.7495, -6.4005, 0.0195, 1.2995, -5.6005, 0.0195, 1.2995, 10.7495, 0.0195, 28.4495, 10.7495, 0.0195, 32.5995, 11.2995, 0.0195, 31.7995, -1.4005, 0.0195, 0.7495, -5.6005, 0.0195, 1.2995, -0.400499, 0.0195, 1.2995, -3.4005, 0.0195, 36.7495, -10.5505, 0.0195, 36.7495, -11.2505, 0.0195, 37.2995, -2.7005, 0.0195, 37.2995, 1.4495, 0.0195, 0.7495, -0.400499, 0.0195, 1.2995, -0.2505, 0.0195, 1.4495, 0.4495, 0.0195, 1.2995, 0.7495, 0.0195, 2.9495, 0.7495, 0.0195, 5.2995, 5.2995, 0.0195, 5.2995, 5.2995, 0.0195, 1.7495, 10.7495, 0.0195, 28.4495, 11.2995, 0.0195, 31.7995, 11.2995, 0.0195, 24.4495, 10.7495, 0.0195, 27.5995, 10.5995, 0.0195, 32.7495, 10.4495, 0.0195, 32.7495, 10.2995, 0.0195, 33.4495, 8.2995, 0.0195, 1.4495, 8.4495, 0.0195, 1.2995, 8.0995, 0.0195, 1.2995, 8.2495, 0.0195, 1.4495, 0.4495, 0.0195, 2.7995, 0.599501, 0.0195, 2.7995, 0.599501, 0.0195, 2.7495, 0.4495, 0.0195, 2.7495, -3.2505, 0.0195, 36.5995, -2.7005, 0.0195, 37.2995, -2.7005, 0.0195, 33.4495, 0.2995, 0.0195, 2.9495, 0.4495, 0.0195, 2.7995, 0.4495, 0.0195, 2.7495, 0.2995, 0.0195, 2.5995, 2.9495, 0.0195, 16.7495, 2.4495, 0.0195, 17.2995, 10.5995, 0.0195, 17.2995, 10.5995, 0.0195, 16.7495, 2.2995, 0.0195, 22.5995, 2.2995, 0.0195, 17.4495, 1.7495, 0.0195, 17.4495, 1.7495, 0.0195, 23.2995, 10.7495, 0.0195, 20.4495, 10.7495, 0.0195, 27.5995, 11.2995, 0.0195, 24.4495, 11.2995, 0.0195, 21.5995, 2.4495, 0.0195, 22.7495, 2.2995, 0.0195, 22.5995, 1.7495, 0.0195, 23.2995, 2.4495, 0.0195, 22.7495, 1.7495, 0.0195, 23.2995, 6.5995, 0.0195, 23.2995, 7.2995, 0.0195, 22.7495, -2.7005, 0.0195, 33.4495, -2.5505, 0.0195, 33.2995, -2.5505, 0.0195, 32.7495, -2.7005, 0.0195, 32.5995, 7.2995, 0.0195, 22.7495, 6.5995, 0.0195, 23.2995, 6.7495, 0.0195, 23.4495, 7.2995, 0.0195, 27.5995, 7.2995, 0.0195, 22.7495, 6.7495, 0.0195, 23.4495, 6.7495, 0.0195, 27.5995, 3.9995, 0.0195, 28.7495, -2.2505, 0.0195, 28.7495, -2.2505, 0.0195, 32.5995, 7.4495, 0.0195, 27.7495, 7.2995, 0.0195, 27.5995, 6.7495, 0.0195, 27.5995, 6.5995, 0.0195, 27.7495, 8.4495, 0.0195, 1.2995, 11.2995, 0.0195, 0.7495, 8.0995, 0.0195, 1.2995, -5.2505, 0.0195, 11.7495, -5.2505, 0.0195, 16.2995, -2.4005, 0.0195, 16.2995, -0.7005, 0.0195, 11.7495, -3.2505, 0.0195, 36.5995, -3.4005, 0.0195, 36.7495, -2.7005, 0.0195, 37.2995, 11.2995, 0.0195, 31.7995, 10.7495, 0.0195, 32.5995, 10.2995, 0.0195, 33.4495, 10.4495, 0.0195, 33.2995, -10.2505, 0.0195, 33.9495, -10.2505, 0.0195, 36.2995, -3.7005, 0.0195, 36.2995, -3.7005, 0.0195, 31.7495, -2.2005, 0.0195, 16.5995, -2.2005, 0.0195, 16.4495, -2.2505, 0.0195, 16.4495, -2.2505, 0.0195, 16.5995, 10.4495, 0.0195, 20.2495, 10.2995, 0.0195, 20.0995, 3.7495, 0.0195, 22.2995, 10.2995, 0.0195, 20.4495, 10.4495, 0.0195, 20.2995, -2.0505, 0.0195, 16.7495, -2.2005, 0.0195, 16.5995, -2.2505, 0.0195, 16.5995, -2.4005, 0.0195, 16.7495, -10.4005, 0.0195, 33.7995, -10.2505, 0.0195, 33.9495, -3.7005, 0.0195, 31.7495, -10.2505, 0.0195, 33.5995, -10.4005, 0.0195, 33.7495, -5.7505, 0.0195, 16.5995, -5.7505, 0.0195, 8.6995, -6.2505, 0.0195, 10.8495, -6.2505, 0.0195, 17.2995, 10.7495, 0.0195, 16.5995, 10.7495, 0.0195, 17.4495, 11.2995, 0.0195, 21.5995, -5.6005, 0.0195, 16.7495, -5.7505, 0.0195, 16.5995, -6.2505, 0.0195, 17.2995, -5.6005, 0.0195, 16.7495, -6.2505, 0.0195, 17.2995, -3.4005, 0.0195, 17.2995, -2.4005, 0.0195, 16.7495, -10.7005, 0.0195, 26.7495, -10.7005, 0.0195, 19.9495, -11.2505, 0.0195, 18.9995, -11.2505, 0.0195, 28.1495, 10.7495, 0.0195, 16.5995, 10.5995, 0.0195, 16.7495, 10.5995, 0.0195, 17.2995, 10.7495, 0.0195, 17.4495, -0.2505, 0.0195, 1.4495, -0.2505, 0.0195, 3.5995, 0.2995, 0.0195, 2.5995, 0.2995, 0.0195, 1.4495, -0.400499, 0.0195, 16.7495, -2.0505, 0.0195, 16.7495, -2.5505, 0.0195, 17.2995, 1.5995, 0.0195, 17.2995, -10.7005, 0.0195, 19.9495, -10.7005, 0.0195, 19.5995, -11.2505, 0.0195, 18.9995, 10.4495, 0.0195, 32.7495, 10.2995, 0.0195, 32.5995, 3.9995, 0.0195, 28.7495, -10.2505, 0.0195, 19.9495, -10.2505, 0.0195, 22.2995, -3.7005, 0.0195, 22.2995, -3.7005, 0.0195, 17.7495, -10.7005, 0.0195, 1.4495, -11.2505, 0.0195, 0.7495, -11.2505, 0.0195, 9.8495, -10.7005, 0.0195, 12.5995, -3.5505, 0.0195, 27.2495, -3.7005, 0.0195, 27.0995, -10.2505, 0.0195, 29.2995, -3.7005, 0.0195, 27.4495, -3.5505, 0.0195, 27.2995, 10.7495, 0.0195, 33.4495, 10.7495, 0.0195, 39.2495, 11.2995, 0.0195, 39.2495, 11.2995, 0.0195, 31.7995, 10.7495, 0.0195, 16.5995, 11.2995, 0.0195, 21.5995, 11.2995, 0.0195, 11.1495, 10.7495, 0.0195, 8.9995, 10.5995, 0.0195, 33.2995, 10.7495, 0.0195, 33.4495, 11.2995, 0.0195, 31.7995, 10.4495, 0.0195, 33.2995, 10.5995, 0.0195, 33.2995, 11.2995, 0.0195, 31.7995, 0.7495, 0.0195, 6.7495, 0.7495, 0.0195, 16.2995, 2.5995, 0.0195, 16.2995, 5.2995, 0.0195, 7.4495, 8.0995, 0.0195, 1.7495, 5.7495, 0.0195, 1.7495, 5.7495, 0.0195, 7.0995, 8.2495, 0.0195, 1.5995, 8.0995, 0.0195, 1.7495, 5.7495, 0.0195, 7.0995, 10.2995, 0.0195, 8.2995, 8.4495, 0.0195, 1.7495, 8.2995, 0.0195, 1.5995, -2.2505, 0.0195, 33.4495, -2.2505, 0.0195, 37.2995, 2.5995, 0.0195, 37.2995, 5.4495, 0.0195, 37.2995, 10.2995, 0.0195, 37.2995, 10.2995, 0.0195, 33.4495, -2.4005, 0.0195, 33.2995, -2.2505, 0.0195, 33.4495, 2.5995, 0.0195, 37.2995, -2.4005, 0.0195, 32.7495, -2.5505, 0.0195, 27.7495, -2.5505, 0.0195, 28.2995, 3.9995, 0.0195, 28.2995, 6.5995, 0.0195, 27.7495, 8.4495, 0.0195, 1.2995, 10.5995, 0.0195, 1.2995, 11.2995, 0.0195, 0.7495, 7.4495, 0.0195, 27.7495, 6.5995, 0.0195, 27.7495, 3.9995, 0.0195, 28.2995, 10.5995, 0.0195, 28.2995, 2.9495, 0.0195, 16.2995, 5.2995, 0.0195, 16.2995, 5.2995, 0.0195, 7.4495, 10.5995, 0.0195, 27.7495, 7.4495, 0.0195, 27.7495, 10.5995, 0.0195, 28.2995, 10.7495, 0.0195, 27.5995, 10.5995, 0.0195, 27.7495, 10.5995, 0.0195, 28.2995, 10.7495, 0.0195, 28.4495, -10.7005, 0.0195, 12.9495, -11.2505, 0.0195, 9.8495, -11.2505, 0.0195, 18.9995, -10.7005, 0.0195, 19.5995, 3.7495, 0.0195, 22.2995, 10.2995, 0.0195, 22.2995, 10.2995, 0.0195, 20.4495, -10.2505, 0.0195, 29.2995, -3.7005, 0.0195, 29.2995, -3.7005, 0.0195, 27.4495, -3.7005, 0.0195, 31.7495, -10.2505, 0.0195, 31.7495, -10.2505, 0.0195, 33.5995, -3.7005, 0.0195, 17.7495, -10.2505, 0.0195, 17.7495, -10.2505, 0.0195, 19.5995, 10.2995, 0.0195, 8.2995, 10.2995, 0.0195, 1.7495, 8.4495, 0.0195, 1.7495, 10.2995, 0.0195, 20.0995, 10.2995, 0.0195, 17.7495, 3.7495, 0.0195, 17.7495, 3.7495, 0.0195, 22.2995, -3.7005, 0.0195, 27.0995, -3.7005, 0.0195, 24.7495, -10.2505, 0.0195, 24.7495, -10.2505, 0.0195, 29.2995, -2.3005, 5.0195, 28.6995, -2.3005, 5.0195, 29.3495, -1.6505, 5.0195, 29.3495, -1.6505, 5.0195, 28.6995)
@@ -291,6 +315,62 @@ font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8upl"]
 bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_05knv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_sslwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ppfuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_imfnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_1hn7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_dkucl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_io10h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_07www")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_7jv61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_bqm3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_xp6ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_s3jgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_q37n7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_k1pnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_5oj42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_4q3rd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_nk14u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wy88o"]
 bg_color = Color(0, 0, 0, 1)
@@ -6935,6 +7015,63 @@ offset_bottom = 142.0
 grow_horizontal = 0
 texture = ExtResource("27_ydix2")
 
+[node name="JumpRope" type="Control" parent="UI"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("34_wf1nl")
+
+[node name="Label" type="Label" parent="UI/JumpRope"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.5
+offset_top = -92.0
+offset_right = 189.5
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_a4rgo")
+theme_override_font_sizes/font_size = 56
+text = "Time to jump rope!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="JumpropeCount" type="Label" parent="UI/JumpRope"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.5
+offset_top = 58.0
+offset_right = 189.5
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_a4rgo")
+theme_override_font_sizes/font_size = 56
+text = "0/5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="rope" type="AnimatedSprite2D" parent="UI/JumpRope"]
+position = Vector2(574, 322)
+scale = Vector2(1.85, 1.85)
+sprite_frames = SubResource("SpriteFrames_05knv")
+frame = 9
+frame_progress = 0.208162
+
 [node name="MathGame" type="Control" parent="UI"]
 visible = false
 layout_mode = 1
@@ -7009,11 +7146,11 @@ offset_bottom = 186.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_cdeyc")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_placeholder_color = Color(0.529412, 0.529412, 0.529412, 1)
-theme_override_colors/selection_color = Color(0, 0, 0, 0)
-theme_override_colors/clear_button_color = Color(0, 0, 0, 0)
 theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 0)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 0)
+theme_override_colors/selection_color = Color(0, 0, 0, 0)
+theme_override_colors/font_placeholder_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 0
 theme_override_fonts/font = ExtResource("9_a4rgo")
 theme_override_font_sizes/font_size = 43
@@ -7087,39 +7224,50 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_neaj8")
 
-[node name="TextureRect2" type="TextureRect" parent="UI"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -590.0
-offset_top = -590.0
-offset_right = 590.0
-offset_bottom = 590.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Label" type="Label" parent="UI"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -297.0
-offset_top = -160.0
-offset_right = 297.0
-offset_bottom = 160.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Time to jump rope!"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Mario" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 8.75, 14)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 14.3674, 14)
 billboard = 1
 texture_filter = 0
 texture = ExtResource("22_ubfpi")
+
+[node name="Mario2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.76689, 14.3674, 2.63862)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("134_llhcl")
+
+[node name="Mario3" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.85828, 14.3674, 8.50082)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("135_fs7wx")
+
+[node name="Mario4" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.61354, 14.3674, 8.34236)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("136_qkc3m")
+
+[node name="Mario5" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.62615, 14.3674, 1.02906)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("137_qd32s")
+
+[node name="Mario6" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.14395, 14.3674, 17.3583)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("138_vs44i")
+
+[node name="Mario7" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.00853, 14.3674, 22.6967)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("139_qu2h0")
+
+[node name="Mario8" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4971, 15.8096, 26.507)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("140_n2sqx")

@@ -38,7 +38,7 @@ func _physics_process(delta):
 
 func catch():
 	speed = 0
-	%Player.jumprope = true
+	%GameController.ActivateJumprope()
 	agent.target_position = %Player.global_transform.origin - %Player.global_transform.basis.z
 	global_transform.origin = agent.get_final_position()
 	pass

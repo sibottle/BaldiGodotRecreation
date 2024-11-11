@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bsyttk12dj3kp"]
 
-[ext_resource type="Texture2D" uid="uid://ps44mavikjkx" path="res://Textures/Character/SchoolHouse/WhiteBrickWall.png" id="1_5e8dn"]
+[ext_resource type="Texture2D" uid="uid://ps44mavikjkx" path="res://Textures/SchoolHouse/WhiteBrickWall.png" id="1_5e8dn"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
 size = Vector3(1, 0.001, 1)

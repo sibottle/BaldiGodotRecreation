@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dcsrqt1qf0sif"]
 
-[ext_resource type="Texture2D" uid="uid://uuilowwdf4dg" path="res://Textures/Character/SchoolHouse/Door_0.png" id="1_fc8nm"]
+[ext_resource type="Texture2D" uid="uid://uuilowwdf4dg" path="res://Textures/SchoolHouse/Door_0.png" id="1_fc8nm"]
 
 [resource]
 transparency = 2

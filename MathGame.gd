@@ -5,8 +5,8 @@ var currentQuestion = 1
 var questionAnswer = 0
 var exitTimer = 4
 
-@onready var checkMarkImage = preload("res://Textures/Character/UI/Check-sharedassets1.assets-27.png")
-@onready var xImage = preload("res://Textures/Character/UI/X-sharedassets2.assets-358.png")
+@onready var checkMarkImage = preload("res://Textures/UI/Check-sharedassets1.assets-27.png")
+@onready var xImage = preload("res://Textures/UI/X-sharedassets2.assets-358.png")
 
 @onready var checkMarks = [$Checkmark1,$Checkmark2,$Checkmark3]
 @onready var text = $Label

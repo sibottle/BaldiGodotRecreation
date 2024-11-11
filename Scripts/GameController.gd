@@ -16,16 +16,25 @@ func _process(delta):
 	
 func EnableMathGame():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	%UI.get_node("MathGame").show()
-	%UI.get_node("MathGame")._show()
+	%UI/MathGame.show()
+	%UI/MathGame.show()
 	mathing = true
 	Engine.time_scale = 0
 
 func DisableMathGame():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	%UI.get_node("MathGame").hide()
+	%UI/MathGame.hide()
 	mathing = false
 	Engine.time_scale = 1
+	
+func ActivateJumprope():
+	%UI/JumpRope.show()
+	%Player.jumprope = true
+	
+func DeactivateJumprope():
+	%UI/JumpRope.hide()
+	%Player.jumprope = false
+	%Playtime.playingTime = 60
 	
 func EnableSpoopMode():
 	spoopMode = true
