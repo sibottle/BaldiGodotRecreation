@@ -1,4 +1,4 @@
-[gd_scene load_steps=190 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=191 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/floor_tile.tscn" id="1_6kwly"]
 [ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
@@ -41,6 +41,7 @@
 [ext_resource type="Texture2D" uid="uid://ovi0ppowfdpe" path="res://Textures/UI/Baldi/Bald_Frown0002-sharedassets2.assets-98.png" id="30_x76hv"]
 [ext_resource type="Texture2D" uid="uid://cat42pwu1johy" path="res://Textures/UI/Baldi/Bald_Frown0003-sharedassets2.assets-519.png" id="31_n5ejp"]
 [ext_resource type="Texture2D" uid="uid://bbgj5lghp1faf" path="res://Textures/UI/Baldi/Bald_Frown0004-sharedassets2.assets-155.png" id="32_647fs"]
+[ext_resource type="FontFile" uid="uid://uixlnvfr5x5a" path="res://baldi-sans.ttf" id="32_merlt"]
 [ext_resource type="Texture2D" uid="uid://6eqgvjetn8k1" path="res://Textures/UI/Baldi/Bald_Frown0005-sharedassets2.assets-371.png" id="33_ghkva"]
 [ext_resource type="Texture2D" uid="uid://4vtw0mfo0px3" path="res://Textures/UI/Baldi/Bald_Frown0006-sharedassets2.assets-194.png" id="34_18gj0"]
 [ext_resource type="Script" path="res://JumpRope.gd" id="34_wf1nl"]
@@ -258,64 +259,6 @@ sky_material = SubResource("PanoramaSkyMaterial_hhrtx")
 background_mode = 2
 sky = SubResource("Sky_6rl64")
 
-[sub_resource type="ImageTexture" id="ImageTexture_4vqjs"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ei1e"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(0, 1, 0, 1)
-corner_detail = 1
-expand_margin_top = 4.0
-expand_margin_bottom = 4.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tb6n6"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(0, 1, 0, 1)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
-corner_detail = 6
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_guqx8"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(1, 0, 0, 1)
-corner_detail = 1
-expand_margin_top = 4.0
-expand_margin_bottom = 4.0
-
-[sub_resource type="Theme" id="Theme_747x7"]
-HSlider/constants/center_grabber = 0
-HSlider/constants/grabber_offset = 0
-HSlider/icons/grabber = null
-HSlider/icons/grabber_disabled = SubResource("ImageTexture_4vqjs")
-HSlider/icons/grabber_highlight = null
-HSlider/icons/tick = null
-HSlider/styles/grabber_area = SubResource("StyleBoxFlat_3ei1e")
-HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_tb6n6")
-HSlider/styles/slider = SubResource("StyleBoxFlat_guqx8")
-
-[sub_resource type="LabelSettings" id="LabelSettings_3t4pl"]
-font = ExtResource("9_a4rgo")
-font_size = 65
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_am47s"]
-font = ExtResource("9_a4rgo")
-font_size = 40
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8upl"]
-bg_color = Color(1, 1, 1, 1)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_05knv"]
 animations = [{
 "frames": [{
@@ -371,6 +314,64 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="ImageTexture" id="ImageTexture_4vqjs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ei1e"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 1, 0, 1)
+corner_detail = 1
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tb6n6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 1, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_guqx8"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 0, 0, 1)
+corner_detail = 1
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="Theme" id="Theme_747x7"]
+HSlider/constants/center_grabber = 0
+HSlider/constants/grabber_offset = 0
+HSlider/icons/grabber = null
+HSlider/icons/grabber_disabled = SubResource("ImageTexture_4vqjs")
+HSlider/icons/grabber_highlight = null
+HSlider/icons/tick = null
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_3ei1e")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_tb6n6")
+HSlider/styles/slider = SubResource("StyleBoxFlat_guqx8")
+
+[sub_resource type="LabelSettings" id="LabelSettings_3t4pl"]
+font = ExtResource("32_merlt")
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_am47s"]
+font = ExtResource("32_merlt")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8upl"]
+bg_color = Color(1, 1, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wy88o"]
 bg_color = Color(0, 0, 0, 1)
@@ -6826,6 +6827,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="Playtime" type="CharacterBody3D" parent="." groups=["npc"]]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
 script = ExtResource("19_p2lvf")
 
@@ -6925,7 +6927,7 @@ metadata/player = false
 shape = SubResource("CapsuleShape3D_qla2b")
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27, 0)
 environment = SubResource("Environment_vemag")
 fov = 54.0
 
@@ -6938,6 +6940,63 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("19_bt202")
+
+[node name="JumpRope" type="Control" parent="UI"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("34_wf1nl")
+
+[node name="rope" type="AnimatedSprite2D" parent="UI/JumpRope"]
+position = Vector2(574, 322)
+scale = Vector2(1.85, 1.85)
+sprite_frames = SubResource("SpriteFrames_05knv")
+frame = 9
+frame_progress = 0.208162
+
+[node name="Label" type="Label" parent="UI/JumpRope"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.5
+offset_top = -92.0
+offset_right = 189.5
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("32_merlt")
+theme_override_font_sizes/font_size = 56
+text = "Time to jump rope!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="JumpropeCount" type="Label" parent="UI/JumpRope"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.5
+offset_top = 58.0
+offset_right = 189.5
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("32_merlt")
+theme_override_font_sizes/font_size = 56
+text = "0/5"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Reticle" type="ColorRect" parent="UI"]
 layout_mode = 1
@@ -6973,10 +7032,10 @@ editable = false
 
 [node name="NotebookCounter" type="Label" parent="UI"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 15.0
-offset_right = 463.0
-offset_bottom = 150.0
+offset_left = 17.0
+offset_top = 11.0
+offset_right = 461.0
+offset_bottom = 146.0
 text = "0/7 Notebooks"
 label_settings = SubResource("LabelSettings_3t4pl")
 
@@ -7014,63 +7073,6 @@ offset_left = -256.0
 offset_bottom = 142.0
 grow_horizontal = 0
 texture = ExtResource("27_ydix2")
-
-[node name="JumpRope" type="Control" parent="UI"]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("34_wf1nl")
-
-[node name="Label" type="Label" parent="UI/JumpRope"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -189.5
-offset_top = -92.0
-offset_right = 189.5
-offset_bottom = -20.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_a4rgo")
-theme_override_font_sizes/font_size = 56
-text = "Time to jump rope!"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="JumpropeCount" type="Label" parent="UI/JumpRope"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -189.5
-offset_top = 58.0
-offset_right = 189.5
-offset_bottom = 130.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_a4rgo")
-theme_override_font_sizes/font_size = 56
-text = "0/5"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="rope" type="AnimatedSprite2D" parent="UI/JumpRope"]
-position = Vector2(574, 322)
-scale = Vector2(1.85, 1.85)
-sprite_frames = SubResource("SpriteFrames_05knv")
-frame = 9
-frame_progress = 0.208162
 
 [node name="MathGame" type="Control" parent="UI"]
 visible = false
@@ -7174,7 +7176,7 @@ offset_bottom = 11.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_a4rgo")
+theme_override_fonts/font = ExtResource("32_merlt")
 theme_override_font_sizes/font_size = 42
 text = "SOLVE MATH Q1:
 
