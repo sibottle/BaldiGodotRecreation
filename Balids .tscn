@@ -1,4 +1,4 @@
-[gd_scene load_steps=284 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=286 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/floor_tile.tscn" id="1_6kwly"]
 [ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
@@ -154,6 +154,8 @@
 [ext_resource type="Texture2D" uid="uid://da3kbn6tl763r" path="res://Textures/luigi.png" id="138_vs44i"]
 [ext_resource type="Texture2D" uid="uid://dkvy1ahclxqlr" path="res://Textures/waluigi.png" id="139_qu2h0"]
 [ext_resource type="Texture2D" uid="uid://7tpu6cbj3yet" path="res://Textures/wario.png" id="140_n2sqx"]
+[ext_resource type="Texture2D" uid="uid://46lsy7pyprph" path="res://Textures/Character/1PR_Sheet.png" id="156_so5gp"]
+[ext_resource type="Script" path="res://Scripts/SpriteRotation.gd" id="157_w8w52"]
 [ext_resource type="AudioStream" uid="uid://c576bsc4yovw5" path="res://Audio/Music/mus_School.wav" id="160_44dwl"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_it2ih"]
@@ -7922,5 +7924,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4971, 15.8096, 26.507)
 billboard = 1
 texture_filter = 0
 texture = ExtResource("140_n2sqx")
+
+[node name="Sprite3D" type="Sprite3D" parent="." node_paths=PackedStringArray("cam")]
+transform = Transform3D(0.340481, 0, 0, 0, 0.340481, 0, 0, 0, 1, 0, 0.300344, 1)
+billboard = 2
+texture_filter = 0
+texture = ExtResource("156_so5gp")
+hframes = 4
+vframes = 4
+script = ExtResource("157_w8w52")
+cam = NodePath("../Player/Camera3D")
 
 [connection signal="finished" from="UI/MathGame/Bald" to="UI/MathGame" method="_on_bald_finished"]
