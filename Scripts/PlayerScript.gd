@@ -21,6 +21,8 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 func _input(event):
+	if Input.is_key_pressed(KEY_K):
+		get_tree().paused = !get_tree().paused
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * MOUSE_SENS)
 		

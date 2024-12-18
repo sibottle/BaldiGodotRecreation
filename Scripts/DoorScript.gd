@@ -10,6 +10,8 @@ var isOpen = false
 @onready var closeMaterial
 @onready var openMaterial
 
+@onready var SoundPlayer = $AudioStreamPlayer3D
+
 @onready var openSound = preload("res://Audio/door_open.wav")
 @onready var closeSound = preload("res://Audio/door_close.wav")
 
@@ -43,18 +45,16 @@ func _process(delta):
 	pass
 
 func doorOpen():
-	if doorOpen: pass
+	if isOpen: pass
+	else:
+		doorCollider.disabled = true
+		isOpen = true
+		openTimer = 3
+		doorVisual.set_material_override(openMaterial)
+		doorVisual2.set_material_override(openMaterial)
 	
-	doorCollider.disabled = true
-	isOpen = true
-	openTimer = 3
-	doorVisual.set_material_override(openMaterial)
-	doorVisual2.set_material_override(openMaterial)
-	
-	var player = AudioStreamPlayer3D.new()
-	add_child(player)
-	player.stream = openSound
-	player.play()
+		SoundPlayer.stream = openSound
+		SoundPlayer.play()
 	
 func _on_area_3d_area_entered(area):
 	if area.is_in_group("npc"):
