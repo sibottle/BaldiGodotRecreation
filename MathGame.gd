@@ -137,10 +137,11 @@ func checkAnswer():
 	checkMarks[currentQuestion - 1].visible = true
 	if int($LineEdit.text) == questionAnswer: 
 		checkMarks[currentQuestion - 1].texture = checkMarkImage
-		Queue.clear()
-		Audio.stream = Aud_Praises.pick_random()
-		Audio.play()
-		BaldiSprite.play("Talk")
+		if (!%GameController.spoopMode)
+			Queue.clear()
+			Audio.stream = Aud_Praises.pick_random()
+			Audio.play()
+			BaldiSprite.play("Talk")
 	else: 
 		Audio.stop()
 		BaldiSprite.play("Frown")
