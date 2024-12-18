@@ -9,6 +9,11 @@ var isOpen = false
 @onready var doorVisual = self.get_node("Dor")
 @onready var doorVisual2 = self.get_node("Dor/e")
 
+@onready var Audio : AudioStreamPlayer3D = $AudioStreamPlayer3D
+
+@onready var openSound = preload("res://Audio/Sounds/Doors/swingdoor_open.wav")
+@onready var NOP = preload("res://Audio/Characters/Baldi/BaldiTutor/BAL_Door.wav")
+
 @onready var closeMaterial = preload("res://Materials/swingDoorClose.tres")
 @onready var openMaterial = preload("res://Materials/swingDoorOpen.tres")
 
@@ -37,6 +42,8 @@ func doorOpen():
 	isOpen = true
 	doorVisual.set_material_override(openMaterial)
 	doorVisual2.set_material_override(openMaterial)
+	Audio.stream = openSound
+	Audio.play()
 	
 	
 
@@ -44,6 +51,10 @@ func _on_area_3d_body_entered(body):
 	if body.has_meta("player"):
 		if %GameController.noteBookCount >= requiredNotebooks:
 			doorOpen()
+		else: 
+			Audio.stream = NOP
+			Audio.play()
+			
 
 
 func _on_area_3d_area_entered(area):

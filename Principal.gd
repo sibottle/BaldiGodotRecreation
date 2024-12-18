@@ -10,6 +10,7 @@ var seeingGuilt = false
 @onready var spawnPos = global_transform.origin
 
 @onready var agent : NavigationAgent3D = $NavigationAgent3D
+@onready var Aud : AudioStreamPlayer3D = $AudioPlayer3D
 
 func ready():
 	agent.target_position =  %NavMeshPoints.get_child(randi() % %NavMeshPoints.get_child_count()).global_transform.origin

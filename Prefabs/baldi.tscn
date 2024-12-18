@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://ulqq6g2agmbk"]
+
+[ext_resource type="Script" path="res://Baldi.gd" id="1_vii8u"]
+[ext_resource type="Texture2D" uid="uid://dtwl3k0cuuwk1" path="res://Textures/Character/Baldi/Baldi_Slap0000-sharedassets2.assets-283.png" id="2_y1w0x"]
+[ext_resource type="Texture2D" uid="uid://dv6uk3gs145ev" path="res://Textures/Character/Baldi/Baldi_Slap0006-sharedassets2.assets-357.png" id="3_h23wa"]
+[ext_resource type="Texture2D" uid="uid://byxphpytrp8gx" path="res://Textures/Character/Baldi/Baldi_Slap0012-sharedassets2.assets-131.png" id="4_1hw4v"]
+[ext_resource type="Texture2D" uid="uid://o1kr4gt072lb" path="res://Textures/Character/Baldi/Baldi_Slap0018-sharedassets2.assets-235.png" id="5_rx38w"]
+[ext_resource type="Texture2D" uid="uid://dh7m5up3kfq7w" path="res://Textures/Character/Baldi/Baldi_Slap0024-sharedassets2.assets-401.png" id="6_okqci"]
+[ext_resource type="AudioStream" uid="uid://bypv4u1tndgyp" path="res://Audio/Characters/Baldi/Sounds/BAL_Slap.wav" id="7_7ikbl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ltsp7"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("2_y1w0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h23wa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1hw4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rx38w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_okqci")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i0vgs"]
+radius = 0.125
+height = 0.5
+
+[node name="Baldi" type="CharacterBody3D" groups=["npc"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
+script = ExtResource("1_vii8u")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.1
+target_desired_distance = 0.1
+path_max_distance = 2.01
+height = 0.5
+radius = 0.2
+neighbor_distance = 5.0
+debug_use_custom = true
+debug_path_custom_color = Color(1, 0, 0, 1)
+debug_path_custom_point_size = 17.64
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(0.307, 0, 0, 0, 0.307, 0, 0, 0, 0.307, -0.0664807, 0.380967, 0.00424957)
+billboard = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ltsp7")
+frame = 4
+frame_progress = 1.0
+speed_scale = 2.0
+
+[node name="BaldiTrigger" type="Area3D" parent="." groups=["npc"]]
+
+[node name="V" type="CollisionShape3D" parent="BaldiTrigger"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("CapsuleShape3D_i0vgs")
+disabled = true
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("7_7ikbl")
+max_distance = 30.0
+attenuation_filter_db = 0.0

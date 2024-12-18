@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7i52fvm6bwdr"
+path="res://.godot/imported/Loud noise 3.wav-953fffb16b098ac8102eb01932f5ad62.sample"
+
+[deps]
+
+source_file="res://Audio/Sounds/FinalMode/Loud noise 3.wav"
+dest_files=["res://.godot/imported/Loud noise 3.wav-953fffb16b098ac8102eb01932f5ad62.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
