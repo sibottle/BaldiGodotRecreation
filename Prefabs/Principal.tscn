@@ -12,6 +12,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
 script = ExtResource("1_rhwfr")
 viewDistance = 999
 speed = 3
+metadata/NPC = false
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_desired_distance = 0.1
@@ -35,8 +36,9 @@ texture = ExtResource("2_raw21")
 [node name="V" type="CollisionShape3D" parent="PrincipalTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_i0vgs")
-disabled = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 max_distance = 65.0
 attenuation_filter_db = 0.0
+
+[connection signal="body_entered" from="PrincipalTrigger" to="." method="_on_area_3d_body_entered"]

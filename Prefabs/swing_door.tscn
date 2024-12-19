@@ -15,6 +15,7 @@ size = Vector3(1, 0.05, 1)
 transform = Transform3D(1.91068e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0, 0.5, 5.5)
 disable_mode = 2
 script = ExtResource("1_gmknj")
+metadata/swingdoor = false
 
 [node name="Barrier" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_wbkpy")
@@ -32,6 +33,7 @@ mesh = SubResource("QuadMesh_7k7my")
 skeleton = NodePath("")
 
 [node name="Area3D" type="Area3D" parent="."]
+disable_mode = 2
 
 [node name="Collision" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("BoxShape3D_b2x4q")
@@ -40,6 +42,8 @@ shape = SubResource("BoxShape3D_b2x4q")
 transform = Transform3D(9.5534e-16, 2.18557e-08, 0.5, 0.5, -2.18557e-08, 0, 2.18557e-08, 0.5, -2.18557e-08, 0, 0.5, 5.5)
 top_level = true
 height = 0.0
+affect_navigation_mesh = true
+carve_navigation_mesh = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 max_distance = 30.0

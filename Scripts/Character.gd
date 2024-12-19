@@ -27,8 +27,6 @@ func _physics_process(delta):
 	if origin.distance_to(Player.global_transform.origin) < viewDistance and !result.is_empty():
 		if result.get("collider").has_meta("player"):
 			_OnSeePlayer()
-			if origin.distance_to(Player.global_transform.origin) < 0.5:
-				_OnTouchPlayer()
 	var direction = agent.get_next_path_position() - global_transform.origin
 	velocity = direction.normalized() * speed
 	move_and_slide()
@@ -41,3 +39,8 @@ func _OnWander():
 	
 func _OnTouchPlayer():
 	print("touched")
+
+func _on_area_3d_body_entered(body):
+	if body.has_meta("player"):
+		_OnTouchPlayer()
+	

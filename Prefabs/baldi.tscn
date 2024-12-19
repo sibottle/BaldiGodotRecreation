@@ -39,6 +39,7 @@ height = 0.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
 script = ExtResource("1_vii8u")
 viewDistance = 999
+metadata/NPC = false
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_desired_distance = 0.1
@@ -65,9 +66,10 @@ speed_scale = 2.0
 [node name="V" type="CollisionShape3D" parent="BaldiTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_i0vgs")
-disabled = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_7ikbl")
 max_distance = 30.0
 attenuation_filter_db = 0.0
+
+[connection signal="body_entered" from="BaldiTrigger" to="." method="_on_area_3d_body_entered"]

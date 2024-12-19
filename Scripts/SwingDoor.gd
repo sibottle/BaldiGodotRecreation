@@ -54,7 +54,6 @@ func _on_area_3d_body_entered(body):
 		else: 
 			Audio.stream = NOP
 			Audio.play()
-			
 
 
 func _on_area_3d_area_entered(area):

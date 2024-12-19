@@ -20,8 +20,6 @@ func _physics_process(delta):
 	if angry:
 		speed = runSpeed
 		agent.target_position = %Player.global_transform.origin
-		if global_transform.origin.distance_to(%Player.global_transform.origin) < 0.5:
-			catch()
 	else:
 		speed = normalSpeed
 	if (seeingGuilt):
@@ -31,7 +29,9 @@ func _OnSeePlayer():
 	if %Player.running:
 			seeingGuilt = true
 	super()
-	
+func _OnTouchPlayer():
+	if angry:
+		catch()
 func catch():
 	%Player.global_transform.origin = spawnPos
 	angry = false

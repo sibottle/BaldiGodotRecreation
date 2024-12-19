@@ -19,6 +19,9 @@ func _OnSeePlayer():
 		agent.target_position = %Player.global_transform.origin
 		if global_transform.origin.distance_to(%Player.global_transform.origin) < 0.5:
 			catch()
+func _OnTouchPlayer():
+	if playingTime <= 0 and !%Player.jumprope:
+			catch()
 func catch():
 	speed = 0
 	%GameController.ActivateJumprope()
