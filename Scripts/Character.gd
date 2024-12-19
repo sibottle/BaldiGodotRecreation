@@ -9,6 +9,7 @@ var SeesPlayer = false
 
 @onready var NavMeshPoints = get_parent().get_node("School/NavMeshPoints")
 @onready var Player = get_parent().get_node("Player")
+@onready var GC = get_parent().get_node("GameController")
 
 func ready():
 	agent.target_position =  NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin

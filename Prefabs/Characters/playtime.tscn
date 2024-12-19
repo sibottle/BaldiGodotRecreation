@@ -1,14 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://bdlqyxpfjjmsq"]
 
-[ext_resource type="Script" path="res://Scripts/Playtime.gd" id="1_l6he3"]
-[ext_resource type="Texture2D" uid="uid://66ioa7t8tu1j" path="res://Textures/Character/Playtime/Normal/PlaytimeModel.webp" id="2_ghtej"]
-[ext_resource type="AudioStream" uid="uid://cwgdup71n0e66" path="res://Audio/Music/mus_Playtime.wav" id="3_tpbno"]
+[ext_resource type="Script" path="res://Scripts/Playtime.gd" id="1_xsj8t"]
+[ext_resource type="Texture2D" uid="uid://66ioa7t8tu1j" path="res://Textures/Character/Playtime/Normal/PlaytimeModel.webp" id="2_gvg4e"]
+[ext_resource type="AudioStream" uid="uid://cwgdup71n0e66" path="res://Audio/Music/mus_Playtime.wav" id="3_6at0u"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a2vlh"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ghtej")
+"texture": ExtResource("2_gvg4e")
 }],
 "loop": true,
 "name": &"default",
@@ -21,7 +21,7 @@ height = 0.5
 
 [node name="Playtime" type="CharacterBody3D" groups=["npc"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
-script = ExtResource("1_l6he3")
+script = ExtResource("1_xsj8t")
 metadata/Npc = false
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
@@ -50,7 +50,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_i0vgs")
 
 [node name="MusicPlayer" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("3_tpbno")
+stream = ExtResource("3_6at0u")
 autoplay = true
 max_distance = 10.0
 attenuation_filter_db = 0.0

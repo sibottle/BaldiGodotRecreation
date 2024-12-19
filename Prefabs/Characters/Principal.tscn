@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b2yu24jb5kpsl"]
 
-[ext_resource type="Script" path="res://Scripts/Principal.gd" id="1_rhwfr"]
-[ext_resource type="Texture2D" uid="uid://bnbjp40npaytu" path="res://Textures/Principal.webp" id="2_raw21"]
+[ext_resource type="Script" path="res://Scripts/Principal.gd" id="1_cnt3m"]
+[ext_resource type="Texture2D" uid="uid://bnbjp40npaytu" path="res://Textures/Principal.webp" id="2_4ah44"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i0vgs"]
 radius = 0.125
@@ -9,7 +9,7 @@ height = 0.5
 
 [node name="Principal" type="CharacterBody3D" groups=["npc"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
-script = ExtResource("1_rhwfr")
+script = ExtResource("1_cnt3m")
 viewDistance = 999
 speed = 3
 metadata/NPC = false
@@ -29,7 +29,7 @@ debug_path_custom_point_size = 17.64
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0.397685, 0)
 billboard = 2
 texture_filter = 0
-texture = ExtResource("2_raw21")
+texture = ExtResource("2_4ah44")
 
 [node name="PrincipalTrigger" type="Area3D" parent="." groups=["npc"]]
 

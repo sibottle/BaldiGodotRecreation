@@ -12,11 +12,14 @@ var mathing = false
 @onready var Mus_hang = preload("res://Audio/Music/mus_hang.wav")
 
 # Characters to clone during spoop mode
-# I changed baldi to be spawned in with a prefab because setting him to not be invisible doesnt disable him
-@onready var BaldiSpawn = preload("res://Prefabs/baldi.tscn")
+const BaldiSpawn = preload("res://Prefabs/Characters/baldi.tscn")
+const PtSpawn = preload("res://Prefabs/Characters/playtime.tscn")
+const PriSpawn = preload("res://Prefabs/Characters/Principal.tscn")
 
 # Characters to hold after spawning
-var Baldi : CharacterBody3D
+var char_Baldi : CharacterBody3D
+var char_Pt : CharacterBody3D
+var char_Pri : CharacterBody3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -56,17 +59,18 @@ func ActivateJumprope():
 func DeactivateJumprope():
 	%UI/JumpRope.hide()
 	%Player.jumprope = false
-	%Playtime.playingTime = 60
-	%Playtime.JumpropingFinished()
+	char_Pt.playingTime = 60
+	char_Pt.JumpropingFinished()
 	
 func EnableSpoopMode():
 	music.stream = Mus_hang
 	music.play()
 	spoopMode = true
-	Baldi = BaldiSpawn.instantiate()
-	print(get_parent().name)
-	get_parent().add_child(Baldi)
-	
-
+	char_Baldi = BaldiSpawn.instantiate()
+	get_parent().add_child(char_Baldi)
+	char_Pt = PtSpawn.instantiate()
+	get_parent().add_child(char_Pt)
+	char_Pri = PriSpawn.instantiate()
+	get_parent().add_child(char_Pri)
 
 	

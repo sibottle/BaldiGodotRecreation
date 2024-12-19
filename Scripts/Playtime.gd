@@ -14,17 +14,17 @@ func JumpropingFinished():
 
 func _OnSeePlayer():
 	super()
-	if playingTime <= 0 && !%Player.jumprope:
+	if playingTime <= 0 && !Player.jumprope:
 		speed = runSpeed
-		agent.target_position = %Player.global_transform.origin
-		if global_transform.origin.distance_to(%Player.global_transform.origin) < 0.5:
+		agent.target_position = Player.global_transform.origin
+		if global_transform.origin.distance_to(Player.global_transform.origin) < 0.5:
 			catch()
 func _OnTouchPlayer():
-	if playingTime <= 0 and !%Player.jumprope:
+	if playingTime <= 0 and !Player.jumprope:
 			catch()
 func catch():
 	speed = 0
-	%GameController.ActivateJumprope()
-	agent.target_position = %Player.global_transform.origin - %Player.global_transform.basis.z
+	GC.ActivateJumprope()
+	agent.target_position = Player.global_transform.origin - Player.global_transform.basis.z
 	global_transform.origin = agent.get_final_position()
 	pass

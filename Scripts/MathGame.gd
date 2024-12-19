@@ -148,8 +148,8 @@ func checkAnswer():
 		checkMarks[currentQuestion - 1].texture = xImage
 		if !%GameController.spoopMode: 
 			%GameController.EnableSpoopMode()
-		if currentQuestion == 3: %GameController.Baldi.getAnger(1)
-		else: %GameController.Baldi.getAnger(0.25)
+		if currentQuestion == 3: %GameController.char_Baldi.getAnger(1)
+		else: %GameController.char_Baldi.getAnger(0.25)
 
 	currentQuestion += 1
 	if currentQuestion == 4:

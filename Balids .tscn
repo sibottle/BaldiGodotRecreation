@@ -1,4 +1,4 @@
-[gd_scene load_steps=283 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=279 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/floor_tile.tscn" id="1_6kwly"]
 [ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
@@ -23,8 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://cmb5pisl6vgem" path="res://Textures/Character/Baldi/Baldi_Wave_Sheet.png" id="17_s4atj"]
 [ext_resource type="AudioStream" uid="uid://bjtnbmatykg3y" path="res://Audio/Characters/Baldi/BaldiTutor/BAL_Hi.wav" id="18_jr3sp"]
 [ext_resource type="Script" path="res://Scripts/UIScript.gd" id="19_bt202"]
-[ext_resource type="PackedScene" uid="uid://bdlqyxpfjjmsq" path="res://Prefabs/playtime.tscn" id="21_q6rf4"]
-[ext_resource type="PackedScene" uid="uid://b2yu24jb5kpsl" path="res://Prefabs/Principal.tscn" id="22_qx3mq"]
 [ext_resource type="Texture2D" uid="uid://dimt4xqivkmjl" path="res://Textures/mario.png" id="22_ubfpi"]
 [ext_resource type="Texture2D" uid="uid://ch4f2ichdel87" path="res://Textures/UI/ItemSlots.png" id="27_ydix2"]
 [ext_resource type="Texture2D" uid="uid://b26ijhof81c7p" path="res://Textures/UI/YCTP2_NoButtons-sharedassets2.assets-344.png" id="28_bnc8w"]
@@ -151,8 +149,6 @@
 [ext_resource type="Texture2D" uid="uid://da3kbn6tl763r" path="res://Textures/luigi.png" id="138_vs44i"]
 [ext_resource type="Texture2D" uid="uid://dkvy1ahclxqlr" path="res://Textures/waluigi.png" id="139_qu2h0"]
 [ext_resource type="Texture2D" uid="uid://7tpu6cbj3yet" path="res://Textures/wario.png" id="140_n2sqx"]
-[ext_resource type="Texture2D" uid="uid://46lsy7pyprph" path="res://Textures/Character/1PR_Sheet.png" id="156_so5gp"]
-[ext_resource type="Script" path="res://Scripts/SpriteRotation.gd" id="157_w8w52"]
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="158_ublil"]
 [ext_resource type="AudioStream" uid="uid://c576bsc4yovw5" path="res://Audio/Music/mus_School.wav" id="160_44dwl"]
 
@@ -7488,12 +7484,6 @@ pixel_size = 0.1
 billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
-[node name="Playtime" parent="." instance=ExtResource("21_q6rf4")]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.646199, 0.201714, 1)
-
-[node name="Principal" parent="." instance=ExtResource("22_qx3mq")]
-
 [node name="Player" type="CharacterBody3D" parent="." groups=["player"]]
 unique_name_in_owner = true
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.25, 0)
@@ -7610,6 +7600,7 @@ allow_lesser = true
 editable = false
 
 [node name="NotebookCounter" type="Label" parent="UI"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 17.0
 offset_top = 11.0
@@ -7857,16 +7848,6 @@ transform = Transform3D(1, 0, 0, 0, 0.46577, 0, 0, 0, 1, 2.4971, 15.8096, 26.507
 billboard = 1
 texture_filter = 0
 texture = ExtResource("140_n2sqx")
-
-[node name="Sprite3D" type="Sprite3D" parent="." node_paths=PackedStringArray("cam")]
-transform = Transform3D(0.340481, 0, 0, 0, 0.340481, 0, 0, 0, 1, 0, 0.300344, 1)
-billboard = 2
-texture_filter = 0
-texture = ExtResource("156_so5gp")
-hframes = 4
-vframes = 4
-script = ExtResource("157_w8w52")
-cam = NodePath("../Player/Camera3D")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.895097, 0, 0.832881)
