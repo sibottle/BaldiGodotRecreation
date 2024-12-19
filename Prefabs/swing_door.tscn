@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dtac0til4v3bm"]
 
-[ext_resource type="Script" path="res://SwingDoor.gd" id="1_gmknj"]
+[ext_resource type="Script" path="res://Scripts/SwingDoor.gd" id="1_gmknj"]
 [ext_resource type="Material" uid="uid://dvbljson58jaa" path="res://Materials/swingDoorClose.tres" id="2_uqu1e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]

@@ -44,6 +44,7 @@ func DisableMathGame():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	%UI/MathGame.hide()
 	mathing = false
+	%Player.stamina = 100
 	if !spoopMode:
 		music.stream = Mus_School
 		music.play()
@@ -56,6 +57,7 @@ func DeactivateJumprope():
 	%UI/JumpRope.hide()
 	%Player.jumprope = false
 	%Playtime.playingTime = 60
+	%Playtime.JumpropingFinished()
 	
 func EnableSpoopMode():
 	music.stream = Mus_hang

@@ -135,7 +135,7 @@ func reset():
 func checkAnswer():
 	if currentQuestion >= 4: return
 	checkMarks[currentQuestion - 1].visible = true
-	if int($LineEdit.text) == questionAnswer: 
+	if int($LineEdit.text) == questionAnswer and !(%GameController.noteBookCount > 1 and currentQuestion == 3): 
 		checkMarks[currentQuestion - 1].texture = checkMarkImage
 		if (!%GameController.spoopMode):
 			Queue.clear()
