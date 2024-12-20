@@ -5,6 +5,7 @@ var currentQuestion = 1
 var questionAnswer = 0
 var exitTimer = 4
 
+@onready var GC = get_tree().get_first_node_in_group("GC")
 @onready var BaldiSprite : AnimatedSprite2D = $AnimatedSprite2D
 
 @onready var checkMarkImage = preload("res://Textures/UI/Check-sharedassets1.assets-27.png")
@@ -53,10 +54,10 @@ preload("res://Audio/Characters/Baldi/MathGame/Intro/BAL_General_HowTo.wav")
 ]
 
 func _show():
-	if (%GameController.spoopMode):
+	if (GC.spoopMode):
 		Audio.volume_db = -INF
 		BaldiSprite.hide()
-	if (%GameController.noteBookCount == 0):
+	if (GC.noteBookCount == 0):
 		Audio.stream = Queue[0]
 		Audio.play()
 		Queue.remove_at(0)
@@ -67,18 +68,18 @@ func _show():
 	for a in checkMarks:
 		a.visible = false
 	reset()
-	if (%GameController.noteBookCount == 1):
+	if (GC.noteBookCount == 1):
 		_on_bald_finished()
 	
 func _process(delta):
-	if !%GameController.mathing: return
+	if !GC.mathing: return
 	if Input.is_action_just_pressed("confirm"):
 		checkAnswer()
 	if currentQuestion == 4:
 		if exitTimer > 0 : exitTimer -= 0.015
 		else:
 			get_tree().paused = false
-			%GameController.DisableMathGame()
+			GC.DisableMathGame()
 			
 	
 func reset():
@@ -86,7 +87,7 @@ func reset():
 	Queue.append(Aud_Problems[currentQuestion-1])
 	$LineEdit.text = ""
 	
-	if %GameController.noteBookCount > 1 and currentQuestion == 3:
+	if GC.noteBookCount > 1 and currentQuestion == 3:
 		Queue.append_array([Aud_Screech, Aud_Plus, Aud_Screech, Aud_Times, Aud_Screech, Aud_Minus, Aud_Screech, Aud_Equals])
 		var a = (randi() + 1) % 9999
 		var b = (randi() + 1) % 9999
@@ -135,9 +136,9 @@ func reset():
 func checkAnswer():
 	if currentQuestion >= 4: return
 	checkMarks[currentQuestion - 1].visible = true
-	if int($LineEdit.text) == questionAnswer and !(%GameController.noteBookCount > 1 and currentQuestion == 3): 
+	if int($LineEdit.text) == questionAnswer and !(GC.noteBookCount > 1 and currentQuestion == 3): 
 		checkMarks[currentQuestion - 1].texture = checkMarkImage
-		if (!%GameController.spoopMode):
+		if (!GC.spoopMode):
 			Queue.clear()
 			Audio.stream = Aud_Praises.pick_random()
 			Audio.play()
@@ -146,10 +147,10 @@ func checkAnswer():
 		Audio.stop()
 		BaldiSprite.play("Frown")
 		checkMarks[currentQuestion - 1].texture = xImage
-		if !%GameController.spoopMode: 
-			%GameController.EnableSpoopMode()
-		if currentQuestion == 3: %GameController.char_Baldi.getAnger(1)
-		else: %GameController.char_Baldi.getAnger(0.25)
+		if !GC.spoopMode: 
+			GC.EnableSpoopMode()
+		if currentQuestion == 3: GC.char_Baldi.getAnger(1)
+		else: GC.char_Baldi.getAnger(0.25)
 
 	currentQuestion += 1
 	if currentQuestion == 4:

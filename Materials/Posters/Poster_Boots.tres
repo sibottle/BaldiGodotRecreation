@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cpfll1smerm73"]
+
+[ext_resource type="Texture2D" uid="uid://4bam7evq1oqq" path="res://Textures/SchoolHouse/Posters/BootsPoster.png" id="1_jgtjt"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_jgtjt")
+texture_filter = 0

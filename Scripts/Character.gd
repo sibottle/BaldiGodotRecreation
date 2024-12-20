@@ -7,9 +7,9 @@ var SeesPlayer = false
 
 @onready var agent : NavigationAgent3D = $NavigationAgent3D
 
-@onready var NavMeshPoints = get_parent().get_node("School/NavMeshPoints")
-@onready var Player = get_parent().get_node("Player")
-@onready var GC = get_parent().get_node("GameController")
+@onready var NavMeshPoints :  = get_tree().get_first_node_in_group("Nav")
+@onready var Player = get_tree().get_first_node_in_group("player")
+@onready var GC = get_tree().get_first_node_in_group("GC")
 
 func ready():
 	agent.target_position =  NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin
@@ -36,7 +36,7 @@ func _OnSeePlayer():
 	SeesPlayer = true
 	
 func _OnWander():
-	agent.target_position =  NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin
+	agent.target_position = NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin
 	
 func _OnTouchPlayer():
 	print("touched")

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bh2bixc71eraj"]
+
+[ext_resource type="Texture2D" uid="uid://swxywn7os35n" path="res://Textures/SchoolHouse/Posters/OfficePosters/Sweep_Poster.png" id="1_fq1v1"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_fq1v1")
+texture_filter = 0

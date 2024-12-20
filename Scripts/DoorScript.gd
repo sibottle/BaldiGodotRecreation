@@ -47,7 +47,7 @@ func _process(delta):
 func doorOpen():
 	if isOpen: pass
 	else:
-		doorCollider.disabled = true
+		doorCollider.set_deferred("disabled", true)
 		isOpen = true
 		openTimer = 3
 		doorVisual.set_material_override(openMaterial)

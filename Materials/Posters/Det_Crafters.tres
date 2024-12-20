@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bsvsyg8sle3dp"]
+
+[ext_resource type="Texture2D" uid="uid://c4qqy1ntpme4s" path="res://Textures/SchoolHouse/Posters/OfficePosters/Crafters_Poster.png" id="1_pci6k"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_pci6k")
+texture_filter = 0

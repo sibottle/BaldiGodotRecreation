@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://djxa5rq0wengd"]
+
+[ext_resource type="Texture2D" uid="uid://diwiuhjpd6j2y" path="res://Textures/SchoolHouse/Posters/OfficePosters/PRI_Poster.png" id="1_kfq4a"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_kfq4a")
+texture_filter = 0

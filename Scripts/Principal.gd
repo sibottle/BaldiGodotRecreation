@@ -11,7 +11,7 @@ var seeingGuilt = false
 @onready var Aud : AudioStreamPlayer3D = $AudioStreamPlayer3D
 
 func _physics_process(delta):
-	if guiltSeen > 0.5:
+	if guiltSeen > 0.2:
 		angry = true
 	if guiltSeen > 0 && !seeingGuilt:
 		guiltSeen -= delta
@@ -32,6 +32,9 @@ func _OnSeePlayer():
 func _OnTouchPlayer():
 	if angry:
 		catch()
+func _OnWander():
+	if (!angry):
+		super()
 func catch():
 	Player.global_transform.origin = spawnPos
 	angry = false

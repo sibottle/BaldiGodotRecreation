@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://44xnl2t5hatr"]
+
+[ext_resource type="Texture2D" uid="uid://b1jryqxbhhf2v" path="res://Textures/SchoolHouse/Ceiling.png" id="1_bxn3f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hblqu"]
+size = Vector3(1, 0.001, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_66aqt"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.498039, 0.498039, 0.498039, 1)
+albedo_texture = ExtResource("1_bxn3f")
+texture_filter = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_ftmbp"]
+
+[node name="CeilingTile599" type="StaticBody3D"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_hblqu")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_66aqt")
+mesh = SubResource("QuadMesh_ftmbp")

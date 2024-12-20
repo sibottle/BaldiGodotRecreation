@@ -5,11 +5,23 @@ var noteBookCount = 0
 var spoopMode = false
 var mathing = false
 
-@onready var music : AudioStreamPlayer = get_node("MusicPlayer")
+var ExitsReached = 0
+var Finalemode = false
 
-@onready var Mus_School = preload("res://Audio/Music/mus_School.wav")
-@onready var Mus_Learn = preload("res://Audio/Music/mus_Learn.wav")
-@onready var Mus_hang = preload("res://Audio/Music/mus_hang.wav")
+@onready var music : AudioStreamPlayer = $MusicPlayer
+@onready var Click : AudioStreamPlayer = $Click
+@onready var AllNotebooks : AudioStreamPlayer = $AllNotebooks
+
+var Mus_School = preload("res://Audio/Music/mus_School.wav")
+var Mus_Learn = preload("res://Audio/Music/mus_Learn.wav")
+var Mus_hang = preload("res://Audio/Music/mus_hang.wav")
+
+var Mus_Finale = [
+	preload("res://Audio/Sounds/FinalMode/quiet noise loop.wav"), 
+	preload("res://Audio/Sounds/FinalMode/LoudNoiseIntroLoop.wav"), 
+	preload("res://Audio/Sounds/FinalMode/Loud noise 3.wav"),
+	preload("res://Audio/Sounds/FinalMode/Loud noise 3_Loop.wav")
+	]
 
 # Characters to clone during spoop mode
 const BaldiSpawn = preload("res://Prefabs/Characters/baldi.tscn")
@@ -20,6 +32,9 @@ const PriSpawn = preload("res://Prefabs/Characters/Principal.tscn")
 var char_Baldi : CharacterBody3D
 var char_Pt : CharacterBody3D
 var char_Pri : CharacterBody3D
+
+signal BeginSpoopMode
+signal BeginFinaleMode
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -51,6 +66,11 @@ func DisableMathGame():
 	if !spoopMode:
 		music.stream = Mus_School
 		music.play()
+	if noteBookCount == 7:
+		Finalemode = true
+		AllNotebooks.play()
+		BeginFinaleMode.emit()
+		
 		
 func ActivateJumprope():
 	%UI/JumpRope.show()
@@ -63,6 +83,7 @@ func DeactivateJumprope():
 	char_Pt.JumpropingFinished()
 	
 func EnableSpoopMode():
+	BeginSpoopMode.emit()
 	music.stream = Mus_hang
 	music.play()
 	spoopMode = true
@@ -73,4 +94,19 @@ func EnableSpoopMode():
 	char_Pri = PriSpawn.instantiate()
 	get_parent().add_child(char_Pri)
 
-	
+func OnExitReached():
+	music.stream = Mus_Finale[ExitsReached]
+	music.play() 
+	ExitsReached += 1
+	match ExitsReached:
+		1:
+			var environment : Environment = %Player/Camera3D.environment
+			environment.fog_enabled = true	
+			environment.background_mode = Environment.BG_COLOR
+			Click.play()
+		2:
+			music.volume_db *= .8
+func AudioLoopCheck():
+	if (music.stream.resource_name == "Loud noise 3.wav"):
+		music.stream = Mus_Finale[3]
+		music.play() 

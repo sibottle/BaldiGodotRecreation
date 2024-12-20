@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://kht0bbwjs1eu"]
+
+[ext_resource type="Texture2D" uid="uid://cjrx4ktnkapyq" path="res://Textures/SchoolHouse/Exits/NorthExit.png" id="1_py5vj"]
+
+[resource]
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+albedo_texture = ExtResource("1_py5vj")
+uv1_scale = Vector3(2, 2, 2)
+texture_filter = 0

@@ -1,10 +1,10 @@
 extends Area3D
-
+@onready var GC = get_tree().get_first_node_in_group("GC")
 func Collect():
-	%GameController.EnableMathGame()
-	%GameController.noteBookCount += 1
+	GC.EnableMathGame()
+	GC.noteBookCount += 1
 	global_position.y -= 5
-	if %GameController.endlessMode: ReadyForRise()
+	if GC.endlessMode: ReadyForRise()
 	
 
 func ReadyForRise():

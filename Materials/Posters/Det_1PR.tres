@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dcjojaie1tfy7"]
+
+[ext_resource type="Texture2D" uid="uid://ftb08lb0m64" path="res://Textures/SchoolHouse/Posters/OfficePosters/Prize_Poster.png" id="1_nkgum"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_nkgum")
+texture_filter = 0

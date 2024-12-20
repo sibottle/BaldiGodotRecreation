@@ -2,8 +2,8 @@ extends CharacterBody3D
 
 class_name player
 
-const SPEED = 1
-const RUNSPEED = 1.6
+@export var SPEED = 1
+@export var RUNSPEED = 1.6
 const JUMP_VELOCITY = 1
 const MOUSE_SENS = 0.01
 

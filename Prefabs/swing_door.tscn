@@ -42,8 +42,7 @@ shape = SubResource("BoxShape3D_b2x4q")
 transform = Transform3D(9.5534e-16, 2.18557e-08, 0.5, 0.5, -2.18557e-08, 0, 2.18557e-08, 0.5, -2.18557e-08, 0, 0.5, 5.5)
 top_level = true
 height = 0.0
-affect_navigation_mesh = true
-carve_navigation_mesh = true
+use_3d_avoidance = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 max_distance = 30.0

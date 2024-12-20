@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://balqa37m3hjjc"]
+
+[ext_resource type="Texture2D" uid="uid://dtl67yffbfnd3" path="res://Textures/SchoolHouse/Chalkboards/wow.png" id="1_o0c6i"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_o0c6i")
+texture_filter = 0

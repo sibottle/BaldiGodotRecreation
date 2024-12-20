@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b4ggd37rfqqss"]
+
+[ext_resource type="Texture2D" uid="uid://d3254kh8x46co" path="res://Textures/SchoolHouse/Exits/SouthExit.png" id="1_bm18n"]
+
+[resource]
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+albedo_texture = ExtResource("1_bm18n")
+uv1_scale = Vector3(2, 2, 2)
+texture_filter = 0

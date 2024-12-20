@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dv6ckdhi5a3fr"]
+
+[ext_resource type="Texture2D" uid="uid://ps44mavikjkx" path="res://Textures/SchoolHouse/WhiteBrickWall.png" id="1_vbqxl"]
+
+[resource]
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+albedo_color = Color(0.498039, 0.498039, 0.498039, 1)
+albedo_texture = ExtResource("1_vbqxl")
+uv1_scale = Vector3(2, 2, 2)
+texture_filter = 0
