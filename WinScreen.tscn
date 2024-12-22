@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://biqm1yt6t1rne"]
+[gd_scene load_steps=6 format=3 uid="uid://biqm1yt6t1rne"]
 
 [ext_resource type="Texture2D" uid="uid://dg4hmuxerne0r" path="res://Textures/Screens/win.png" id="1_l2h6c"]
 [ext_resource type="AudioStream" uid="uid://bves88evo4pa8" path="res://Audio/Characters/Filename2/great.wav" id="2_a3s2j"]
 [ext_resource type="Script" path="res://CloseOnSoundFinish.gd" id="3_r1jmw"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_q7au4"]
 
 [sub_resource type="Environment" id="Environment_lm0as"]
 background_mode = 1
@@ -31,11 +33,20 @@ stream = ExtResource("2_a3s2j")
 autoplay = true
 script = ExtResource("3_r1jmw")
 
+[node name="TextureRect2" type="TextureRect" parent="TextureRect"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_q7au4")
+metadata/_edit_use_anchors_ = true
+
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_lm0as")
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="finished" from="TextureRect/AudioStreamPlayer" to="TextureRect/AudioStreamPlayer" method="_on_finished"]

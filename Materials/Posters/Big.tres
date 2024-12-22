@@ -1,8 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dviagotdx2py"]
-
-[ext_resource type="Texture2D" uid="uid://ddc2a5v4qr8bh" path="res://Textures/SchoolHouse/Chalkboards/99.png" id="1_v5jfa"]
-
-[resource]
-shading_mode = 0
-albedo_texture = ExtResource("1_v5jfa")
-texture_filter = 0

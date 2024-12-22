@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cfy31owjw8p6r"]
+
+[ext_resource type="Texture2D" uid="uid://bqtv8puxskc1w" path="res://Textures/SchoolHouse/Posters/WD_NoSqueePoster.png" id="1_tjqlb"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_tjqlb")
+texture_filter = 0

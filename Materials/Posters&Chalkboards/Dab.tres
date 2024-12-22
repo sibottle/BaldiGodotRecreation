@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://detcakrwrc5qf"]
+
+[ext_resource type="Texture2D" uid="uid://qb10bssxxnfs" path="res://Textures/SchoolHouse/Chalkboards/dab.png" id="1_ean57"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_ean57")
+texture_filter = 0

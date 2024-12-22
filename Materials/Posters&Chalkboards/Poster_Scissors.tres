@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bbd2gadcgnnkn"]
+
+[ext_resource type="Texture2D" uid="uid://c4a8u1wdhd7pn" path="res://Textures/SchoolHouse/Posters/ScissorsPoster.png" id="1_kp38o"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_kp38o")
+texture_filter = 0

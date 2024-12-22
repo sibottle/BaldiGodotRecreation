@@ -54,6 +54,7 @@ preload("res://Audio/Characters/Baldi/MathGame/Intro/BAL_General_HowTo.wav")
 ]
 
 func _show():
+	$LineEdit.grab_focus()
 	if (GC.spoopMode):
 		Audio.volume_db = -INF
 		BaldiSprite.hide()

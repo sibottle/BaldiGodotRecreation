@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ggijjeellosd"]
+
+[ext_resource type="Texture2D" uid="uid://c1fqir7ij1qil" path="res://Textures/PickUps/PlaceHolder.png" id="1_tkcyw"]
+[ext_resource type="Script" path="res://Scripts/Float.gd" id="2_5oj0a"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_e1chm"]
+radius = 0.15
+
+[node name="ITM" type="Area3D" groups=["Item"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+metadata/ID = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_e1chm")
+
+[node name="Sprite3D" type="Sprite3D" parent="CollisionShape3D"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("1_tkcyw")
+script = ExtResource("2_5oj0a")

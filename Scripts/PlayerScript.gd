@@ -13,6 +13,24 @@ var running = false
 var stamina = 100
 
 @onready var cam = get_node("Camera3D")
+@export var ItmManager : ItemSelector
+
+func ItemRay(item : int):
+		var space_state = get_world_3d().direct_space_state
+		var mousepos = get_viewport().get_mouse_position()
+		var origin = cam.project_ray_origin(mousepos)
+		var end = origin + cam.project_ray_normal(mousepos)
+		var query = PhysicsRayQueryParameters3D.create(origin, end)
+		query.exclude = [self]
+		query.collide_with_areas = true
+		
+		var result = space_state.intersect_ray(query)
+		match item:
+			5:
+				if result && result.collider.is_in_group("VendingMachine"):
+					ItmManager.CollectItem(result.collider.get_meta("ID"))
+				#if result && result.collider.is_in_group("Payphone"):
+					#ItmManager.CollectItem(0)
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -76,5 +94,8 @@ func _physics_process(delta):
 			result.collider.get_parent().doorOpen()
 		if result && result.collider.is_in_group("notebook"):
 			result.collider.Collect()
+		if result && result.collider.is_in_group("Item"):
+			ItmManager.CollectItem(result.collider.get_meta("ID"))
+			result.collider.queue_free()
 			
 	move_and_slide()

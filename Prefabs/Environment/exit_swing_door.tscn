@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://u1yja1yogvqo"]
 
 [ext_resource type="Texture2D" uid="uid://c8hwhymuvwt5c" path="res://Textures/SchoolHouse/SwingDoor0.png" id="1_1cmp6"]
-[ext_resource type="Script" path="res://Prefabs/Exit.gd" id="2_iteua"]
+[ext_resource type="Script" path="res://Prefabs/Environment/Exit.gd" id="2_iteua"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
 size = Vector3(1, 0.001, 1)

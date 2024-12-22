@@ -1,59 +1,45 @@
-[gd_scene load_steps=316 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=309 format=3 uid="uid://s75x5rlcmu17"]
 
-[ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/floor_tile.tscn" id="1_6kwly"]
+[ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/Environment/floor_tile.tscn" id="1_6kwly"]
 [ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
-[ext_resource type="PackedScene" uid="uid://bsyttk12dj3kp" path="res://Prefabs/wall_tile.tscn" id="2_403ow"]
-[ext_resource type="PackedScene" uid="uid://ck5udn1vbk3e7" path="res://Prefabs/carpet_tile.tscn" id="2_mmy8y"]
+[ext_resource type="PackedScene" uid="uid://bsyttk12dj3kp" path="res://Prefabs/Environment/wall_tile.tscn" id="2_403ow"]
+[ext_resource type="PackedScene" uid="uid://ck5udn1vbk3e7" path="res://Prefabs/Environment/carpet_tile.tscn" id="2_mmy8y"]
 [ext_resource type="Script" path="res://Scripts/PlayerScript.gd" id="3_h5l21"]
 [ext_resource type="AudioStream" uid="uid://gu22nyn4wrg3" path="res://Audio/Sounds/MEC_SLINGSHOT.wav" id="3_vrw2s"]
 [ext_resource type="AudioStream" uid="uid://dh1jradplpviv" path="res://Audio/Characters/Baldi/BAL_AllNotebooks.wav" id="4_4xjak"]
-[ext_resource type="PackedScene" uid="uid://7gxa5ou22vbl" path="res://Prefabs/fence_tile.tscn" id="4_28n18"]
-[ext_resource type="PackedScene" uid="uid://h61bvi2ryr2q" path="res://Prefabs/window_tile.tscn" id="4_vtrio"]
-[ext_resource type="PackedScene" uid="uid://dvk8gbe5vtarj" path="res://Prefabs/ceiling_tile.tscn" id="5_qs63q"]
-[ext_resource type="PackedScene" uid="uid://dkvbtl48bosmo" path="res://Prefabs/floor_tile_dark.tscn" id="6_m4k2b"]
-[ext_resource type="PackedScene" uid="uid://dg00bou33xige" path="res://Prefabs/grass_tile.tscn" id="7_le5bm"]
-[ext_resource type="PackedScene" uid="uid://u1yja1yogvqo" path="res://Prefabs/exit_swing_door.tscn" id="8_d6sgb"]
+[ext_resource type="PackedScene" uid="uid://7gxa5ou22vbl" path="res://Prefabs/Environment/fence_tile.tscn" id="4_28n18"]
+[ext_resource type="PackedScene" uid="uid://h61bvi2ryr2q" path="res://Prefabs/Environment/window_tile.tscn" id="4_vtrio"]
+[ext_resource type="PackedScene" uid="uid://dvk8gbe5vtarj" path="res://Prefabs/Environment/ceiling_tile.tscn" id="5_qs63q"]
+[ext_resource type="PackedScene" uid="uid://dkvbtl48bosmo" path="res://Prefabs/Environment/floor_tile_dark.tscn" id="6_m4k2b"]
+[ext_resource type="PackedScene" uid="uid://dg00bou33xige" path="res://Prefabs/Environment/grass_tile.tscn" id="7_le5bm"]
+[ext_resource type="PackedScene" uid="uid://u1yja1yogvqo" path="res://Prefabs/Environment/exit_swing_door.tscn" id="8_d6sgb"]
 [ext_resource type="FontFile" uid="uid://daa0oi7r01rb8" path="res://pixel-sans.ttf" id="9_a4rgo"]
-[ext_resource type="PackedScene" uid="uid://b5qlbo758b7tl" path="res://Prefabs/fade_wall.tscn" id="9_exj8s"]
-[ext_resource type="PackedScene" uid="uid://dwtkemc4tut0j" path="res://Prefabs/door_tile.tscn" id="9_miigy"]
-[ext_resource type="PackedScene" uid="uid://dtac0til4v3bm" path="res://Prefabs/swing_door.tscn" id="10_cq45a"]
+[ext_resource type="PackedScene" uid="uid://b5qlbo758b7tl" path="res://Prefabs/Environment/fade_wall.tscn" id="9_exj8s"]
+[ext_resource type="PackedScene" uid="uid://dwtkemc4tut0j" path="res://Prefabs/Environment/door_tile.tscn" id="9_miigy"]
+[ext_resource type="PackedScene" uid="uid://dtac0til4v3bm" path="res://Prefabs/Environment/swing_door.tscn" id="10_cq45a"]
 [ext_resource type="Material" uid="uid://dv6ckdhi5a3fr" path="res://Materials/wall_tile_dark.tres" id="11_8e2ri"]
 [ext_resource type="Texture2D" uid="uid://uwu3gswu5upt" path="res://Textures/SchoolHouse/Window.png" id="13_bf5fn"]
 [ext_resource type="Texture2D" uid="uid://c0eff3fo7h35i" path="res://Textures/Skybox/baldiSkyboxPanorama.png" id="13_g1jge"]
-[ext_resource type="PackedScene" uid="uid://jnmjss41adck" path="res://Prefabs/Poster.tscn" id="13_rlguk"]
-[ext_resource type="Material" uid="uid://cgloqpx5rotx0" path="res://Materials/Posters/99.tres" id="14_0stl0"]
-[ext_resource type="Material" uid="uid://di5smd2hbqdj3" path="res://Materials/Posters/Ghealth.tres" id="15_adklr"]
-[ext_resource type="Material" uid="uid://bkjmsproiptim" path="res://Materials/Posters/Det_PT.tres" id="15_g4x0l"]
+[ext_resource type="Material" uid="uid://bbd2gadcgnnkn" path="res://Materials/Posters&Chalkboards/Poster_Scissors.tres" id="14_l4ej1"]
 [ext_resource type="Texture2D" uid="uid://bvsg78up16x1" path="res://Textures/SchoolHouse/ExitSign.png" id="15_ybn7g"]
-[ext_resource type="Material" uid="uid://balqa37m3hjjc" path="res://Materials/Posters/WOW.tres" id="15_yknwo"]
-[ext_resource type="Material" uid="uid://bsvsyg8sle3dp" path="res://Materials/Posters/Det_Crafters.tres" id="16_2wqfb"]
+[ext_resource type="Material" uid="uid://dpgt4m35hfnw2" path="res://Materials/Posters&Chalkboards/Poster_rules.tres" id="16_4pj3o"]
 [ext_resource type="Texture2D" uid="uid://c2jjh8eafsjo4" path="res://Textures/Notebooks/blackNotebook.png" id="16_i6ddl"]
 [ext_resource type="Script" path="res://Scripts/Notebook.gd" id="16_ygmnp"]
 [ext_resource type="Texture2D" uid="uid://cmb5pisl6vgem" path="res://Textures/Character/Baldi/Baldi_Wave_Sheet.png" id="17_s4atj"]
-[ext_resource type="Material" uid="uid://bslmnx2jd1w3i" path="res://Materials/Posters/Det_Baldi.tres" id="17_u3uv3"]
-[ext_resource type="Material" uid="uid://djxa5rq0wengd" path="res://Materials/Posters/Det_Pri.tres" id="18_07goq"]
+[ext_resource type="Material" uid="uid://bks3ksab71ldn" path="res://Materials/Posters&Chalkboards/Lazy.tres" id="17_x8v3d"]
+[ext_resource type="Material" uid="uid://7qvbe51iua3r" path="res://Materials/Posters&Chalkboards/Math.tres" id="18_c5i42"]
 [ext_resource type="AudioStream" uid="uid://bjtnbmatykg3y" path="res://Audio/Characters/Baldi/BaldiTutor/BAL_Hi.wav" id="18_jr3sp"]
-[ext_resource type="Material" uid="uid://bh2bixc71eraj" path="res://Materials/Posters/Det_Sweep.tres" id="19_4so8n"]
 [ext_resource type="Script" path="res://Scripts/UIScript.gd" id="19_bt202"]
 [ext_resource type="Texture2D" uid="uid://bkc2isee32e26" path="res://Textures/Billboards/Plant.png" id="19_r6gjp"]
-[ext_resource type="Material" uid="uid://dcjojaie1tfy7" path="res://Materials/Posters/Det_1PR.tres" id="20_5vf3a"]
-[ext_resource type="Material" uid="uid://cpfll1smerm73" path="res://Materials/Posters/Poster_Boots.tres" id="20_34oy5"]
-[ext_resource type="Script" path="res://Prefabs/poster.gd" id="20_77iku"]
-[ext_resource type="Material" uid="uid://dpgt4m35hfnw2" path="res://Materials/Posters/Poster_rules.tres" id="21_dxsf7"]
-[ext_resource type="Material" uid="uid://bks3ksab71ldn" path="res://Materials/Posters/Lazy.tres" id="22_2pcqv"]
+[ext_resource type="Material" uid="uid://c6fsu6kiqmylb" path="res://Materials/Posters&Chalkboards/Cheese.tres" id="19_ulhpp"]
+[ext_resource type="Material" uid="uid://cfy31owjw8p6r" path="res://Materials/Posters&Chalkboards/Poster_NoSquee.tres" id="20_ajxbw"]
 [ext_resource type="Texture2D" uid="uid://dimt4xqivkmjl" path="res://Textures/mario.png" id="22_ubfpi"]
-[ext_resource type="Material" uid="uid://hkh6ybotxel6" path="res://Materials/Posters/Poster_Windows.tres" id="22_y3j88"]
-[ext_resource type="Material" uid="uid://dlirgc3yxolao" path="res://Materials/Posters/Det_Bul.tres" id="23_f6jxb"]
-[ext_resource type="Material" uid="uid://dviagotdx2py" path="res://Materials/Posters/Big.tres" id="27_pucyh"]
 [ext_resource type="Texture2D" uid="uid://ch4f2ichdel87" path="res://Textures/UI/ItemSlots.png" id="27_ydix2"]
-[ext_resource type="Material" uid="uid://detcakrwrc5qf" path="res://Materials/Posters/Dab.tres" id="28_2wy0x"]
 [ext_resource type="Texture2D" uid="uid://b26ijhof81c7p" path="res://Textures/UI/YCTP2_NoButtons-sharedassets2.assets-344.png" id="28_bnc8w"]
 [ext_resource type="Texture2D" uid="uid://dbruy4nje3wvo" path="res://Textures/UI/Baldi/Bald_Frown0000-sharedassets2.assets-174.png" id="28_fb0uy"]
 [ext_resource type="Texture2D" uid="uid://cgdjnatha3jnf" path="res://Textures/UI/Baldi/Bald_Frown0001-sharedassets2.assets-182.png" id="29_engxy"]
-[ext_resource type="Material" uid="uid://c6fsu6kiqmylb" path="res://Materials/Posters/Cheese.tres" id="30_7ttkv"]
 [ext_resource type="Script" path="res://Scripts/MathGame.gd" id="30_nj28a"]
 [ext_resource type="Texture2D" uid="uid://ovi0ppowfdpe" path="res://Textures/UI/Baldi/Bald_Frown0002-sharedassets2.assets-98.png" id="30_x76hv"]
-[ext_resource type="Material" uid="uid://cmwt27jlxfjgw" path="res://Materials/Posters/Reference.tres" id="31_2rtna"]
 [ext_resource type="Texture2D" uid="uid://cat42pwu1johy" path="res://Textures/UI/Baldi/Bald_Frown0003-sharedassets2.assets-519.png" id="31_n5ejp"]
 [ext_resource type="Texture2D" uid="uid://bbgj5lghp1faf" path="res://Textures/UI/Baldi/Bald_Frown0004-sharedassets2.assets-155.png" id="32_647fs"]
 [ext_resource type="FontFile" uid="uid://uixlnvfr5x5a" path="res://baldi-sans.ttf" id="32_merlt"]
@@ -61,7 +47,7 @@
 [ext_resource type="AudioStream" uid="uid://ufyiwuoh0hdj" path="res://Audio/Sounds/Buzz.wav" id="34_8cfao"]
 [ext_resource type="Texture2D" uid="uid://4vtw0mfo0px3" path="res://Textures/UI/Baldi/Bald_Frown0006-sharedassets2.assets-194.png" id="34_18gj0"]
 [ext_resource type="Script" path="res://Scripts/JumpRope.gd" id="34_wf1nl"]
-[ext_resource type="PackedScene" uid="uid://44xnl2t5hatr" path="res://Prefabs/Ceiling_Dark.tscn" id="35_4mhel"]
+[ext_resource type="PackedScene" uid="uid://44xnl2t5hatr" path="res://Prefabs/Environment/Ceiling_Dark.tscn" id="35_4mhel"]
 [ext_resource type="Texture2D" uid="uid://bv2jpdjrcibi0" path="res://Textures/UI/Baldi/Bald_Frown0007-sharedassets2.assets-432.png" id="35_48c2v"]
 [ext_resource type="Texture2D" uid="uid://b8668bm15k730" path="res://Textures/UI/Rope0031.png" id="35_sslwy"]
 [ext_resource type="Texture2D" uid="uid://cwq47olwk7vui" path="res://Textures/UI/Baldi/Bald_Frown0008-sharedassets2.assets-145.png" id="36_j2bfw"]
@@ -88,6 +74,7 @@
 [ext_resource type="Texture2D" uid="uid://hvd3g7cxqcgn" path="res://Textures/UI/Rope0042.png" id="46_q37n7"]
 [ext_resource type="Texture2D" uid="uid://0qku5fqlovju" path="res://Textures/UI/Baldi/Bald_Frown0019-sharedassets2.assets-158.png" id="47_6kqf6"]
 [ext_resource type="Texture2D" uid="uid://c22ebt1wkqg4p" path="res://Textures/UI/Rope0043.png" id="47_k1pnm"]
+[ext_resource type="PackedScene" uid="uid://ggijjeellosd" path="res://Prefabs/Items/item.tscn" id="48_1t1pn"]
 [ext_resource type="Texture2D" uid="uid://c4rcwnneacehs" path="res://Textures/UI/Rope0044.png" id="48_5oj42"]
 [ext_resource type="Texture2D" uid="uid://ba50bhfomvspu" path="res://Textures/UI/Baldi/Bald_Frown0020-sharedassets2.assets-152.png" id="48_ec66q"]
 [ext_resource type="Texture2D" uid="uid://rlbffshuetmg" path="res://Textures/UI/Rope0045.png" id="49_4q3rd"]
@@ -96,6 +83,7 @@
 [ext_resource type="Texture2D" uid="uid://cmdipptjc7k4s" path="res://Textures/UI/Baldi/Bald_Frown0022-sharedassets2.assets-105.png" id="50_t8inq"]
 [ext_resource type="Texture2D" uid="uid://c4od18vmh5xjg" path="res://Textures/UI/Baldi/Bald_Frown0023-sharedassets2.assets-347.png" id="51_1p6yf"]
 [ext_resource type="Texture2D" uid="uid://be3g3fqyldhbl" path="res://Textures/UI/Baldi/Bald_Frown0024-sharedassets2.assets-376.png" id="52_goakt"]
+[ext_resource type="Texture2D" uid="uid://c1fqir7ij1qil" path="res://Textures/PickUps/PlaceHolder.png" id="52_wcko1"]
 [ext_resource type="Texture2D" uid="uid://dukkwn0kwdnod" path="res://Textures/UI/Baldi/Bald_Frown0025-sharedassets2.assets-475.png" id="53_gufil"]
 [ext_resource type="Texture2D" uid="uid://caqog6srnt50f" path="res://Textures/UI/Baldi/Bald_Frown0026-sharedassets2.assets-518.png" id="54_nwfnd"]
 [ext_resource type="Texture2D" uid="uid://ia2445o5j8a2" path="res://Textures/UI/Baldi/Bald_Frown0027-sharedassets2.assets-237.png" id="55_x85aq"]
@@ -114,6 +102,8 @@
 [ext_resource type="Texture2D" uid="uid://b34wsm4tp31ao" path="res://Textures/UI/Baldi/Bald_Frown0040-sharedassets2.assets-384.png" id="68_sx3dt"]
 [ext_resource type="Texture2D" uid="uid://bqsjgwjxnnjlb" path="res://Textures/UI/Baldi/Bald_Frown0041-sharedassets2.assets-355.png" id="69_urp0h"]
 [ext_resource type="Texture2D" uid="uid://bsck3150pkhvr" path="res://Textures/UI/Baldi/Bald_Frown0042-sharedassets2.assets-232.png" id="70_7y3bc"]
+[ext_resource type="Script" path="res://ItemSelector.gd" id="70_sxeuk"]
+[ext_resource type="Texture2D" uid="uid://5vaby105np1n" path="res://Textures/Red.png" id="71_rts4y"]
 [ext_resource type="Texture2D" uid="uid://bmn81lbonrsy1" path="res://Textures/UI/Baldi/Bald_Frown0043-sharedassets2.assets-479.png" id="71_twj10"]
 [ext_resource type="Texture2D" uid="uid://b3cv1821u1a2c" path="res://Textures/UI/Baldi/Bald_Frown0044-sharedassets2.assets-440.png" id="72_ye4ff"]
 [ext_resource type="Texture2D" uid="uid://cd4radtv071hs" path="res://Textures/UI/Baldi/Bald_Frown0045-sharedassets2.assets-407.png" id="73_wpr3f"]
@@ -179,6 +169,8 @@
 [ext_resource type="Material" uid="uid://cvqgnm00qsw4a" path="res://Materials/wall_tile.tres" id="156_l68lq"]
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="158_ublil"]
 [ext_resource type="AudioStream" uid="uid://c576bsc4yovw5" path="res://Audio/Music/mus_School.wav" id="160_44dwl"]
+[ext_resource type="Texture2D" uid="uid://cwopf0w55a2vx" path="res://Textures/PickUps/Quarter.png" id="167_0868s"]
+[ext_resource type="Texture2D" uid="uid://m5vyy0wijim6" path="res://Textures/PickUps/skibidiah.png" id="169_wig4o"]
 [ext_resource type="Material" uid="uid://b4ggd37rfqqss" path="res://Materials/Map_Bottom.tres" id="180_ptvp4"]
 [ext_resource type="Material" uid="uid://dy323c0t7ehi1" path="res://Materials/Map_Left.tres" id="181_4yqpd"]
 [ext_resource type="Material" uid="uid://kht0bbwjs1eu" path="res://Materials/Map_Top.tres" id="182_ryxs2"]
@@ -236,11 +228,6 @@ disable_ambient_light = true
 albedo_color = Color(0.498039, 0.498039, 0.498039, 1)
 albedo_texture = ExtResource("13_bf5fn")
 texture_filter = 0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_tegik"]
-size = Vector3(1, 0.001, 1)
-
-[sub_resource type="QuadMesh" id="QuadMesh_cu4yw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gkc8n"]
 atlas = ExtResource("17_s4atj")
@@ -1050,16 +1037,16 @@ HSlider/styles/slider = SubResource("StyleBoxFlat_guqx8")
 
 [sub_resource type="LabelSettings" id="LabelSettings_3t4pl"]
 font = ExtResource("32_merlt")
-font_size = 60
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_am47s"]
-font = ExtResource("32_merlt")
-font_size = 40
+font_size = 52
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8upl"]
 bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_am47s"]
+font = ExtResource("32_merlt")
+font_size = 52
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wy88o"]
 bg_color = Color(0, 0, 0, 1)
@@ -1397,6 +1384,16 @@ animations = [{
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uci0g"]
 size = Vector3(2.99023, 1, 1.31633)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0isec"]
+shading_mode = 0
+albedo_texture = ExtResource("169_wig4o")
+uv1_scale = Vector3(3, 3, 3)
+uv1_offset = Vector3(0, -0.2, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g2xux"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1n1sj"]
 
 [node name="Game" type="Node3D"]
 
@@ -4467,9 +4464,6 @@ transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.0
 [node name="WallTile336" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, -2.5, 0.5, 31)
 
-[node name="WallTile337" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
-transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, -2.5, 0.5, 32)
-
 [node name="WallTile338" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, -2.5, 0.5, 37)
 
@@ -4478,9 +4472,6 @@ transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.0
 
 [node name="WallTile339" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, 10.5, 0.5, 30)
-
-[node name="WallTile340" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
-transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, 10.5, 0.5, 34)
 
 [node name="WallTile341" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, 10.5, 0.5, 35)
@@ -4517,9 +4508,6 @@ transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.0
 
 [node name="WallTile577" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, 11.5, 0.5, 37)
-
-[node name="WallTile578" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
-transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, 11.5, 0.5, 38)
 
 [node name="WallTile579" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, 11.5, 0.5, 39)
@@ -4726,7 +4714,7 @@ mesh = SubResource("QuadMesh_7k7my")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="School/NavMesh/Wall/WallTile347/MeshInstance3D"]
 transform = Transform3D(-1, -8.74228e-08, 7.10543e-15, -8.74228e-08, 1, 2.62268e-07, -4.26326e-14, 2.62268e-07, -1, 0, 0, 0)
-material_override = ExtResource("156_l68lq")
+material_override = ExtResource("14_l4ej1")
 mesh = SubResource("QuadMesh_7k7my")
 
 [node name="WallTile348" type="StaticBody3D" parent="School/NavMesh/Wall"]
@@ -4860,9 +4848,6 @@ transform = Transform3D(-4.37114e-08, -1, 1.74846e-07, 1, -4.37114e-08, 0, 7.642
 
 [node name="WallTile396" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, 1.74846e-07, 1, -4.37114e-08, 0, 7.64274e-15, 1.74846e-07, 1, 2.5, 0.5, 38)
-
-[node name="WallTile391" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
-transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 7, 0.5, 37.5)
 
 [node name="WallTile392" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 8, 0.5, 37.5)
@@ -5948,6 +5933,207 @@ transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.821
 [node name="WallTile3" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -0.5, 0.5, 2)
 
+[node name="WallTile4" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -0.5, 0.5, 3)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile4" index="1"]
+material_override = ExtResource("16_4pj3o")
+
+[node name="WallTile50" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -5.5, 0.5, 3)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile50" index="1"]
+material_override = ExtResource("17_x8v3d")
+
+[node name="WallTile51" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, 1.74846e-07, 1, -4.37114e-08, 0, 7.64274e-15, 1.74846e-07, 1, 5.5, 0.5, 4)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile51" index="1"]
+material_override = ExtResource("18_c5i42")
+
+[node name="WallTile70" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 8, 0.5, 8.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile70" index="1"]
+material_override = ExtResource("19_ulhpp")
+
+[node name="WallTile81" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(1.91068e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 3, 0.5, 6.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile81" index="1"]
+material_override = ExtResource("19_ulhpp")
+
+[node name="WallTile60" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -8.5, 0.5, 4)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile60" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile101" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, 2.84217e-14, 1, -4.37114e-08, 0, -1.69407e-21, 2.84217e-14, 1, -6.5, 0.5, 12)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile101" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile106" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, 8.74227e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74227e-08, -1, -5.5, 0.5, 14)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile106" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile112" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 0, -7.64275e-15, -1.74846e-07, 1, -3.5, 0.5, 20)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile112" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile113" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, 8.74227e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74227e-08, -1, -2.5, 0.5, 19)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile113" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile116" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, 1.31134e-07, -1, 0.5, 17.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile116" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile117" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, 1.31134e-07, 1, 0.5, 17.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile117" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile159" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, 8.74227e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74227e-08, -1, 3.5, 0.5, 20)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile159" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile571" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 14, 0.5, 28.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile571" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile578" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, 2.84217e-14, 1, -4.37114e-08, 0, -1.69407e-21, 2.84217e-14, 1, 16.5, 0.5, 31)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile578" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile622" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, 2.84217e-14, 1, -4.37114e-08, 0, -1.69407e-21, 2.84217e-14, 1, 11.5, 0.5, 38)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile622" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile623" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, 2.84217e-14, 1, -4.37114e-08, 0, -1.69407e-21, 2.84217e-14, 1, 10.5, 0.5, 34)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile623" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile626" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -2.5, 0.5, 32)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile626" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile627" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, 1.74846e-07, 1, -4.37114e-08, 0, 7.64274e-15, 1.74846e-07, 1, -3.5, 0.5, 34)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile627" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile628" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, -8, 0.5, 37.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile628" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile629" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -10.5, 0.5, 27)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile629" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile630" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -10.5, 0.5, 27)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile630" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile631" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(1.91068e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -7, 0.5, 24.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile631" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile624" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-1.77636e-15, 0, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 0, 7, 0.5, 37.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile624" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile625" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-1.77636e-15, 0, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 0, 7, 0.5, 28.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile625" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile567" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, 2.84217e-14, 1, -4.37114e-08, 0, -1.69407e-21, 2.84217e-14, 1, 6.5, 0.5, 26)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile567" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile567/MeshInstance3D" index="0"]
+material_override = ExtResource("11_8e2ri")
+
+[node name="WallTile118" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 0, -7.64275e-15, -1.74846e-07, 1, 1.5, 0.5, 20)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile118" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile118/MeshInstance3D" index="0"]
+material_override = ExtResource("11_8e2ri")
+
+[node name="WallTile119" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 0, -7.64275e-15, -1.74846e-07, 1, 1.5, 0.5, 21)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile119" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile119/MeshInstance3D" index="0"]
+material_override = ExtResource("11_8e2ri")
+
+[node name="WallTile122" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, 1, 0.5, 22.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile122" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile139" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, 0, 0.5, 22.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile139" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile140" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, -1, 0.5, 22.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile140" index="1"]
+material_override = ExtResource("20_ajxbw")
+
+[node name="WallTile152" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, -2, 0.5, 22.5)
+
+[node name="MeshInstance3D" parent="School/NavMesh/Wall/WallTile152" index="1"]
+material_override = ExtResource("20_ajxbw")
+
 [node name="WallTile17" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -1.5, 0.5, 0)
 
@@ -6319,161 +6505,50 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 26)
 [node name="FloorTile199" parent="School/NavMesh/Wall" instance=ExtResource("1_6kwly")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 27)
 
-[node name="Poster" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 14, 0.5, 28.5)
-Poster = ExtResource("14_0stl0")
-
-[node name="Poster6" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-5.73206e-15, -1.31134e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, 1.31134e-07, -1, 0.5, 17.5)
-Poster = ExtResource("16_2wqfb")
-
-[node name="Poster15" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-5.73206e-15, -1.31134e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, 1.31134e-07, 1, 0.5, 17.5)
-Poster = ExtResource("17_u3uv3")
-
-[node name="Poster7" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82138e-15, 8.74228e-08, -1, -2.5, 0.5, 19)
-Poster = ExtResource("15_g4x0l")
-
-[node name="Poster8" type="StaticBody3D" parent="School/NavMesh/Wall"]
-transform = Transform3D(-4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 0, -7.64275e-15, -1.74846e-07, 1, 1.5, 0.5, 20)
-script = ExtResource("20_77iku")
-Poster = ExtResource("18_07goq")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="School/NavMesh/Wall/Poster8"]
-shape = SubResource("BoxShape3D_tegik")
-
-[node name="Front" type="MeshInstance3D" parent="School/NavMesh/Wall/Poster8"]
-transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 0, 0)
-material_override = ExtResource("15_adklr")
-mesh = SubResource("QuadMesh_cu4yw")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="School/NavMesh/Wall/Poster8/Front"]
-transform = Transform3D(-1, -8.74228e-08, 7.10543e-15, -8.74228e-08, 1, 2.62268e-07, -4.26326e-14, 2.62268e-07, -1, 0, 0, 0)
-material_override = ExtResource("11_8e2ri")
-mesh = SubResource("QuadMesh_cu4yw")
-
-[node name="Poster9" type="StaticBody3D" parent="School/NavMesh/Wall"]
-transform = Transform3D(-4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 0, -7.64275e-15, -1.74846e-07, 1, 1.5, 0.5, 21)
-script = ExtResource("20_77iku")
-Poster = ExtResource("19_4so8n")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="School/NavMesh/Wall/Poster9"]
-shape = SubResource("BoxShape3D_tegik")
-
-[node name="Front" type="MeshInstance3D" parent="School/NavMesh/Wall/Poster9"]
-transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 0, 0)
-material_override = ExtResource("15_adklr")
-mesh = SubResource("QuadMesh_cu4yw")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="School/NavMesh/Wall/Poster9/Front"]
-transform = Transform3D(-1, -8.74228e-08, 7.10543e-15, -8.74228e-08, 1, 2.62268e-07, -4.26326e-14, 2.62268e-07, -1, 0, 0, 0)
-material_override = ExtResource("11_8e2ri")
-mesh = SubResource("QuadMesh_cu4yw")
-
-[node name="Poster10" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, 1, 0.5, 22.5)
-Poster = ExtResource("20_5vf3a")
-
-[node name="Poster11" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, 0, 0.5, 22.5)
-Poster = ExtResource("21_dxsf7")
-
-[node name="Poster28" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, 7, 0.5, 28.5)
-Poster = ExtResource("21_dxsf7")
-
-[node name="Poster14" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(4.37114e-08, 1, 2.62268e-07, 1, -4.37114e-08, 0, 1.14641e-14, 2.62268e-07, -1, -0.5, 0.5, 3)
-Poster = ExtResource("21_dxsf7")
-
-[node name="Poster16" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(4.37114e-08, 1, 2.62268e-07, 1, -4.37114e-08, 0, 1.14641e-14, 2.62268e-07, -1, -8.5, 0.5, 4)
-Poster = ExtResource("20_34oy5")
-
-[node name="Poster19" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-1.33748e-14, -3.0598e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, 3.0598e-07, -7, 0.5, 24.5)
-Poster = ExtResource("20_34oy5")
-
-[node name="Poster20" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-4.37114e-08, -1, -3.49691e-07, 1, -4.37114e-08, 0, -1.52855e-14, -3.49691e-07, 1, -3.5, 0.5, 34)
-Poster = ExtResource("27_pucyh")
-
-[node name="Poster21" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-4.37114e-08, -1, -3.49691e-07, 1, -4.37114e-08, 0, -1.52855e-14, -3.49691e-07, 1, -3.5, 0.5, 20)
-Poster = ExtResource("28_2wy0x")
-
-[node name="Poster22" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-4.37114e-08, -1, -3.49691e-07, 1, -4.37114e-08, 0, -1.52855e-14, -3.49691e-07, 1, -6.5, 0.5, 12)
-Poster = ExtResource("28_2wy0x")
-
-[node name="Poster12" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, -1, 0.5, 22.5)
-Poster = ExtResource("22_y3j88")
-
-[node name="Poster27" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, -8, 0.5, 37.5)
-Poster = ExtResource("22_y3j88")
-
-[node name="Poster23" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, 8, 0.5, 8.5)
-Poster = ExtResource("30_7ttkv")
-
-[node name="Poster24" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-1.33748e-14, -3.0598e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, 3.0598e-07, 3, 0.5, 6.5)
-Poster = ExtResource("30_7ttkv")
-
-[node name="Poster29" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(4.37114e-08, 1, 2.62268e-07, 1, -4.37114e-08, 0, 1.14641e-14, 2.62268e-07, -1, -10.5, 0.5, 27)
-Poster = ExtResource("30_7ttkv")
-
-[node name="Poster26" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(4.37114e-08, 1, 2.62268e-07, 1, -4.37114e-08, 0, 1.14641e-14, 2.62268e-07, -1, -5.5, 0.5, 14)
-Poster = ExtResource("31_2rtna")
-
-[node name="Poster25" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(4.37114e-08, 1, 2.62268e-07, 1, -4.37114e-08, 0, 1.14641e-14, 2.62268e-07, -1, 3.5, 0.5, 20)
-Poster = ExtResource("30_7ttkv")
-
-[node name="Poster17" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(4.37114e-08, 1, 2.62268e-07, 1, -4.37114e-08, 0, 1.14641e-14, 2.62268e-07, -1, -5.5, 0.5, 3)
-Poster = ExtResource("22_2pcqv")
-
-[node name="Poster18" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 0, -7.64275e-15, -1.74846e-07, 1, 5.5, 0.5, 4)
-Poster = ExtResource("22_2pcqv")
-
-[node name="Poster13" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, -2, 0.5, 22.5)
-Poster = ExtResource("23_f6jxb")
-
-[node name="Poster2" parent="School/NavMesh/Wall" instance=ExtResource("13_rlguk")]
-transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, 16.5, 0.5, 31)
-Poster = ExtResource("15_yknwo")
-
-[node name="Poster3" type="StaticBody3D" parent="School/NavMesh/Wall"]
-transform = Transform3D(-4.37114e-08, -1, -1.06581e-14, 1, -4.37114e-08, 0, -4.02341e-21, -1.06581e-14, 1, 6.5, 0.5, 26)
-script = ExtResource("20_77iku")
-Poster = ExtResource("15_adklr")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="School/NavMesh/Wall/Poster3"]
-shape = SubResource("BoxShape3D_tegik")
-
-[node name="Front" type="MeshInstance3D" parent="School/NavMesh/Wall/Poster3"]
-transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 0, 0)
-material_override = ExtResource("15_adklr")
-mesh = SubResource("QuadMesh_cu4yw")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="School/NavMesh/Wall/Poster3/Front"]
-transform = Transform3D(-1, -8.74228e-08, 7.10543e-15, -8.74228e-08, 1, 2.62268e-07, -4.26326e-14, 2.62268e-07, -1, 0, 0, 0)
-material_override = ExtResource("11_8e2ri")
-mesh = SubResource("QuadMesh_cu4yw")
-
 [node name="WallTile179" type="StaticBody3D" parent="School/NavMesh/Wall"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 16.5, 0.5, 31)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="School/NavMesh/Wall/WallTile179"]
 shape = SubResource("BoxShape3D_h4l5m")
+
+[node name="WallTile276" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 12, 0.5, 28.5)
+
+[node name="WallTile309" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 13, 0.5, 28.5)
+
+[node name="WallTile325" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 15, 0.5, 28.5)
+
+[node name="WallTile355" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 16, 0.5, 28.5)
+
+[node name="WallTile371" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74226e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74226e-08, -1, 16.5, 0.5, 29)
+
+[node name="WallTile372" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74226e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74226e-08, -1, 16.5, 0.5, 30)
+
+[node name="WallTile389" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74226e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74226e-08, -1, 16.5, 0.5, 32)
+
+[node name="WallTile539" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(4.37114e-08, 1, -8.74226e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74226e-08, -1, 16.5, 0.5, 33)
+
+[node name="WallTile550" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 16, 0.5, 33.5)
+
+[node name="WallTile551" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 15, 0.5, 33.5)
+
+[node name="WallTile555" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 14, 0.5, 33.5)
+
+[node name="WallTile565" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 13, 0.5, 33.5)
+
+[node name="WallTile566" parent="School/NavMesh/Wall" instance=ExtResource("2_403ow")]
+transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 12, 0.5, 33.5)
 
 [node name="Doors" type="Node" parent="School/NavMesh"]
 
@@ -8786,11 +8861,11 @@ pixel_size = 0.1
 billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
-[node name="Player" type="CharacterBody3D" parent="." groups=["player"]]
+[node name="Player" type="CharacterBody3D" parent="." node_paths=PackedStringArray("ItmManager") groups=["player"]]
 unique_name_in_owner = true
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.25, 0)
 script = ExtResource("3_h5l21")
-RUNSPEED = 20.0
+ItmManager = NodePath("../UI/Items")
 metadata/player = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
@@ -8837,15 +8912,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -189.5
-offset_top = -92.0
-offset_right = 189.5
-offset_bottom = -20.0
+offset_left = -231.0
+offset_top = -36.0
+offset_right = 157.0
+offset_bottom = 36.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.16719, 1.16719)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("32_merlt")
-theme_override_font_sizes/font_size = 56
+theme_override_font_sizes/font_size = 52
 text = "Time to jump rope!"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -8865,7 +8941,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("32_merlt")
-theme_override_font_sizes/font_size = 56
+theme_override_font_sizes/font_size = 52
 text = "0/5"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -8907,36 +8983,13 @@ texture_filter = 1
 layout_mode = 0
 offset_left = 17.0
 offset_top = 11.0
-offset_right = 461.0
-offset_bottom = 146.0
+offset_right = 395.0
+offset_bottom = 79.0
+scale = Vector2(1.13156, 1.13156)
 text = "0/7 Notebooks"
 label_settings = SubResource("LabelSettings_3t4pl")
 
-[node name="NotebookCounter2" type="Label" parent="UI"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -453.0
-offset_top = 141.0
-offset_right = -9.0
-offset_bottom = 276.0
-grow_horizontal = 0
-text = "Nothing"
-label_settings = SubResource("LabelSettings_am47s")
-horizontal_alignment = 2
-
-[node name="ItemBarBackground" type="Panel" parent="UI"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -215.0
-offset_bottom = 88.0
-grow_horizontal = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_m8upl")
-
-[node name="TextureRect" type="TextureRect" parent="UI"]
+[node name="Items" type="TextureRect" parent="UI" node_paths=PackedStringArray("Player")]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 1
@@ -8946,6 +8999,61 @@ offset_left = -256.0
 offset_bottom = 142.0
 grow_horizontal = 0
 texture = ExtResource("27_ydix2")
+script = ExtResource("70_sxeuk")
+Player = NodePath("../../Player")
+
+[node name="ItemBarBackground" type="Panel" parent="UI/Items"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -215.0
+offset_bottom = 88.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m8upl")
+
+[node name="Selector" type="TextureRect" parent="UI/Items"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 180.0
+offset_top = 7.0
+offset_right = 270.0
+offset_bottom = 97.0
+texture = ExtResource("71_rts4y")
+
+[node name="Item0" type="Sprite2D" parent="UI/Items"]
+visible = false
+show_behind_parent = true
+position = Vector2(69, 48)
+texture = ExtResource("52_wcko1")
+
+[node name="Item1" type="Sprite2D" parent="UI/Items"]
+visible = false
+show_behind_parent = true
+position = Vector2(147, 54)
+texture = ExtResource("52_wcko1")
+
+[node name="Item2" type="Sprite2D" parent="UI/Items"]
+visible = false
+show_behind_parent = true
+position = Vector2(223, 59)
+texture = ExtResource("52_wcko1")
+
+[node name="ItemText" type="Label" parent="UI/Items"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -342.0
+offset_top = 139.0
+offset_right = 102.0
+offset_bottom = 274.0
+grow_horizontal = 0
+scale = Vector2(0.76059, 0.76059)
+text = "Nothing"
+label_settings = SubResource("LabelSettings_am47s")
+horizontal_alignment = 2
 
 [node name="MathGame" type="Control" parent="UI"]
 process_priority = 1
@@ -9302,44 +9410,24 @@ input_ray_pickable = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.499512, 0.0251236)
 shape = SubResource("BoxShape3D_uci0g")
 
-[node name="WallTile214" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 12, 0.5, 28.5)
+[node name="Quarter" parent="." instance=ExtResource("48_1t1pn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.270774, 0.5, 1.35528)
+metadata/ID = 5
 
-[node name="WallTile215" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 13, 0.5, 28.5)
+[node name="Sprite3D" parent="Quarter/CollisionShape3D" index="0"]
+texture = ExtResource("167_0868s")
 
-[node name="WallTile217" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 15, 0.5, 28.5)
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["VendingMachine"]]
+transform = Transform3D(0.535175, 0, 0, 0, 1, 0, 0, 0, 0.281954, 1, 0.49294, 1.35802)
+metadata/ID = 1
 
-[node name="WallTile218" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(-5.73206e-15, -1.31134e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 1.31134e-07, 16, 0.5, 28.5)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1.07966, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_0isec")
+mesh = SubResource("BoxMesh_g2xux")
 
-[node name="WallTile216" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(4.37114e-08, 1, -8.74226e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74226e-08, -1, 16.5, 0.5, 29)
-
-[node name="WallTile219" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(4.37114e-08, 1, -8.74226e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74226e-08, -1, 16.5, 0.5, 30)
-
-[node name="WallTile220" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(4.37114e-08, 1, -8.74226e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74226e-08, -1, 16.5, 0.5, 32)
-
-[node name="WallTile221" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(4.37114e-08, 1, -8.74226e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74226e-08, -1, 16.5, 0.5, 33)
-
-[node name="WallTile222" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 16, 0.5, 33.5)
-
-[node name="WallTile223" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 15, 0.5, 33.5)
-
-[node name="WallTile226" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 14, 0.5, 33.5)
-
-[node name="WallTile224" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 13, 0.5, 33.5)
-
-[node name="WallTile225" parent="." instance=ExtResource("2_403ow")]
-transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -2.18557e-07, 12, 0.5, 33.5)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_1n1sj")
 
 [connection signal="BeginFinaleMode" from="GameController" to="School/NavMesh/Wall/ExitSwingDoor" method="OnFinale"]
 [connection signal="BeginFinaleMode" from="GameController" to="School/NavMesh/Wall/ExitSwingDoor2" method="OnFinale"]
@@ -9359,3 +9447,37 @@ transform = Transform3D(9.55343e-15, 2.18557e-07, 1, 1, -4.37114e-08, 0, 4.37114
 [connection signal="body_entered" from="ExitWall2/Area3D" to="ExitWall2" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="ExitWall3/Area3D" to="ExitWall3" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="ExitWall4/Area3D" to="ExitWall4" method="_on_area_3d_body_entered"]
+
+[editable path="School/NavMesh/Wall/WallTile4"]
+[editable path="School/NavMesh/Wall/WallTile50"]
+[editable path="School/NavMesh/Wall/WallTile51"]
+[editable path="School/NavMesh/Wall/WallTile70"]
+[editable path="School/NavMesh/Wall/WallTile81"]
+[editable path="School/NavMesh/Wall/WallTile60"]
+[editable path="School/NavMesh/Wall/WallTile101"]
+[editable path="School/NavMesh/Wall/WallTile106"]
+[editable path="School/NavMesh/Wall/WallTile112"]
+[editable path="School/NavMesh/Wall/WallTile113"]
+[editable path="School/NavMesh/Wall/WallTile116"]
+[editable path="School/NavMesh/Wall/WallTile117"]
+[editable path="School/NavMesh/Wall/WallTile159"]
+[editable path="School/NavMesh/Wall/WallTile571"]
+[editable path="School/NavMesh/Wall/WallTile578"]
+[editable path="School/NavMesh/Wall/WallTile622"]
+[editable path="School/NavMesh/Wall/WallTile623"]
+[editable path="School/NavMesh/Wall/WallTile626"]
+[editable path="School/NavMesh/Wall/WallTile627"]
+[editable path="School/NavMesh/Wall/WallTile628"]
+[editable path="School/NavMesh/Wall/WallTile629"]
+[editable path="School/NavMesh/Wall/WallTile630"]
+[editable path="School/NavMesh/Wall/WallTile631"]
+[editable path="School/NavMesh/Wall/WallTile624"]
+[editable path="School/NavMesh/Wall/WallTile625"]
+[editable path="School/NavMesh/Wall/WallTile567"]
+[editable path="School/NavMesh/Wall/WallTile118"]
+[editable path="School/NavMesh/Wall/WallTile119"]
+[editable path="School/NavMesh/Wall/WallTile122"]
+[editable path="School/NavMesh/Wall/WallTile139"]
+[editable path="School/NavMesh/Wall/WallTile140"]
+[editable path="School/NavMesh/Wall/WallTile152"]
+[editable path="Quarter"]
