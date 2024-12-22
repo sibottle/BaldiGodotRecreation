@@ -59,7 +59,7 @@ func UseItem():
 		1: #zesty bar
 			Player.stamina = 200
 		5: #quarter
-			Player.UseQuarter()
+			Player.ItemRay(5)
 			return
 	CollectItem(0)
 func CollectItem(item: int):
