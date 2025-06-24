@@ -1,19 +1,19 @@
 extends StaticBody3D
 
-var openTimer = 0
-var isOpen = false
+var openTimer := 0.0
+var isOpen := false
 
-@onready var doorCollider = get_node("DoorCollision")
-@onready var doorVisual = self.get_node("Dorr")
-@onready var doorVisual2 = self.get_node("Dorr/Dorr")
+@onready var doorCollider := get_node("DoorCollision")
+@onready var doorVisual := self.get_node("Dorr")
+@onready var doorVisual2 := self.get_node("Dorr/Dorr")
 
-@onready var closeMaterial
-@onready var openMaterial
+@onready var closeMaterial : StandardMaterial3D
+@onready var openMaterial : StandardMaterial3D
 
-@onready var SoundPlayer = $AudioStreamPlayer3D
+@onready var SoundPlayer := $AudioStreamPlayer3D
 
-@onready var openSound = preload("res://Audio/door_open.wav")
-@onready var closeSound = preload("res://Audio/door_close.wav")
+@onready var openSound := preload("res://Audio/door_open.wav")
+@onready var closeSound := preload("res://Audio/door_close.wav")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

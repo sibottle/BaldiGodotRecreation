@@ -1,15 +1,18 @@
 extends CharacterBody3D
 
-@export var viewDistance = 5
-@export var speed = 5
+@export var viewDistance := 5.0
+@export var speed := 5.0
 
-var SeesPlayer = false
+@export var acceleration := INF
+@export var turn_speed := INF
 
-@onready var agent : NavigationAgent3D = $NavigationAgent3D
+var SeesPlayer := false
 
-@onready var NavMeshPoints :  = get_tree().get_first_node_in_group("Nav")
-@onready var Player = get_tree().get_first_node_in_group("player")
-@onready var GC = get_tree().get_first_node_in_group("GC")
+@onready var agent := $NavigationAgent3D
+
+@onready var NavMeshPoints := get_tree().get_first_node_in_group("Nav")
+@onready var Player := get_tree().get_first_node_in_group("player")
+@onready var GC := get_tree().get_first_node_in_group("GC")
 
 func ready():
 	agent.target_position =  NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin
@@ -29,7 +32,7 @@ func _physics_process(delta):
 		if result.get("collider").has_meta("player"):
 			_OnSeePlayer()
 	var direction = agent.get_next_path_position() - global_transform.origin
-	velocity = direction.normalized() * speed
+	velocity = velocity.move_toward(direction.normalized() * speed,acceleration * delta)
 	move_and_slide()
 	
 func _OnSeePlayer():

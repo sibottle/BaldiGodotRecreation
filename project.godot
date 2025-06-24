@@ -12,10 +12,10 @@ config_version=5
 
 config/name="Balds' basics"
 run/main_scene="res://Balids .tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/image="res://Textures/GodotEngine.png"
 boot_splash/fullsize=false
+boot_splash/image="res://Textures/GodotEngine.png"
 config/icon="res://icon.svg"
 
 [display]
@@ -119,6 +119,12 @@ Scroll_Down={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":5,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
+
+[layer_names]
+
+3d_physics/layer_1="map"
+3d_physics/layer_2="npc"
+3d_physics/layer_3="player"
 
 [navigation]
 

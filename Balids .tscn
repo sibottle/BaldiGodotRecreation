@@ -1,10 +1,10 @@
-[gd_scene load_steps=309 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=316 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/Environment/floor_tile.tscn" id="1_6kwly"]
-[ext_resource type="Script" path="res://Scripts/GameController.gd" id="1_7mqpd"]
+[ext_resource type="Script" uid="uid://cfbbtu1syt1rf" path="res://Scripts/GameController.gd" id="1_7mqpd"]
 [ext_resource type="PackedScene" uid="uid://bsyttk12dj3kp" path="res://Prefabs/Environment/wall_tile.tscn" id="2_403ow"]
 [ext_resource type="PackedScene" uid="uid://ck5udn1vbk3e7" path="res://Prefabs/Environment/carpet_tile.tscn" id="2_mmy8y"]
-[ext_resource type="Script" path="res://Scripts/PlayerScript.gd" id="3_h5l21"]
+[ext_resource type="Script" uid="uid://sou573fatnp7" path="res://Scripts/PlayerScript.gd" id="3_h5l21"]
 [ext_resource type="AudioStream" uid="uid://gu22nyn4wrg3" path="res://Audio/Sounds/MEC_SLINGSHOT.wav" id="3_vrw2s"]
 [ext_resource type="AudioStream" uid="uid://dh1jradplpviv" path="res://Audio/Characters/Baldi/BAL_AllNotebooks.wav" id="4_4xjak"]
 [ext_resource type="PackedScene" uid="uid://7gxa5ou22vbl" path="res://Prefabs/Environment/fence_tile.tscn" id="4_28n18"]
@@ -24,12 +24,12 @@
 [ext_resource type="Texture2D" uid="uid://bvsg78up16x1" path="res://Textures/SchoolHouse/ExitSign.png" id="15_ybn7g"]
 [ext_resource type="Material" uid="uid://dpgt4m35hfnw2" path="res://Materials/Posters&Chalkboards/Poster_rules.tres" id="16_4pj3o"]
 [ext_resource type="Texture2D" uid="uid://c2jjh8eafsjo4" path="res://Textures/Notebooks/blackNotebook.png" id="16_i6ddl"]
-[ext_resource type="Script" path="res://Scripts/Notebook.gd" id="16_ygmnp"]
+[ext_resource type="Script" uid="uid://ctnek2losmjca" path="res://Scripts/Notebook.gd" id="16_ygmnp"]
 [ext_resource type="Texture2D" uid="uid://cmb5pisl6vgem" path="res://Textures/Character/Baldi/Baldi_Wave_Sheet.png" id="17_s4atj"]
 [ext_resource type="Material" uid="uid://bks3ksab71ldn" path="res://Materials/Posters&Chalkboards/Lazy.tres" id="17_x8v3d"]
 [ext_resource type="Material" uid="uid://7qvbe51iua3r" path="res://Materials/Posters&Chalkboards/Math.tres" id="18_c5i42"]
 [ext_resource type="AudioStream" uid="uid://bjtnbmatykg3y" path="res://Audio/Characters/Baldi/BaldiTutor/BAL_Hi.wav" id="18_jr3sp"]
-[ext_resource type="Script" path="res://Scripts/UIScript.gd" id="19_bt202"]
+[ext_resource type="Script" uid="uid://beceiqfinjuy" path="res://Scripts/UIScript.gd" id="19_bt202"]
 [ext_resource type="Texture2D" uid="uid://bkc2isee32e26" path="res://Textures/Billboards/Plant.png" id="19_r6gjp"]
 [ext_resource type="Material" uid="uid://c6fsu6kiqmylb" path="res://Materials/Posters&Chalkboards/Cheese.tres" id="19_ulhpp"]
 [ext_resource type="Material" uid="uid://cfy31owjw8p6r" path="res://Materials/Posters&Chalkboards/Poster_NoSquee.tres" id="20_ajxbw"]
@@ -38,7 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://b26ijhof81c7p" path="res://Textures/UI/YCTP2_NoButtons-sharedassets2.assets-344.png" id="28_bnc8w"]
 [ext_resource type="Texture2D" uid="uid://dbruy4nje3wvo" path="res://Textures/UI/Baldi/Bald_Frown0000-sharedassets2.assets-174.png" id="28_fb0uy"]
 [ext_resource type="Texture2D" uid="uid://cgdjnatha3jnf" path="res://Textures/UI/Baldi/Bald_Frown0001-sharedassets2.assets-182.png" id="29_engxy"]
-[ext_resource type="Script" path="res://Scripts/MathGame.gd" id="30_nj28a"]
+[ext_resource type="Script" uid="uid://fyvb0jht4faj" path="res://Scripts/MathGame.gd" id="30_nj28a"]
 [ext_resource type="Texture2D" uid="uid://ovi0ppowfdpe" path="res://Textures/UI/Baldi/Bald_Frown0002-sharedassets2.assets-98.png" id="30_x76hv"]
 [ext_resource type="Texture2D" uid="uid://cat42pwu1johy" path="res://Textures/UI/Baldi/Bald_Frown0003-sharedassets2.assets-519.png" id="31_n5ejp"]
 [ext_resource type="Texture2D" uid="uid://bbgj5lghp1faf" path="res://Textures/UI/Baldi/Bald_Frown0004-sharedassets2.assets-155.png" id="32_647fs"]
@@ -46,7 +46,7 @@
 [ext_resource type="Texture2D" uid="uid://6eqgvjetn8k1" path="res://Textures/UI/Baldi/Bald_Frown0005-sharedassets2.assets-371.png" id="33_ghkva"]
 [ext_resource type="AudioStream" uid="uid://ufyiwuoh0hdj" path="res://Audio/Sounds/Buzz.wav" id="34_8cfao"]
 [ext_resource type="Texture2D" uid="uid://4vtw0mfo0px3" path="res://Textures/UI/Baldi/Bald_Frown0006-sharedassets2.assets-194.png" id="34_18gj0"]
-[ext_resource type="Script" path="res://Scripts/JumpRope.gd" id="34_wf1nl"]
+[ext_resource type="Script" uid="uid://vvy4ynm0fhve" path="res://Scripts/JumpRope.gd" id="34_wf1nl"]
 [ext_resource type="PackedScene" uid="uid://44xnl2t5hatr" path="res://Prefabs/Environment/Ceiling_Dark.tscn" id="35_4mhel"]
 [ext_resource type="Texture2D" uid="uid://bv2jpdjrcibi0" path="res://Textures/UI/Baldi/Bald_Frown0007-sharedassets2.assets-432.png" id="35_48c2v"]
 [ext_resource type="Texture2D" uid="uid://b8668bm15k730" path="res://Textures/UI/Rope0031.png" id="35_sslwy"]
@@ -102,7 +102,7 @@
 [ext_resource type="Texture2D" uid="uid://b34wsm4tp31ao" path="res://Textures/UI/Baldi/Bald_Frown0040-sharedassets2.assets-384.png" id="68_sx3dt"]
 [ext_resource type="Texture2D" uid="uid://bqsjgwjxnnjlb" path="res://Textures/UI/Baldi/Bald_Frown0041-sharedassets2.assets-355.png" id="69_urp0h"]
 [ext_resource type="Texture2D" uid="uid://bsck3150pkhvr" path="res://Textures/UI/Baldi/Bald_Frown0042-sharedassets2.assets-232.png" id="70_7y3bc"]
-[ext_resource type="Script" path="res://ItemSelector.gd" id="70_sxeuk"]
+[ext_resource type="Script" uid="uid://fouwyd2t628l" path="res://ItemSelector.gd" id="70_sxeuk"]
 [ext_resource type="Texture2D" uid="uid://5vaby105np1n" path="res://Textures/Red.png" id="71_rts4y"]
 [ext_resource type="Texture2D" uid="uid://bmn81lbonrsy1" path="res://Textures/UI/Baldi/Bald_Frown0043-sharedassets2.assets-479.png" id="71_twj10"]
 [ext_resource type="Texture2D" uid="uid://b3cv1821u1a2c" path="res://Textures/UI/Baldi/Bald_Frown0044-sharedassets2.assets-440.png" id="72_ye4ff"]
@@ -165,12 +165,16 @@
 [ext_resource type="Texture2D" uid="uid://da3kbn6tl763r" path="res://Textures/luigi.png" id="138_vs44i"]
 [ext_resource type="Texture2D" uid="uid://dkvy1ahclxqlr" path="res://Textures/waluigi.png" id="139_qu2h0"]
 [ext_resource type="Texture2D" uid="uid://7tpu6cbj3yet" path="res://Textures/wario.png" id="140_n2sqx"]
-[ext_resource type="Script" path="res://Scripts/LowerWall.gd" id="153_ree15"]
+[ext_resource type="Script" uid="uid://e1u3g0tpx0r2" path="res://Scripts/LowerWall.gd" id="153_ree15"]
 [ext_resource type="Material" uid="uid://cvqgnm00qsw4a" path="res://Materials/wall_tile.tres" id="156_l68lq"]
-[ext_resource type="Script" path="res://Scripts/Character.gd" id="158_ublil"]
+[ext_resource type="Script" uid="uid://gul81wglxflq" path="res://Scripts/Character.gd" id="158_ublil"]
 [ext_resource type="AudioStream" uid="uid://c576bsc4yovw5" path="res://Audio/Music/mus_School.wav" id="160_44dwl"]
 [ext_resource type="Texture2D" uid="uid://cwopf0w55a2vx" path="res://Textures/PickUps/Quarter.png" id="167_0868s"]
 [ext_resource type="Texture2D" uid="uid://m5vyy0wijim6" path="res://Textures/PickUps/skibidiah.png" id="169_wig4o"]
+[ext_resource type="Script" uid="uid://blhvkx5uwt8yr" path="res://Scripts/1st_prize.gd" id="176_6qcr5"]
+[ext_resource type="AudioStream" uid="uid://bypv4u1tndgyp" path="res://Audio/Characters/Baldi/Sounds/BAL_Slap.wav" id="177_sw31y"]
+[ext_resource type="Texture2D" uid="uid://46lsy7pyprph" path="res://Textures/Character/1PR_Sheet.png" id="178_lci2f"]
+[ext_resource type="Script" uid="uid://c1nqx4wqxqlc8" path="res://Scripts/SpriteRotation.gd" id="179_6mr0l"]
 [ext_resource type="Material" uid="uid://b4ggd37rfqqss" path="res://Materials/Map_Bottom.tres" id="180_ptvp4"]
 [ext_resource type="Material" uid="uid://dy323c0t7ehi1" path="res://Materials/Map_Left.tres" id="181_4yqpd"]
 [ext_resource type="Material" uid="uid://kht0bbwjs1eu" path="res://Materials/Map_Top.tres" id="182_ryxs2"]
@@ -1394,6 +1398,17 @@ uv1_offset = Vector3(0, -0.2, 0)
 [sub_resource type="BoxMesh" id="BoxMesh_g2xux"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1n1sj"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i0vgs"]
+radius = 0.125
+height = 0.5
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_poq6k"]
+height = 0.5
+radius = 0.1
+
+[sub_resource type="BoxMesh" id="BoxMesh_poq6k"]
+size = Vector3(0.03, 0.17, 0.02)
 
 [node name="Game" type="Node3D"]
 
@@ -8864,6 +8879,8 @@ texture = SubResource("PlaceholderTexture2D_5yggl")
 [node name="Player" type="CharacterBody3D" parent="." node_paths=PackedStringArray("ItmManager") groups=["player"]]
 unique_name_in_owner = true
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.25, 0)
+collision_layer = 4
+collision_mask = 5
 script = ExtResource("3_h5l21")
 ItmManager = NodePath("../UI/Items")
 metadata/player = false
@@ -9428,6 +9445,57 @@ mesh = SubResource("BoxMesh_g2xux")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_1n1sj")
+
+[node name="1st Prize" type="CharacterBody3D" parent="." node_paths=PackedStringArray("cam", "motorAudio") groups=["npc"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("176_6qcr5")
+cam = NodePath("../Player/Camera3D")
+motorAudio = NodePath("AudioStreamPlayer3D")
+acceleration = 0.5
+metadata/NPC = false
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="1st Prize"]
+path_desired_distance = 0.1
+target_desired_distance = 0.1
+path_max_distance = 2.01
+height = 0.5
+radius = 0.2
+neighbor_distance = 5.0
+debug_use_custom = true
+debug_path_custom_color = Color(1, 0, 0, 1)
+debug_path_custom_point_size = 17.64
+
+[node name="PrizeTrigger" type="Area3D" parent="1st Prize" groups=["npc"]]
+
+[node name="V" type="CollisionShape3D" parent="1st Prize/PrizeTrigger"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("CapsuleShape3D_i0vgs")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="1st Prize"]
+stream = ExtResource("177_sw31y")
+max_distance = 30.0
+attenuation_filter_db = 0.0
+
+[node name="Sprite3D" type="Sprite3D" parent="1st Prize" node_paths=PackedStringArray("cam")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.353122, 0)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("178_lci2f")
+hframes = 4
+vframes = 4
+region_rect = Rect2(0, 0, 256, 256)
+script = ExtResource("179_6mr0l")
+cam = NodePath("../../Player/Camera3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="1st Prize"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CylinderShape3D_poq6k")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="1st Prize"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.383312, -0.392429)
+mesh = SubResource("BoxMesh_poq6k")
 
 [connection signal="BeginFinaleMode" from="GameController" to="School/NavMesh/Wall/ExitSwingDoor" method="OnFinale"]
 [connection signal="BeginFinaleMode" from="GameController" to="School/NavMesh/Wall/ExitSwingDoor2" method="OnFinale"]

@@ -1,11 +1,11 @@
 extends "res://Scripts/Character.gd"
 
-var slapSpeed = 5
-var anger = 0
-var slapTime = 0
-var slapDelay = 1
-@onready var sprite : AnimatedSprite3D = $AnimatedSprite3D
-@onready var SlapSound : AudioStreamPlayer3D = $AudioStreamPlayer3D
+var slapSpeed := 5.0
+var anger := 0.0
+var slapTime := 0.0
+var slapDelay := 1.0
+@onready var sprite := $AnimatedSprite3D
+@onready var SlapSound := $AudioStreamPlayer3D
 
 	
 func getAnger(a):
