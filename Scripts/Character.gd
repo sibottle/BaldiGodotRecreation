@@ -14,6 +14,8 @@ var SeesPlayer := false
 @onready var Player := get_tree().get_first_node_in_group("player")
 @onready var GC := get_tree().get_first_node_in_group("GC")
 
+@onready var map_id = NavigationServer3D.get_maps()[0]
+
 func ready():
 	agent.target_position =  NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin
 	
@@ -34,6 +36,7 @@ func _physics_process(delta):
 	var direction = agent.get_next_path_position() - global_transform.origin
 	velocity = velocity.move_toward(direction.normalized() * speed,acceleration * delta)
 	move_and_slide()
+	global_position = NavigationServer3D.map_get_closest_point(map_id, global_position)
 	
 func _OnSeePlayer():
 	SeesPlayer = true
