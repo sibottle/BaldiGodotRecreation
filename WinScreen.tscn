@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dg4hmuxerne0r" path="res://Textures/Screens/win.png" id="1_l2h6c"]
 [ext_resource type="AudioStream" uid="uid://bves88evo4pa8" path="res://Audio/Characters/Filename2/great.wav" id="2_a3s2j"]
-[ext_resource type="Script" path="res://CloseOnSoundFinish.gd" id="3_r1jmw"]
+[ext_resource type="Script" uid="uid://gf0au0lbun5s" path="res://CloseOnSoundFinish.gd" id="3_r1jmw"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_q7au4"]
 

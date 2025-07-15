@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://ulqq6g2agmbk"]
 
-[ext_resource type="Script" path="res://Scripts/Baldi.gd" id="1_0u8ls"]
+[ext_resource type="Script" uid="uid://c7h0opybcrat7" path="res://Scripts/Baldi.gd" id="1_0u8ls"]
 [ext_resource type="Texture2D" uid="uid://dtwl3k0cuuwk1" path="res://Textures/Character/Baldi/Baldi_Slap0000-sharedassets2.assets-283.png" id="2_oc4ti"]
 [ext_resource type="Texture2D" uid="uid://dv6uk3gs145ev" path="res://Textures/Character/Baldi/Baldi_Slap0006-sharedassets2.assets-357.png" id="3_kpuko"]
 [ext_resource type="Texture2D" uid="uid://byxphpytrp8gx" path="res://Textures/Character/Baldi/Baldi_Slap0012-sharedassets2.assets-131.png" id="4_3h01g"]
@@ -38,7 +38,6 @@ height = 0.5
 [node name="Baldi" type="CharacterBody3D" groups=["npc"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
 script = ExtResource("1_0u8ls")
-viewDistance = 999
 metadata/NPC = false
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

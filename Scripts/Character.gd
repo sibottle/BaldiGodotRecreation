@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-@export var viewDistance := 5.0
+@export var viewDistance := INF
 @export var speed := 5.0
 
 @export var acceleration := INF

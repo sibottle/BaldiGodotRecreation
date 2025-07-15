@@ -1,9 +1,9 @@
 extends "res://Scripts/Character.gd"
 
 var currentSpeed := 0.0
-var turnSpeed = 1
-var runSpeed = 20
-var normSpeed = 1.0
+var turnSpeed = 15 / 57.29578
+var runSpeed = 100
+var normSpeed = 5
 
 var coolDown = 0.0
 var autoBrakeCool = 0.0
@@ -27,10 +27,10 @@ func _OnSeePlayer():
 	agent.target_position = Player.global_transform.origin
 	
 func delta_angle(no_1, no_2):
-	var angle = abs(no_1 - no_2)
-	if angle > 180.0:
-		return 360.0 - angle
-	return angle
+	var a = no_1 - no_2
+	if (a > 180): a -= 360
+	if (a < -180): a += 360
+	return a
 
 func _process(delta):
 		if coolDown > 0:
@@ -38,16 +38,16 @@ func _process(delta):
 		if autoBrakeCool > 0:
 			autoBrakeCool -= 1 * delta;
 			
-		angleDiff = delta_angle(rotation.y,atan2(cam.global_position.z - global_position.z, cam.global_position.x - global_position.x)) - 180
+		angleDiff = delta_angle(global_rotation.y * 57.29578 + 90, -atan2(agent.get_next_path_position().z - global_position.z, agent.get_next_path_position().x - global_position.x) * 57.29578)
 		print(angleDiff)
 		
 		if crazyTime <= 0:
-			#if abs(angleDiff) < 5:
-				#look_at(Vector3(agent.get_next_path_position().x, position.y, agent.get_next_path_position().z))
-				#speed = currentSpeed;
-			#else:
-			rotate(Vector3.UP, turnSpeed * sign(angleDiff) * delta)
-			speed = 0
+			if abs(angleDiff) < 5:
+				look_at(Vector3(agent.get_next_path_position().x, position.y, agent.get_next_path_position().z))
+				speed = currentSpeed;
+			else:
+				rotate(Vector3.UP, turnSpeed * -sign(angleDiff) * delta)
+				speed = 0
 		else:
 			speed = 0
 			rotate(Vector3.UP, 180 * delta)
