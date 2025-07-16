@@ -37,6 +37,7 @@ var char_Prize : CharacterBody3D
 
 signal BeginSpoopMode
 signal BeginFinaleMode
+signal GetNotebook
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -48,6 +49,7 @@ func _process(delta):
 	pass
 	
 func EnableMathGame():
+	GetNotebook.emit()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	%UI/MathGame._show()
 	%UI/MathGame.show()
@@ -56,8 +58,6 @@ func EnableMathGame():
 	if (!spoopMode):
 		music.stream = Mus_Learn
 		music.play()
-	
-
 
 func DisableMathGame():
 	get_tree().paused = false

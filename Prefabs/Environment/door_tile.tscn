@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dwtkemc4tut0j"]
 
-[ext_resource type="Script" path="res://Scripts/DoorScript.gd" id="1_vslb3"]
+[ext_resource type="Script" uid="uid://po8j76dl7k2w" path="res://Scripts/DoorScript.gd" id="1_vslb3"]
 [ext_resource type="Texture2D" uid="uid://ps44mavikjkx" path="res://Textures/SchoolHouse/WhiteBrickWall.png" id="2_h4stj"]
 [ext_resource type="Material" uid="uid://dcsrqt1qf0sif" path="res://Materials/closedDoor.tres" id="3_tc50p"]
 
@@ -64,6 +64,7 @@ max_distance = 50.0
 attenuation_filter_db = 0.0
 
 [node name="Area3D" type="Area3D" parent="."]
+collision_mask = 7
 
 [node name="DoorCollision" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.25)

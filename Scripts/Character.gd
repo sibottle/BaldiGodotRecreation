@@ -16,9 +16,10 @@ var SeesPlayer := false
 
 @onready var map_id = NavigationServer3D.get_maps()[0]
 
-func ready():
-	agent.target_position =  NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin
-	
+func _ready():
+	_OnWander()
+	if find_children("*", "Area3D"):
+		find_children("*", "Area3D")[0].body_entered.connect(body_entered)
 	
 func _physics_process(delta):
 	if agent.is_navigation_finished():
@@ -54,9 +55,10 @@ func _OnWander():
 	agent.target_position = NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin
 	
 func _OnTouchPlayer():
+	print("touched")
 	pass
 
-func _on_area_3d_body_entered(body):
+func body_entered(body):
 	if body.has_meta("player"):
 		_OnTouchPlayer()
 	

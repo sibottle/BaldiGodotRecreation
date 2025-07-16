@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dtac0til4v3bm"]
 
-[ext_resource type="Script" path="res://Scripts/SwingDoor.gd" id="1_gmknj"]
+[ext_resource type="Script" uid="uid://dp616yvpsf5qi" path="res://Scripts/SwingDoor.gd" id="1_gmknj"]
 [ext_resource type="Material" uid="uid://dvbljson58jaa" path="res://Materials/swingDoorClose.tres" id="2_uqu1e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wbkpy"]
@@ -14,6 +14,7 @@ size = Vector3(1, 0.05, 1)
 [node name="SwingDoor" type="StaticBody3D"]
 transform = Transform3D(1.91068e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0, 0.5, 5.5)
 disable_mode = 2
+collision_mask = 6
 script = ExtResource("1_gmknj")
 metadata/swingdoor = false
 
@@ -34,13 +35,15 @@ skeleton = NodePath("")
 
 [node name="Area3D" type="Area3D" parent="."]
 disable_mode = 2
+collision_mask = 6
 
 [node name="Collision" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("BoxShape3D_b2x4q")
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="."]
-transform = Transform3D(9.5534e-16, 2.18557e-08, 0.5, 0.5, -2.18557e-08, 0, 2.18557e-08, 0.5, -2.18557e-08, 0, 0.5, 5.5)
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 0, 0, 5.5)
 top_level = true
+radius = 1.0
 height = 0.0
 use_3d_avoidance = true
 

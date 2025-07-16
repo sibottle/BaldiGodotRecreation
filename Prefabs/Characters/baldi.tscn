@@ -37,6 +37,8 @@ height = 0.5
 
 [node name="Baldi" type="CharacterBody3D" groups=["npc"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_0u8ls")
 metadata/NPC = false
 
@@ -44,6 +46,8 @@ metadata/NPC = false
 path_desired_distance = 0.1
 target_desired_distance = 0.1
 path_max_distance = 2.01
+simplify_path = true
+avoidance_enabled = true
 height = 0.5
 radius = 0.2
 neighbor_distance = 5.0
@@ -61,6 +65,8 @@ frame_progress = 1.0
 speed_scale = 2.0
 
 [node name="BaldiTrigger" type="Area3D" parent="." groups=["npc"]]
+collision_layer = 2
+collision_mask = 4
 
 [node name="V" type="CollisionShape3D" parent="BaldiTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
@@ -70,5 +76,9 @@ shape = SubResource("CapsuleShape3D_i0vgs")
 stream = ExtResource("7_cytws")
 max_distance = 30.0
 attenuation_filter_db = 0.0
+
+[node name="V" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("CapsuleShape3D_i0vgs")
 
 [connection signal="body_entered" from="BaldiTrigger" to="." method="_on_area_3d_body_entered"]

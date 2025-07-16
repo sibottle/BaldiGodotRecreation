@@ -8255,7 +8255,7 @@ transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08,
 material_override = ExtResource("34_xasbm")
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile118/MeshInstance3D" index="0"]
-material_override = ExtResource("34_xasbm")
+material_override = ExtResource("11_8e2ri")
 
 [node name="WallTile119" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 0, -7.64275e-15, -1.74846e-07, 1, 1.5, 0.5, 21)
@@ -8780,7 +8780,6 @@ ItmManager = NodePath("../UI/Items")
 metadata/player = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
-visible = false
 shape = SubResource("CapsuleShape3D_qla2b")
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
@@ -9181,9 +9180,12 @@ texture = ExtResource("140_n2sqx")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.895097, 0, 0.832881)
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("158_ublil")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="CharacterBody3D"]
+avoidance_enabled = true
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
 transform = Transform3D(0.0614581, 0, 0, 0, 0.0614581, 0, 0, 0, 1, 0, 0.265896, 0)

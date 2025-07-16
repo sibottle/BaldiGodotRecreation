@@ -22,6 +22,12 @@ func _ready():
 	doorVisual.set_material_override(closeMaterial)
 	doorVisual2.set_material_override(closeMaterial)
 	doorCollider.set_deferred("disabled", false)
+	%GameController.GetNotebook.connect(on_get_notebook)
+
+func on_get_notebook():
+	if %GameController.noteBookCount >= requiredNotebooks:
+		$NavigationObstacle3D.avoidance_enabled = false
+		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -45,9 +51,8 @@ func doorOpen():
 	Audio.stream = openSound
 	Audio.play()
 	
-	
-
 func _on_area_3d_body_entered(body):
+	print(body)
 	if body.has_meta("player"):
 		if %GameController.noteBookCount >= requiredNotebooks:
 			doorOpen()
@@ -57,5 +62,7 @@ func _on_area_3d_body_entered(body):
 
 
 func _on_area_3d_area_entered(area):
+	print(area)
 	if area.is_in_group("npc"):
-		doorOpen()
+		if %GameController.noteBookCount >= requiredNotebooks:
+			doorOpen()

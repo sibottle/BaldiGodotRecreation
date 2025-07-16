@@ -15,6 +15,8 @@ var stamina = 100
 @onready var cam = get_node("Camera3D")
 @export var ItmManager : ItemSelector
 
+@onready var GC = %GameController
+
 func ItemRay(item : int):
 		var space_state = get_world_3d().direct_space_state
 		var mousepos = get_viewport().get_mouse_position()
@@ -93,9 +95,10 @@ func _physics_process(delta):
 		if result:
 			if result.collider.get_parent().has_meta("blueDoor"):
 				result.collider.get_parent().doorOpen()
-			if result.collider.is_in_group("notebook"):
+				if GC.char_Baldi: GC.char_Baldi.hear(result.collider.global_position,1.0)
+			elif result.collider.is_in_group("notebook"):
 				result.collider.Collect()
-			if result.collider.is_in_group("Item"):
+			elif result.collider.is_in_group("Item"):
 				ItmManager.CollectItem(result.collider.get_meta("ID"))
 				result.collider.queue_free()
 			

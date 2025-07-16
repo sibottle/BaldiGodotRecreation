@@ -17,11 +17,11 @@ func _OnSeePlayer():
 	if playingTime <= 0 && !Player.jumprope:
 		speed = runSpeed
 		agent.target_position = Player.global_transform.origin
-		if global_transform.origin.distance_to(Player.global_transform.origin) < 0.5:
-			catch()
+		
 func _OnTouchPlayer():
 	if playingTime <= 0 and !Player.jumprope:
 			catch()
+
 func catch():
 	speed = 0
 	GC.ActivateJumprope()
