@@ -17,17 +17,18 @@ var isOpen = false
 @onready var closeMaterial = preload("res://Materials/swingDoorClose.tres")
 @onready var openMaterial = preload("res://Materials/swingDoorOpen.tres")
 
+@onready var GC = get_tree().get_first_node_in_group("GC")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	doorVisual.set_material_override(closeMaterial)
 	doorVisual2.set_material_override(closeMaterial)
 	doorCollider.set_deferred("disabled", false)
-	%GameController.GetNotebook.connect(on_get_notebook)
+	GC.GetNotebook.connect(on_get_notebook)
 
 func on_get_notebook():
-	if %GameController.noteBookCount >= requiredNotebooks:
+	if GC.noteBookCount >= requiredNotebooks:
 		$NavigationObstacle3D.avoidance_enabled = false
-		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -40,6 +41,11 @@ func _process(delta):
 			doorVisual.set_material_override(closeMaterial)
 			doorVisual2.set_material_override(closeMaterial)
 	pass
+	
+func _physics_process(delta: float) -> void:
+	for i in $Area3D.get_overlapping_bodies():
+		if i.is_in_group("npc") or i.is_in_group("player"):
+			doorOpen()
 
 func doorOpen():
 	openTimer = 5
@@ -53,16 +59,12 @@ func doorOpen():
 	
 func _on_area_3d_body_entered(body):
 	print(body)
-	if body.has_meta("player"):
+	if body.is_in_group("player"):
 		if %GameController.noteBookCount >= requiredNotebooks:
 			doorOpen()
 		else: 
 			Audio.stream = NOP
 			Audio.play()
-
-
-func _on_area_3d_area_entered(area):
-	print(area)
-	if area.is_in_group("npc"):
+	if body.is_in_group("npc"):
 		if %GameController.noteBookCount >= requiredNotebooks:
 			doorOpen()

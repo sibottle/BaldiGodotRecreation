@@ -1417,6 +1417,7 @@ stream = ExtResource("4_4xjak")
 [node name="School" type="Node" parent="."]
 
 [node name="NavMesh" type="NavigationRegion3D" parent="School"]
+visible = false
 navigation_mesh = SubResource("NavigationMesh_it2ih")
 
 [node name="aipath" parent="School/NavMesh" instance=ExtResource("5_26noh")]
@@ -9180,6 +9181,7 @@ texture = ExtResource("140_n2sqx")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.895097, 0, 0.832881)
+visible = false
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("158_ublil")
