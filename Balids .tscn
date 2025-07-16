@@ -8771,6 +8771,10 @@ metadata/faculty = false
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -10.5, 0.5, 10)
 metadata/faculty = false
 
+[node name="DetentionSpawn" type="Marker3D" parent="School" groups=["DetentionSpawn"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.25, 17)
+gizmo_extents = 0.1
+
 [node name="Player" type="CharacterBody3D" parent="." node_paths=PackedStringArray("ItmManager") groups=["player"]]
 unique_name_in_owner = true
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.25, 0)

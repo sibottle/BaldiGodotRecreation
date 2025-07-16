@@ -10,7 +10,7 @@ var slapDelay := 1.0
 func getAnger(a):
 	anger += a
 	if anger < 0.5: anger = 0.5
-	slapDelay = -3 * anger / anger + 5
+	slapDelay = -3 * anger / (anger + 2) + 3
 	
 func _physics_process(delta):
 	super(delta)

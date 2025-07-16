@@ -6,6 +6,8 @@ extends CharacterBody3D
 @export var acceleration := INF
 @export var turn_speed := INF
 
+@export var enabled = true
+
 var SeesPlayer := false
 
 @onready var agent := $NavigationAgent3D
@@ -24,6 +26,7 @@ func _ready():
 func _physics_process(delta):
 	if agent.is_navigation_finished():
 		_OnWander()
+		
 	SeesPlayer = false
 	var space_state = get_world_3d().direct_space_state
 	var origin = global_transform.origin
@@ -34,6 +37,9 @@ func _physics_process(delta):
 	if origin.distance_to(Player.global_transform.origin) < viewDistance and !result.is_empty():
 		if result.get("collider").has_meta("player"):
 			_OnSeePlayer()
+	
+	if not enabled: return
+	
 	var direction = agent.get_next_path_position() - global_transform.origin
 	velocity = velocity.move_toward(direction.normalized() * speed,acceleration * delta)
 	move_and_slide()
