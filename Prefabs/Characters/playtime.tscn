@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bdlqyxpfjjmsq"]
 
-[ext_resource type="Script" uid="uid://ibn6ak7o8o7h" path="res://Scripts/Playtime.gd" id="1_xsj8t"]
+[ext_resource type="Script" uid="uid://bcgdoks3on4sc" path="res://Scripts/Playtime.gd" id="1_xsj8t"]
 [ext_resource type="Texture2D" uid="uid://66ioa7t8tu1j" path="res://Textures/Character/Playtime/Normal/PlaytimeModel.webp" id="2_gvg4e"]
 [ext_resource type="AudioStream" uid="uid://cwgdup71n0e66" path="res://Audio/Music/mus_Playtime.wav" id="3_6at0u"]
 
@@ -54,5 +54,3 @@ stream = ExtResource("3_6at0u")
 autoplay = true
 max_distance = 10.0
 attenuation_filter_db = 0.0
-
-[connection signal="body_entered" from="PlaytimeTrigger" to="." method="_on_area_3d_body_entered"]

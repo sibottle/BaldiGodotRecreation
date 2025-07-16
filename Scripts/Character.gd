@@ -38,14 +38,23 @@ func _physics_process(delta):
 	move_and_slide()
 	global_position = NavigationServer3D.map_get_closest_point(map_id, global_position)
 	
+signal see_player
+signal unsee_player
 func _OnSeePlayer():
-	SeesPlayer = true
+	if not SeesPlayer:
+		SeesPlayer = true
+		see_player.emit()
+		
+func _OnUnseePlayer():
+	if see_player:
+		SeesPlayer = false
+		unsee_player.emit()
 	
 func _OnWander():
 	agent.target_position = NavMeshPoints.get_child(randi() % NavMeshPoints.get_child_count()).global_transform.origin
 	
 func _OnTouchPlayer():
-	print("touched")
+	pass
 
 func _on_area_3d_body_entered(body):
 	if body.has_meta("player"):

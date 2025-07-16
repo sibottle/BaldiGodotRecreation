@@ -9,6 +9,7 @@ size = Vector3(1, 0.001, 1)
 shading_mode = 0
 specular_mode = 2
 albedo_texture = ExtResource("1_ihf8l")
+uv1_scale = Vector3(2, 2, 2)
 texture_filter = 0
 
 [sub_resource type="QuadMesh" id="QuadMesh_7k7my"]

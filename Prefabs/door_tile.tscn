@@ -1,6 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://b115rorohbicu"]
+[gd_scene load_steps=8 format=3 uid="uid://byovy7b8vbmvb"]
 
-[ext_resource type="Script" uid="uid://dsaeqnbt5tkjo" path="res://Scripts/DoorScript.gd" id="1_vslb3"]
+[ext_resource type="Script" uid="uid://po8j76dl7k2w" path="res://Scripts/DoorScript.gd" id="1_vslb3"]
 [ext_resource type="Texture2D" uid="uid://ps44mavikjkx" path="res://Textures/SchoolHouse/WhiteBrickWall.png" id="2_h4stj"]
 [ext_resource type="Material" uid="uid://dcsrqt1qf0sif" path="res://Materials/closedDoor.tres" id="3_tc50p"]
 

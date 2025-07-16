@@ -27,11 +27,13 @@ var Mus_Finale = [
 const BaldiSpawn = preload("res://Prefabs/Characters/baldi.tscn")
 const PtSpawn = preload("res://Prefabs/Characters/playtime.tscn")
 const PriSpawn = preload("res://Prefabs/Characters/Principal.tscn")
+const PrizeSpawn = preload("res://Prefabs/Characters/1st_prize.tscn")
 
 # Characters to hold after spawning
 var char_Baldi : CharacterBody3D
 var char_Pt : CharacterBody3D
 var char_Pri : CharacterBody3D
+var char_Prize : CharacterBody3D
 
 signal BeginSpoopMode
 signal BeginFinaleMode
@@ -93,6 +95,9 @@ func EnableSpoopMode():
 	get_parent().add_child(char_Pt)
 	char_Pri = PriSpawn.instantiate()
 	get_parent().add_child(char_Pri)
+	char_Prize = PrizeSpawn.instantiate()
+	get_parent().add_child(char_Prize)
+	
 
 func OnExitReached():
 	music.stream = Mus_Finale[ExitsReached]

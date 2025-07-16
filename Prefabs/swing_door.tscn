@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://r8jj3ribbfgo"]
+[gd_scene load_steps=6 format=3 uid="uid://d10wg32gyqldo"]
 
 [ext_resource type="Script" uid="uid://dp616yvpsf5qi" path="res://Scripts/SwingDoor.gd" id="1_gmknj"]
 [ext_resource type="Material" uid="uid://dvbljson58jaa" path="res://Materials/swingDoorClose.tres" id="2_uqu1e"]

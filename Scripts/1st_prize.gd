@@ -39,7 +39,6 @@ func _process(delta):
 			autoBrakeCool -= 1 * delta;
 			
 		angleDiff = delta_angle(global_rotation.y * 57.29578 + 90, -atan2(agent.get_next_path_position().z - global_position.z, agent.get_next_path_position().x - global_position.x) * 57.29578)
-		print(angleDiff)
 		
 		if crazyTime <= 0:
 			if abs(angleDiff) < 5:

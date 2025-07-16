@@ -2,7 +2,7 @@ extends Sprite3D
 
 var angle
 
-@export var cam : Camera3D
+@onready var cam : Camera3D = get_viewport().get_camera_3d()
 	
 func delta_angle(no_1, no_2):
 	var angle = abs(no_1 - no_2)

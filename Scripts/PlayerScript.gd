@@ -90,12 +90,13 @@ func _physics_process(delta):
 
 		var result = space_state.intersect_ray(query)
 		
-		if result && result.collider.get_parent().has_meta("blueDoor"):
-			result.collider.get_parent().doorOpen()
-		if result && result.collider.is_in_group("notebook"):
-			result.collider.Collect()
-		if result && result.collider.is_in_group("Item"):
-			ItmManager.CollectItem(result.collider.get_meta("ID"))
-			result.collider.queue_free()
+		if result:
+			if result.collider.get_parent().has_meta("blueDoor"):
+				result.collider.get_parent().doorOpen()
+			if result.collider.is_in_group("notebook"):
+				result.collider.Collect()
+			if result.collider.is_in_group("Item"):
+				ItmManager.CollectItem(result.collider.get_meta("ID"))
+				result.collider.queue_free()
 			
 	move_and_slide()

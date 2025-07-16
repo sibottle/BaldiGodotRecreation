@@ -1,10 +1,10 @@
-[gd_scene load_steps=317 format=3 uid="uid://s75x5rlcmu17"]
+[gd_scene load_steps=318 format=3 uid="uid://s75x5rlcmu17"]
 
 [ext_resource type="PackedScene" uid="uid://dab334bak5sbd" path="res://Prefabs/Environment/floor_tile.tscn" id="1_6kwly"]
-[ext_resource type="Script" uid="uid://b7qpwkqwpewgm" path="res://Scripts/GameController.gd" id="1_7mqpd"]
+[ext_resource type="Script" uid="uid://cfbbtu1syt1rf" path="res://Scripts/GameController.gd" id="1_7mqpd"]
 [ext_resource type="PackedScene" uid="uid://bsyttk12dj3kp" path="res://Prefabs/Environment/wall_tile.tscn" id="2_403ow"]
 [ext_resource type="PackedScene" uid="uid://ck5udn1vbk3e7" path="res://Prefabs/Environment/carpet_tile.tscn" id="2_mmy8y"]
-[ext_resource type="Script" uid="uid://cbmhd3mpoblp1" path="res://Scripts/PlayerScript.gd" id="3_h5l21"]
+[ext_resource type="Script" uid="uid://sou573fatnp7" path="res://Scripts/PlayerScript.gd" id="3_h5l21"]
 [ext_resource type="AudioStream" uid="uid://gu22nyn4wrg3" path="res://Audio/Sounds/MEC_SLINGSHOT.wav" id="3_vrw2s"]
 [ext_resource type="AudioStream" uid="uid://dh1jradplpviv" path="res://Audio/Characters/Baldi/BAL_AllNotebooks.wav" id="4_4xjak"]
 [ext_resource type="PackedScene" uid="uid://7gxa5ou22vbl" path="res://Prefabs/Environment/fence_tile.tscn" id="4_28n18"]
@@ -25,12 +25,12 @@
 [ext_resource type="Texture2D" uid="uid://bvsg78up16x1" path="res://Textures/SchoolHouse/ExitSign.png" id="15_ybn7g"]
 [ext_resource type="Material" uid="uid://dpgt4m35hfnw2" path="res://Materials/Posters&Chalkboards/Poster_rules.tres" id="16_4pj3o"]
 [ext_resource type="Texture2D" uid="uid://c2jjh8eafsjo4" path="res://Textures/Notebooks/blackNotebook.png" id="16_i6ddl"]
-[ext_resource type="Script" uid="uid://csrumrc455w07" path="res://Scripts/Notebook.gd" id="16_ygmnp"]
+[ext_resource type="Script" uid="uid://ctnek2losmjca" path="res://Scripts/Notebook.gd" id="16_ygmnp"]
 [ext_resource type="Texture2D" uid="uid://cmb5pisl6vgem" path="res://Textures/Character/Baldi/Baldi_Wave_Sheet.png" id="17_s4atj"]
 [ext_resource type="Material" uid="uid://bks3ksab71ldn" path="res://Materials/Posters&Chalkboards/Lazy.tres" id="17_x8v3d"]
 [ext_resource type="Material" uid="uid://7qvbe51iua3r" path="res://Materials/Posters&Chalkboards/Math.tres" id="18_c5i42"]
 [ext_resource type="AudioStream" uid="uid://bjtnbmatykg3y" path="res://Audio/Characters/Baldi/BaldiTutor/BAL_Hi.wav" id="18_jr3sp"]
-[ext_resource type="Script" uid="uid://caa4jr5gsydn1" path="res://Scripts/UIScript.gd" id="19_bt202"]
+[ext_resource type="Script" uid="uid://beceiqfinjuy" path="res://Scripts/UIScript.gd" id="19_bt202"]
 [ext_resource type="Texture2D" uid="uid://bkc2isee32e26" path="res://Textures/Billboards/Plant.png" id="19_r6gjp"]
 [ext_resource type="Material" uid="uid://c6fsu6kiqmylb" path="res://Materials/Posters&Chalkboards/Cheese.tres" id="19_ulhpp"]
 [ext_resource type="Material" uid="uid://cfy31owjw8p6r" path="res://Materials/Posters&Chalkboards/Poster_NoSquee.tres" id="20_ajxbw"]
@@ -39,24 +39,35 @@
 [ext_resource type="Texture2D" uid="uid://b26ijhof81c7p" path="res://Textures/UI/YCTP2_NoButtons-sharedassets2.assets-344.png" id="28_bnc8w"]
 [ext_resource type="Texture2D" uid="uid://dbruy4nje3wvo" path="res://Textures/UI/Baldi/Bald_Frown0000-sharedassets2.assets-174.png" id="28_fb0uy"]
 [ext_resource type="Texture2D" uid="uid://cgdjnatha3jnf" path="res://Textures/UI/Baldi/Bald_Frown0001-sharedassets2.assets-182.png" id="29_engxy"]
-[ext_resource type="Script" uid="uid://cwjwyph3qabfp" path="res://Scripts/MathGame.gd" id="30_nj28a"]
+[ext_resource type="Script" uid="uid://cub6lylqjk7my" path="res://Scripts/MathGame.gd" id="30_nj28a"]
 [ext_resource type="Texture2D" uid="uid://ovi0ppowfdpe" path="res://Textures/UI/Baldi/Bald_Frown0002-sharedassets2.assets-98.png" id="30_x76hv"]
 [ext_resource type="Texture2D" uid="uid://cat42pwu1johy" path="res://Textures/UI/Baldi/Bald_Frown0003-sharedassets2.assets-519.png" id="31_n5ejp"]
+[ext_resource type="Material" uid="uid://bkjmsproiptim" path="res://Materials/Posters&Chalkboards/Det_PT.tres" id="31_uviir"]
 [ext_resource type="Texture2D" uid="uid://bbgj5lghp1faf" path="res://Textures/UI/Baldi/Bald_Frown0004-sharedassets2.assets-155.png" id="32_647fs"]
 [ext_resource type="FontFile" uid="uid://uixlnvfr5x5a" path="res://baldi-sans.ttf" id="32_merlt"]
+[ext_resource type="Material" uid="uid://bsvsyg8sle3dp" path="res://Materials/Posters&Chalkboards/Det_Crafters.tres" id="32_pcd3p"]
+[ext_resource type="Material" uid="uid://bslmnx2jd1w3i" path="res://Materials/Posters&Chalkboards/Det_Baldi.tres" id="33_bj15m"]
 [ext_resource type="Texture2D" uid="uid://6eqgvjetn8k1" path="res://Textures/UI/Baldi/Bald_Frown0005-sharedassets2.assets-371.png" id="33_ghkva"]
 [ext_resource type="AudioStream" uid="uid://ufyiwuoh0hdj" path="res://Audio/Sounds/Buzz.wav" id="34_8cfao"]
+[ext_resource type="Material" uid="uid://cgloqpx5rotx0" path="res://Materials/Posters&Chalkboards/99.tres" id="34_8odvg"]
 [ext_resource type="Texture2D" uid="uid://4vtw0mfo0px3" path="res://Textures/UI/Baldi/Bald_Frown0006-sharedassets2.assets-194.png" id="34_18gj0"]
-[ext_resource type="Script" uid="uid://b80xpwuirpvc8" path="res://Scripts/JumpRope.gd" id="34_wf1nl"]
+[ext_resource type="Script" uid="uid://vvy4ynm0fhve" path="res://Scripts/JumpRope.gd" id="34_wf1nl"]
+[ext_resource type="Material" uid="uid://djxa5rq0wengd" path="res://Materials/Posters&Chalkboards/Det_Pri.tres" id="34_xasbm"]
 [ext_resource type="PackedScene" uid="uid://44xnl2t5hatr" path="res://Prefabs/Environment/Ceiling_Dark.tscn" id="35_4mhel"]
+[ext_resource type="Material" uid="uid://bh2bixc71eraj" path="res://Materials/Posters&Chalkboards/Det_Sweep.tres" id="35_8odvg"]
 [ext_resource type="Texture2D" uid="uid://bv2jpdjrcibi0" path="res://Textures/UI/Baldi/Bald_Frown0007-sharedassets2.assets-432.png" id="35_48c2v"]
+[ext_resource type="Material" uid="uid://cybccthk0hmq8" path="res://Materials/Posters&Chalkboards/Poster_RecycleFood.tres" id="35_p1xkf"]
+[ext_resource type="Material" uid="uid://3ehamyyyh2ki" path="res://Materials/Posters&Chalkboards/Poster_Phone.tres" id="35_s77q5"]
 [ext_resource type="Texture2D" uid="uid://b8668bm15k730" path="res://Textures/UI/Rope0031.png" id="35_sslwy"]
 [ext_resource type="Texture2D" uid="uid://cwq47olwk7vui" path="res://Textures/UI/Baldi/Bald_Frown0008-sharedassets2.assets-145.png" id="36_j2bfw"]
+[ext_resource type="Material" uid="uid://dcjojaie1tfy7" path="res://Materials/Posters&Chalkboards/Det_1PR.tres" id="36_p1xkf"]
 [ext_resource type="Texture2D" uid="uid://beasvq2pm76c3" path="res://Textures/UI/Rope0032.png" id="36_ppfuh"]
+[ext_resource type="Material" uid="uid://hkh6ybotxel6" path="res://Materials/Posters&Chalkboards/Poster_Windows.tres" id="37_bj15m"]
 [ext_resource type="Texture2D" uid="uid://n6iaew2quyy3" path="res://Textures/UI/Rope0033.png" id="37_imfnf"]
 [ext_resource type="Texture2D" uid="uid://bsvxpqf3t573e" path="res://Textures/UI/Baldi/Bald_Frown0009-sharedassets2.assets-322.png" id="37_uay0d"]
 [ext_resource type="Texture2D" uid="uid://1r83axsgxqj6" path="res://Textures/UI/Rope0034.png" id="38_1hn7w"]
 [ext_resource type="Texture2D" uid="uid://d02cjxki4mk0h" path="res://Textures/UI/Baldi/Bald_Frown0010-sharedassets2.assets-231.png" id="38_52sdy"]
+[ext_resource type="Material" uid="uid://dlirgc3yxolao" path="res://Materials/Posters&Chalkboards/Det_Bul.tres" id="38_xasbm"]
 [ext_resource type="Texture2D" uid="uid://coq8mdhgrtmbb" path="res://Textures/UI/Baldi/Bald_Frown0011-sharedassets2.assets-107.png" id="39_5p0jt"]
 [ext_resource type="Texture2D" uid="uid://ckevttwukjag4" path="res://Textures/UI/Rope0035.png" id="39_dkucl"]
 [ext_resource type="Texture2D" uid="uid://cyr5qnw7aifiq" path="res://Textures/UI/Baldi/Bald_Frown0012-sharedassets2.assets-189.png" id="40_0y3qi"]
@@ -103,7 +114,7 @@
 [ext_resource type="Texture2D" uid="uid://b34wsm4tp31ao" path="res://Textures/UI/Baldi/Bald_Frown0040-sharedassets2.assets-384.png" id="68_sx3dt"]
 [ext_resource type="Texture2D" uid="uid://bqsjgwjxnnjlb" path="res://Textures/UI/Baldi/Bald_Frown0041-sharedassets2.assets-355.png" id="69_urp0h"]
 [ext_resource type="Texture2D" uid="uid://bsck3150pkhvr" path="res://Textures/UI/Baldi/Bald_Frown0042-sharedassets2.assets-232.png" id="70_7y3bc"]
-[ext_resource type="Script" uid="uid://bbubknsy4cquk" path="res://ItemSelector.gd" id="70_sxeuk"]
+[ext_resource type="Script" path="res://ItemSelector.gd" id="70_sxeuk"]
 [ext_resource type="Texture2D" uid="uid://5vaby105np1n" path="res://Textures/Red.png" id="71_rts4y"]
 [ext_resource type="Texture2D" uid="uid://bmn81lbonrsy1" path="res://Textures/UI/Baldi/Bald_Frown0043-sharedassets2.assets-479.png" id="71_twj10"]
 [ext_resource type="Texture2D" uid="uid://b3cv1821u1a2c" path="res://Textures/UI/Baldi/Bald_Frown0044-sharedassets2.assets-440.png" id="72_ye4ff"]
@@ -166,20 +177,16 @@
 [ext_resource type="Texture2D" uid="uid://da3kbn6tl763r" path="res://Textures/luigi.png" id="138_vs44i"]
 [ext_resource type="Texture2D" uid="uid://dkvy1ahclxqlr" path="res://Textures/waluigi.png" id="139_qu2h0"]
 [ext_resource type="Texture2D" uid="uid://7tpu6cbj3yet" path="res://Textures/wario.png" id="140_n2sqx"]
-[ext_resource type="Script" uid="uid://bo05ier82ojio" path="res://Scripts/LowerWall.gd" id="153_ree15"]
+[ext_resource type="Script" uid="uid://e1u3g0tpx0r2" path="res://Scripts/LowerWall.gd" id="153_ree15"]
 [ext_resource type="Material" uid="uid://cvqgnm00qsw4a" path="res://Materials/wall_tile.tres" id="156_l68lq"]
 [ext_resource type="Script" uid="uid://gul81wglxflq" path="res://Scripts/Character.gd" id="158_ublil"]
 [ext_resource type="AudioStream" uid="uid://c576bsc4yovw5" path="res://Audio/Music/mus_School.wav" id="160_44dwl"]
 [ext_resource type="Texture2D" uid="uid://cwopf0w55a2vx" path="res://Textures/PickUps/Quarter.png" id="167_0868s"]
-[ext_resource type="Texture2D" uid="uid://m5vyy0wijim6" path="res://Textures/PickUps/skibidiah.png" id="169_wig4o"]
-[ext_resource type="Script" uid="uid://blhvkx5uwt8yr" path="res://Scripts/1st_prize.gd" id="176_6qcr5"]
-[ext_resource type="AudioStream" uid="uid://bypv4u1tndgyp" path="res://Audio/Characters/Baldi/Sounds/BAL_Slap.wav" id="177_sw31y"]
-[ext_resource type="Texture2D" uid="uid://46lsy7pyprph" path="res://Textures/Character/1PR_Sheet.png" id="178_lci2f"]
-[ext_resource type="Script" uid="uid://c1nqx4wqxqlc8" path="res://Scripts/SpriteRotation.gd" id="179_6mr0l"]
 [ext_resource type="Material" uid="uid://b4ggd37rfqqss" path="res://Materials/Map_Bottom.tres" id="180_ptvp4"]
 [ext_resource type="Material" uid="uid://dy323c0t7ehi1" path="res://Materials/Map_Left.tres" id="181_4yqpd"]
 [ext_resource type="Material" uid="uid://kht0bbwjs1eu" path="res://Materials/Map_Top.tres" id="182_ryxs2"]
 [ext_resource type="Material" uid="uid://bud3ld8fm8l4e" path="res://Materials/Map_Right.tres" id="183_rytg0"]
+[ext_resource type="ArrayOccluder3D" uid="uid://crpdrk4xedl2" path="res://Balids .occ" id="192_s77q5"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_it2ih"]
 vertices = PackedVector3Array(-2.89, 0.0199994, 25.42, -2.58, 0.0199994, 25.11, -2.57, 0.0199994, 24.9, -2.89, 0.0199994, 24.58, -3.1, 0.0199994, 24.41, 2.81, 0.0199994, 13.9, 2.81, 0.0199994, 13.42, 2.6, 0.0199994, 13.43, 2.6, 0.0199994, 13.9, -3.1, 0.0199994, 24.2, -3.1, 0.0199994, 14.43, -2.89, 0.0199994, 14.42, -2.58, 0.0199994, 14.11, 1.9, 0.0199994, 14.43, 2.11, 0.0199994, 14.42, 2.42, 0.0199994, 14.11, 1.58, 0.0199994, 14.11, -6.1, 0.0199994, 1.43, -5.89, 0.0199994, 1.42, -5.58, 0.0199994, 1.11, -6.42, 0.0199994, 1.11, -0.100003, 0.0199994, 1.43, 0.109997, 0.0199994, 1.42, 0.419996, 0.0199994, 1.11, -0.420004, 0.0199994, 1.11, 3.12, 0.0199994, 13.11, 5.11, 0.0199994, 7.72, 2.28, 0.0199994, 13.11, -3.42, 0.0199994, 14.11, -2.3, 0.0199994, 13.9, -5.89, 0.0199994, 13.9, -6.1, 0.0199994, 14.11, -10.89, 0.0199994, 10.12, -10.89, 0.0199994, 9.28, -11.1, 0.0199994, 0.899998, 0.429996, 0.0199994, 13.9, 0.109997, 0.0199994, 13.58, -0.100003, 0.0199994, 13.57, -0.430003, 0.0199994, 13.9, -2.89, 0.0199994, 30.42, -2.89, 0.0199994, 29.58, -3.1, 0.0199994, 33.9, 0.109997, 0.0199994, 3.12, -0.100003, 0.0199994, 4.41, 0.109997, 0.0199994, 2.28, -0.100003, 0.0199994, 4.2, -8.3, 0.0199994, 4.51, -6.89, 0.0199994, 4.51, -6.89, 0.0199994, 4.41, -6.89, 0.0199994, 3.88, -6.89, 0.0199994, 3.5, -8.3, 0.0199994, 3.5, -6.57, 0.0199994, 4.2, -2.57, 0.0199994, 29.9, -2.58, 0.0199994, 30.11, -2.1, 0.0199994, 30.11, -2.1, 0.0199994, 29.9, -10.89, 0.0199994, 17.12, -10.58, 0.0199994, 16.81, -10.57, 0.0199994, 16.6, -10.89, 0.0199994, 16.28, -6.1, 0.0199994, 4.41, -6.1, 0.0199994, 4.2, -10.1, 0.0199994, 16.81, -10.1, 0.0199994, 16.6, -2.89, 0.0199994, 16.28, 1.9, 0.0199994, 20.9, 1.9, 0.0199994, 24.11, 2.28, 0.0199994, 24.11, 3.12, 0.0199994, 24.11, 2.6, 0.0199994, 24.43, 2.81, 0.0199994, 24.42, 1.11, 0.0199994, 14.9, -2.1, 0.0199994, 14.9, -2.1, 0.0199994, 16.6, -2.1, 0.0199994, 16.81, -2.1, 0.0199994, 19.11, 1.11, 0.0199994, 19.11, 11.11, 0.0199994, 0.899998, 7.88, 0.0199994, 1.11, -2.57, 0.0199994, 16.6, -2.58, 0.0199994, 16.81, -3.89, 0.0199994, 14.9, -2.89, 0.0199994, 17.12, -10.1, 0.0199994, 9.81, -10.1, 0.0199994, 12.11, -6.89, 0.0199994, 12.11, -6.89, 0.0199994, 6.9, -10.1, 0.0199994, 6.9, -10.1, 0.0199994, 9.6, 8.72, 0.0199994, 1.11, -10.57, 0.0199994, 9.6, -10.58, 0.0199994, 9.81, -11.1, 0.0199994, 34.11, -10.89, 0.0199994, 31.12, -10.89, 0.0199994, 30.28, 10.57, 0.0199994, 24.9, 10.58, 0.0199994, 25.11, 10.9, 0.0199994, 25.43, 10.9, 0.0199994, 24.57, 5.11, 0.0199994, 7.2, 5.11, 0.0199994, 6.9, 0.899997, 0.0199994, 6.9, -5.1, 0.0199994, 5.11, -0.890003, 0.0199994, 5.11, -0.890003, 0.0199994, 4.72, 5.11, 0.0199994, 1.9, 0.899997, 0.0199994, 1.9, 0.899997, 0.0199994, 2.6, 5.9, 0.0199994, 7.41, 5.9, 0.0199994, 8.11, 10.11, 0.0199994, 8.11, -1.78, 0.0199994, 13.11, -0.890003, 0.0199994, 13.11, -0.890003, 0.0199994, 8.9, 6.11, 0.0199994, 24.11, 6.11, 0.0199994, 20.9, 10.11, 0.0199994, 29.58, 10.11, 0.0199994, 25.9, -2.1, 0.0199994, 25.9, -2.89, 0.0199994, 34.11, -10.89, 0.0199994, 33.9, -10.89, 0.0199994, 1.11, 2.81, 0.0199994, 24.9, 2.6, 0.0199994, 24.9, -10.1, 0.0199994, 19.11, -3.89, 0.0199994, 19.11, 16.1, 0.0199994, 25.9, 11.9, 0.0199994, 25.9, 11.9, 0.0199994, 27.6, -0.890003, 0.0199994, 3.88, -0.580004, 0.0199994, 4.41, -0.570004, 0.0199994, 4.2, -0.890003, 0.0199994, 1.9, -5.1, 0.0199994, 1.9, -2.1, 0.0199994, 34.11, 10.11, 0.0199994, 34.11, 10.11, 0.0199994, 30.42, 10.42, 0.0199994, 30.11, 10.43, 0.0199994, 29.9, -2.09, 0.0199994, 13.42, -2.62, 0.0199994, 13.11, -2.3, 0.0199994, 13.43, 11.9, 0.0199994, 27.81, 11.9, 0.0199994, 30.11, 16.1, 0.0199994, 30.11, 11.43, 0.0199994, 27.6, 11.42, 0.0199994, 27.81, -10.58, 0.0199994, 30.81, -10.57, 0.0199994, 30.6, 11.11, 0.0199994, 28.12, 11.11, 0.0199994, 27.28, 7.43, 0.0199994, 24.9, 6.57, 0.0199994, 24.9, 0.899997, 0.0199994, 2.81, 0.899997, 0.0199994, 5.11, 5.11, 0.0199994, 5.11, 0.429996, 0.0199994, 2.6, 0.419996, 0.0199994, 2.81, -10.1, 0.0199994, 30.81, -10.1, 0.0199994, 30.6, 10.57, 0.0199994, 13.9, 10.58, 0.0199994, 14.11, 10.9, 0.0199994, 14.43, 10.9, 0.0199994, 13.57, -5.1, 0.0199994, 8.9, -5.1, 0.0199994, 13.11, 10.9, 0.0199994, 17.2, -2.09, 0.0199994, 13.9, -3.89, 0.0199994, 28.9, 2.11, 0.0199994, 19.9, 1.9, 0.0199994, 20.11, 10.9, 0.0199994, 17.41, 6.9, 0.0199994, 20.11, 7.11, 0.0199994, 19.9, 7.11, 0.0199994, 24.58, 6.9, 0.0199994, 24.57, 5.11, 0.0199994, 13.11, 8.2, 0.0199994, 1.9, 5.9, 0.0199994, 1.9, 5.9, 0.0199994, 7.2, 10.9, 0.0199994, 30.11, 10.9, 0.0199994, 36.1, 11.11, 0.0199994, 36.1, 10.9, 0.0199994, 29.9, 0.899997, 0.0199994, 13.11, 10.9, 0.0199994, 1.11, 5.42, 0.0199994, 7.41, 10.11, 0.0199994, 1.9, 8.41, 0.0199994, 1.9, 3.9, 0.0199994, 19.11, 10.11, 0.0199994, 19.11, 10.11, 0.0199994, 17.72, -10.1, 0.0199994, 26.11, -3.89, 0.0199994, 26.11, -3.89, 0.0199994, 24.72, -10.1, 0.0199994, 28.9, -10.1, 0.0199994, 14.9, 8.2, 0.0199994, 1.43, 8.41, 0.0199994, 1.42, 10.11, 0.0199994, 16.88, 10.11, 0.0199994, 14.9, 3.9, 0.0199994, 14.9, -3.89, 0.0199994, 23.88, -3.89, 0.0199994, 21.9, -10.1, 0.0199994, 21.9, 10.43, 0.0199994, 17.2, 10.42, 0.0199994, 17.41, -3.57, 0.0199994, 24.2, -3.58, 0.0199994, 24.41, -10.1, 0.0199994, 33.11, -3.89, 0.0199994, 33.11)
@@ -1391,27 +1398,6 @@ animations = [{
 [sub_resource type="BoxShape3D" id="BoxShape3D_uci0g"]
 size = Vector3(2.99023, 1, 1.31633)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0isec"]
-shading_mode = 0
-albedo_texture = ExtResource("169_wig4o")
-uv1_scale = Vector3(3, 3, 3)
-uv1_offset = Vector3(0, -0.2, 0)
-
-[sub_resource type="BoxMesh" id="BoxMesh_g2xux"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_1n1sj"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i0vgs"]
-radius = 0.125
-height = 0.5
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_poq6k"]
-height = 0.5
-radius = 0.1
-
-[sub_resource type="BoxMesh" id="BoxMesh_poq6k"]
-size = Vector3(0.03, 0.17, 0.02)
-
 [node name="Game" type="Node3D"]
 
 [node name="GameController" type="Node" parent="." groups=["GC"]]
@@ -1431,7 +1417,6 @@ stream = ExtResource("4_4xjak")
 [node name="School" type="Node" parent="."]
 
 [node name="NavMesh" type="NavigationRegion3D" parent="School"]
-visible = false
 navigation_mesh = SubResource("NavigationMesh_it2ih")
 
 [node name="aipath" parent="School/NavMesh" instance=ExtResource("5_26noh")]
@@ -8094,7 +8079,7 @@ transform = Transform3D(1, 3.34074e-22, 0, 3.34074e-22, 1, 0, 0, 0, 1, 0, -2.384
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile113" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, -2.38419e-07, 3)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("31_uviir")
 
 [node name="WallTile116" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-5.73206e-15, -1.31134e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, 1.31134e-07, -1, 0.5, 17.5)
@@ -8104,7 +8089,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19209e-07, -3, -4.17233e-0
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile116" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, -1.19209e-07, -3, -4.17233e-07)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("32_pcd3p")
 
 [node name="WallTile117" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-5.73206e-15, -1.31134e-07, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, 1.31134e-07, 1, 0.5, 17.5)
@@ -8114,7 +8099,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19209e-07, -3, -3.57628e-0
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile117" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, -1.19209e-07, -3, -3.57628e-07)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("33_bj15m")
 
 [node name="WallTile159" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(4.37114e-08, 1, 8.74227e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74227e-08, -1, 3.5, 0.5, 20)
@@ -8134,7 +8119,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49012e-07, 3, 0)
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile571" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 1.49012e-07, 3, 0)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("34_8odvg")
 
 [node name="WallTile578" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, 2.84217e-14, 1, -4.37114e-08, 0, -1.69407e-21, 2.84217e-14, 1, 16.5, 0.5, 31)
@@ -8154,7 +8139,7 @@ transform = Transform3D(1, 3.53098e-35, 0, -4.81483e-35, 1, 0, 0, 0, 1, 0, 0, -3
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile622" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 0, -3)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("35_s77q5")
 
 [node name="WallTile623" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, 2.84217e-14, 1, -4.37114e-08, 0, -1.69407e-21, 2.84217e-14, 1, 10.5, 0.5, 34)
@@ -8164,7 +8149,7 @@ transform = Transform3D(1, 3.53098e-35, 0, -4.81483e-35, 1, 0, 0, 0, 1, 0, 0, -3
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile623" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 0, -3)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("35_p1xkf")
 
 [node name="WallTile626" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -2.5, 0.5, 32)
@@ -8174,7 +8159,7 @@ transform = Transform3D(1, 3.34075e-22, 0, 3.34075e-22, 1, 0, 0, 0, 1, 0, 2.3841
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile626" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 2.38419e-07, 3)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("35_p1xkf")
 
 [node name="WallTile627" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, 1.74846e-07, 1, -4.37114e-08, 0, 7.64274e-15, 1.74846e-07, 1, -3.5, 0.5, 34)
@@ -8234,7 +8219,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, -3.39407e-30, 0, 1, 1.19209e-07, 3, 0)
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile624" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 1.19209e-07, 3, 0)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("35_p1xkf")
 
 [node name="WallTile625" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-1.77636e-15, 0, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, 0, 7, 0.5, 28.5)
@@ -8267,10 +8252,10 @@ transform = Transform3D(1, 1.33631e-21, 0, 1.3363e-21, 1, 0, 0, 0, 1, 0, 4.76837
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile118" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 4.76837e-07, -3)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("34_xasbm")
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile118/MeshInstance3D" index="0"]
-material_override = ExtResource("11_8e2ri")
+material_override = ExtResource("34_xasbm")
 
 [node name="WallTile119" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(-4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 0, -7.64275e-15, -1.74846e-07, 1, 1.5, 0.5, 21)
@@ -8280,7 +8265,7 @@ transform = Transform3D(1, 1.33631e-21, 0, 1.3363e-21, 1, 0, 0, 0, 1, 0, 5.96046
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile119" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 0, 5.96046e-07, -3)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("35_8odvg")
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile119/MeshInstance3D" index="0"]
 material_override = ExtResource("11_8e2ri")
@@ -8293,7 +8278,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19209e-07, 3, 5.96046e-07)
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile122" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 1.19209e-07, 3, 5.96046e-07)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("36_p1xkf")
 
 [node name="WallTile139" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, 0, 0.5, 22.5)
@@ -8303,7 +8288,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19209e-07, 3, 6.55671e-07)
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile139" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 1.19209e-07, 3, 6.55671e-07)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("16_4pj3o")
 
 [node name="WallTile140" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, -1, 0.5, 22.5)
@@ -8313,7 +8298,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19209e-07, 3, 6.55651e-07)
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile140" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 1.19209e-07, 3, 6.55651e-07)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("37_bj15m")
 
 [node name="WallTile152" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(9.55343e-15, 2.18557e-07, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -2.18557e-07, -2, 0.5, 22.5)
@@ -8323,7 +8308,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19209e-07, 3, 5.96046e-07)
 
 [node name="MeshInstance3D" parent="School/Wall/WallTile152" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 8.74228e-08, 4.37114e-08, -8.74228e-08, 1, 1, 4.37114e-08, -4.37114e-08, 1.19209e-07, 3, 5.96046e-07)
-material_override = ExtResource("20_ajxbw")
+material_override = ExtResource("38_xasbm")
 
 [node name="WallTile17" parent="School/Wall" instance=ExtResource("2_403ow")]
 transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -1.5, 0.5, 0)
@@ -9196,7 +9181,6 @@ texture = ExtResource("140_n2sqx")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.895097, 0, 0.832881)
-visible = false
 script = ExtResource("158_ublil")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="CharacterBody3D"]
@@ -9354,68 +9338,8 @@ metadata/ID = 5
 [node name="Sprite3D" parent="Quarter/CollisionShape3D" index="0"]
 texture = ExtResource("167_0868s")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["VendingMachine"]]
-transform = Transform3D(0.535175, 0, 0, 0, 1, 0, 0, 0, 0.281954, 1, 0.49294, 1.35802)
-metadata/ID = 1
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(1.07966, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_0isec")
-mesh = SubResource("BoxMesh_g2xux")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-shape = SubResource("BoxShape3D_1n1sj")
-
-[node name="1st Prize" type="CharacterBody3D" parent="." node_paths=PackedStringArray("cam", "motorAudio") groups=["npc"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
-collision_layer = 2
-collision_mask = 3
-script = ExtResource("176_6qcr5")
-cam = NodePath("../Player/Camera3D")
-motorAudio = NodePath("AudioStreamPlayer3D")
-acceleration = 0.5
-metadata/NPC = false
-
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="1st Prize"]
-path_desired_distance = 0.1
-target_desired_distance = 0.1
-path_max_distance = 2.01
-height = 0.5
-radius = 0.2
-neighbor_distance = 5.0
-debug_use_custom = true
-debug_path_custom_color = Color(1, 0, 0, 1)
-debug_path_custom_point_size = 17.64
-
-[node name="PrizeTrigger" type="Area3D" parent="1st Prize" groups=["npc"]]
-
-[node name="V" type="CollisionShape3D" parent="1st Prize/PrizeTrigger"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
-shape = SubResource("CapsuleShape3D_i0vgs")
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="1st Prize"]
-stream = ExtResource("177_sw31y")
-max_distance = 30.0
-attenuation_filter_db = 0.0
-
-[node name="Sprite3D" type="Sprite3D" parent="1st Prize" node_paths=PackedStringArray("cam")]
-transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.353122, 0)
-billboard = 1
-texture_filter = 0
-texture = ExtResource("178_lci2f")
-hframes = 4
-vframes = 4
-region_rect = Rect2(0, 0, 256, 256)
-script = ExtResource("179_6mr0l")
-cam = NodePath("../../Player/Camera3D")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="1st Prize"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-shape = SubResource("CylinderShape3D_poq6k")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="1st Prize"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.383312, -0.392429)
-mesh = SubResource("BoxMesh_poq6k")
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="."]
+occluder = ExtResource("192_s77q5")
 
 [connection signal="BeginFinaleMode" from="GameController" to="School/Wall/ExitSwingDoor" method="OnFinale"]
 [connection signal="BeginFinaleMode" from="GameController" to="School/Wall/ExitSwingDoor2" method="OnFinale"]

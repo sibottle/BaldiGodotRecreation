@@ -6,7 +6,7 @@ var guiltSeen = 0
 var angry = false
 var seeingGuilt = false
 
-@onready var spawnPos = global_transform.origin
+@onready var spawnPos = global_position
 
 @onready var Aud : AudioStreamPlayer3D = $AudioStreamPlayer3D
 
@@ -19,7 +19,7 @@ func _physics_process(delta):
 	super(delta)
 	if angry:
 		speed = runSpeed
-		agent.target_position = Player.global_transform.origin
+		agent.target_position = Player.global_position
 	else:
 		speed = normalSpeed
 	if (seeingGuilt):
@@ -29,12 +29,15 @@ func _OnSeePlayer():
 	if Player.running:
 			seeingGuilt = true
 	super()
+	
 func _OnTouchPlayer():
 	if angry:
 		catch()
+		
 func _OnWander():
 	if (!angry):
 		super()
+		
 func catch():
 	Player.global_transform.origin = spawnPos
 	angry = false

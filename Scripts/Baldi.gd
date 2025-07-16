@@ -6,7 +6,6 @@ var slapTime := 0.0
 var slapDelay := 1.0
 @onready var sprite := $AnimatedSprite3D
 @onready var SlapSound := $AudioStreamPlayer3D
-
 	
 func getAnger(a):
 	anger += a
@@ -29,3 +28,13 @@ func slap():
 	slapTime = slapDelay
 	await get_tree().create_timer(0.25).timeout
 	speed = 0
+
+func _OnWander():
+	super()
+	cur_priority = 0.0	
+	
+var cur_priority = 0.0
+func hear(location, priority):
+	if (priority >= cur_priority):
+		agent.target_position = location
+		cur_priority = priority
