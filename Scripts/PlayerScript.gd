@@ -65,22 +65,18 @@ func _physics_process(delta):
 		if direction:
 			var speed = SPEED
 			if Input.is_action_pressed("run") and stamina > 0:
-				running = true
-				stamina -= 0.2
-				speed = RUNSPEED
-				if stamina <= 0:
-					stamina = -5
-			else:
-				running = false
+				if abs(velocity.x+velocity.z) / 2 > 0.01:
+					running = true
+					stamina -= 0.2
+					speed = RUNSPEED
+					if stamina <= 0:
+						stamina = -5
 			velocity.x = direction.x * speed
 			velocity.z = direction.z * speed
 		else:
-			running = false
-			if stamina < 100:
-				stamina += 0.2
 			velocity.x = 0
 			velocity.z = 0
-		
+	
 	if Input.is_action_just_pressed("interact"):
 		var space_state = get_world_3d().direct_space_state
 		var mousepos = get_viewport().get_mouse_position()
@@ -104,3 +100,8 @@ func _physics_process(delta):
 				result.collider.queue_free()
 			
 	move_and_slide()
+	
+	if abs(velocity.x+velocity.z) / 2 <= 0.01:
+		running = false
+		if stamina < 100:
+			stamina += 0.2

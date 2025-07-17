@@ -3,14 +3,14 @@ extends Control
 @onready var GameController = %GameController
 @onready var Player = %Player
 @onready var rope = $rope
-@onready var JumpropeCount = $JumpropeCount
+@onready var JumpropeCount = $Label
 var count = 0
 var maxCount = 5
 var awaiting = true
 
 func _show():
 	count = 0
-	JumpropeCount.text = str('0/',maxCount)
+	JumpropeCount.text = str('Time to jump rope!\n0/',maxCount)
 	rope.frame = 0
 	awaiting = true
 	
@@ -24,6 +24,6 @@ func _process(delta):
 			count += 1
 			if count >= maxCount:
 				GameController.DeactivateJumprope()
-		JumpropeCount.text = str(count,'/',maxCount)
+		JumpropeCount.text = str('Time to jump rope!\n',count,'/',maxCount)
 	if rope.frame == 14:
 		awaiting = true
