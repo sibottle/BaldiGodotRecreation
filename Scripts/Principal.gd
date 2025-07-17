@@ -79,7 +79,7 @@ func _OnSeePlayer():
 		seeingGuilt = true
 	super()
 	
-func _OnTouchPlayer():
+func _OnTouchPlayer(body):
 	if angry:
 		catch()
 		

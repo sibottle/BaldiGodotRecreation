@@ -23,6 +23,7 @@ var CurrentItems = [0, 0, 0]
 		"WD-NoSquee (Door Type)", # not added
 		"Safety Scissors", # not added
 		"Big Ol' Boots"] # not added
+
 @export var ItemTextures = [
 preload("res://Textures/PickUps/EnergyFlavoredZestyBar.png"),
 preload("res://Textures/PickUps/YellowDoorLock.png"),
@@ -39,15 +40,16 @@ preload("res://Textures/PickUps/BootsIcon.png")
 
 func _process(delta: float) -> void:
 	if (Input.is_action_just_released("Scroll_Up")):
-		CurrentItem += 1
-	if (Input.is_action_just_released("Scroll_Down")):
 		CurrentItem -= 1
 		if CurrentItem < 0: CurrentItem = 2
-	if CurrentItem > 2: CurrentItem = 0
+	if (Input.is_action_just_released("Scroll_Down")):
+		CurrentItem += 1
+		if CurrentItem > 2: CurrentItem = 0
 	Selector.position.x = SelectorPositions[CurrentItem]
 	ItemText.text = ItemNames[CurrentItems[CurrentItem]]
 	if Input.is_key_pressed(KEY_G):
 		CollectItem(1)
+
 func _input(event: InputEvent) -> void:
 	if (Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT)):
 		UseItem()
@@ -62,6 +64,7 @@ func UseItem():
 			Player.ItemRay(5)
 			return
 	CollectItem(0)
+
 func CollectItem(item: int):
 	CurrentItems[CurrentItem] = item
 	if item == 0:

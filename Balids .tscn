@@ -114,7 +114,7 @@
 [ext_resource type="Texture2D" uid="uid://b34wsm4tp31ao" path="res://Textures/UI/Baldi/Bald_Frown0040-sharedassets2.assets-384.png" id="68_sx3dt"]
 [ext_resource type="Texture2D" uid="uid://bqsjgwjxnnjlb" path="res://Textures/UI/Baldi/Bald_Frown0041-sharedassets2.assets-355.png" id="69_urp0h"]
 [ext_resource type="Texture2D" uid="uid://bsck3150pkhvr" path="res://Textures/UI/Baldi/Bald_Frown0042-sharedassets2.assets-232.png" id="70_7y3bc"]
-[ext_resource type="Script" path="res://ItemSelector.gd" id="70_sxeuk"]
+[ext_resource type="Script" uid="uid://fouwyd2t628l" path="res://ItemSelector.gd" id="70_sxeuk"]
 [ext_resource type="Texture2D" uid="uid://5vaby105np1n" path="res://Textures/Red.png" id="71_rts4y"]
 [ext_resource type="Texture2D" uid="uid://bmn81lbonrsy1" path="res://Textures/UI/Baldi/Bald_Frown0043-sharedassets2.assets-479.png" id="71_twj10"]
 [ext_resource type="Texture2D" uid="uid://b3cv1821u1a2c" path="res://Textures/UI/Baldi/Bald_Frown0044-sharedassets2.assets-440.png" id="72_ye4ff"]
@@ -3436,18 +3436,16 @@ texture = ExtResource("16_i6ddl")
 [node name="NavMeshPoints" type="Node" parent="School" groups=["Nav"]]
 unique_name_in_owner = true
 
-[node name="NavigationPoint" type="Node3D" parent="School/NavMeshPoints"]
+[node name="NavigationPoint1" type="Node3D" parent="School/NavMeshPoints"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
-visible = false
 
-[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint"]
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint1"]
 pixel_size = 0.1
 billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint2" type="Node3D" parent="School/NavMeshPoints"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 1)
-visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint2"]
 pixel_size = 0.1
@@ -3455,8 +3453,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint3" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 17)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 35)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint3"]
 pixel_size = 0.1
@@ -3464,8 +3461,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint4" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 34)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint4"]
 pixel_size = 0.1
@@ -3473,8 +3469,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint5" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 17)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 1)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint5"]
 pixel_size = 0.1
@@ -3482,8 +3477,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint6" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 17)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint6"]
 pixel_size = 0.1
@@ -3491,8 +3485,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint7" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 1)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint7"]
 pixel_size = 0.1
@@ -3500,8 +3493,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint8" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 1)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 14)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint8"]
 pixel_size = 0.1
@@ -3509,8 +3501,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint9" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 37)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 14)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint9"]
 pixel_size = 0.1
@@ -3518,8 +3509,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint10" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 37)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 14)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint10"]
 pixel_size = 0.1
@@ -3527,8 +3517,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint11" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 28)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 15)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint11"]
 pixel_size = 0.1
@@ -3536,8 +3525,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint12" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 33)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 25)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint12"]
 pixel_size = 0.1
@@ -3545,8 +3533,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint13" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 28)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 25)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint13"]
 pixel_size = 0.1
@@ -3554,8 +3541,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint14" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 36)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 20)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint14"]
 pixel_size = 0.1
@@ -3563,8 +3549,7 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint15" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 28)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 24)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint15"]
 pixel_size = 0.1
@@ -3572,28 +3557,113 @@ billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
 [node name="NavigationPoint16" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 23)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 19)
 
 [node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint16"]
 pixel_size = 0.1
 billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
-[node name="NavigationPoint17" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 23)
-visible = false
+[node name="NavigationPointRooms1" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 17)
 
-[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint17"]
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms1"]
 pixel_size = 0.1
 billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
 
-[node name="NavigationPoint18" type="Node3D" parent="School/NavMeshPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 17)
-visible = false
+[node name="NavigationPointRooms2" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 24)
 
-[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPoint18"]
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms2"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms3" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 31)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms3"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms4" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 29)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms4"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms5" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 29)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms5"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms6" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 28)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms6"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms7" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 17)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms7"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms8" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 5)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms8"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms9" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 10)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms9"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms10" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms10"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms11" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 4)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms11"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms12" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 11)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms12"]
+pixel_size = 0.1
+billboard = 1
+texture = SubResource("PlaceholderTexture2D_5yggl")
+
+[node name="NavigationPointRooms13" type="Node3D" parent="School/NavMeshPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 22)
+
+[node name="Sprite3D" type="Sprite3D" parent="School/NavMeshPoints/NavigationPointRooms13"]
 pixel_size = 0.1
 billboard = 1
 texture = SubResource("PlaceholderTexture2D_5yggl")
@@ -8770,6 +8840,9 @@ metadata/faculty = false
 [node name="DoorTile12" parent="School/Doors" instance=ExtResource("9_miigy")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -10.5, 0.5, 10)
 metadata/faculty = false
+
+[node name="SwingDoor7" parent="School/Doors" instance=ExtResource("10_cq45a")]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, 2.5, 0.5, 20)
 
 [node name="DetentionSpawn" type="Marker3D" parent="School" groups=["DetentionSpawn"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.25, 17)

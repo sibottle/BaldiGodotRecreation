@@ -9,13 +9,12 @@ radius = 0.125
 height = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2wogd"]
-radius = 0.046
+radius = 0.125
 height = 0.5
 
 [node name="Principal" type="CharacterBody3D" groups=["npc"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 18)
 collision_layer = 2
-collision_mask = 3
 script = ExtResource("1_cnt3m")
 metadata/NPC = false
 
@@ -41,6 +40,7 @@ texture = ExtResource("2_4ah44")
 [node name="PrincipalTrigger" type="Area3D" parent="." groups=["npc"]]
 collision_layer = 2
 collision_mask = 6
+input_ray_pickable = false
 
 [node name="V" type="CollisionShape3D" parent="PrincipalTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)

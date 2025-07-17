@@ -4,7 +4,6 @@ var normalSpeed = 1
 var runSpeed = 2
 var playingTime = 0
 	
-	
 func _physics_process(delta):
 		super(delta)
 		
@@ -18,7 +17,7 @@ func _OnSeePlayer():
 		speed = runSpeed
 		agent.target_position = Player.global_transform.origin
 		
-func _OnTouchPlayer():
+func _OnTouchPlayer(body):
 	if playingTime <= 0 and !Player.jumprope:
 			catch()
 

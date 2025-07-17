@@ -111,6 +111,7 @@ func OnExitReached():
 			Click.play()
 		2:
 			music.volume_db *= .8
+
 func AudioLoopCheck():
 	if (music.stream.resource_name == "Loud noise 3.wav"):
 		music.stream = Mus_Finale[3]

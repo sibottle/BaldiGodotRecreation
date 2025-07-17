@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bcmxx1k2e2e42"]
 
 [ext_resource type="Script" uid="uid://blhvkx5uwt8yr" path="res://Scripts/1st_prize.gd" id="1_nmqe8"]
-[ext_resource type="AudioStream" uid="uid://bypv4u1tndgyp" path="res://Audio/Characters/Baldi/Sounds/BAL_Slap.wav" id="2_ce4mk"]
+[ext_resource type="AudioStream" uid="uid://delxe5nclvvmm" path="res://Audio/Characters/1stPrize/Sounds/1PR_Motor.wav" id="2_dij5c"]
 [ext_resource type="Texture2D" uid="uid://46lsy7pyprph" path="res://Textures/Character/1PR_Sheet.png" id="3_0ofa0"]
 [ext_resource type="Script" uid="uid://c1nqx4wqxqlc8" path="res://Scripts/SpriteRotation.gd" id="4_hdaag"]
 
@@ -10,16 +10,17 @@ radius = 0.125
 height = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dij5c"]
-radius = 0.046
+radius = 0.125
 height = 0.5
 
 [node name="1st Prize" type="CharacterBody3D" node_paths=PackedStringArray("motorAudio") groups=["npc"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 22)
 collision_layer = 2
-collision_mask = 3
 script = ExtResource("1_nmqe8")
 motorAudio = NodePath("AudioStreamPlayer3D")
-acceleration = 0.5
+acceleration = 1.0
+turn_speed = 0.262
+wanderToRooms = false
 metadata/NPC = false
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
@@ -31,20 +32,23 @@ avoidance_enabled = true
 height = 0.5
 radius = 0.2
 neighbor_distance = 5.0
+debug_enabled = true
 debug_use_custom = true
-debug_path_custom_color = Color(1, 0, 0, 1)
+debug_path_custom_color = Color(0, 0.446845, 0.77934, 1)
 debug_path_custom_point_size = 17.64
 
 [node name="PrizeTrigger" type="Area3D" parent="." groups=["npc"]]
 collision_layer = 2
 collision_mask = 4
+input_ray_pickable = false
 
 [node name="V" type="CollisionShape3D" parent="PrizeTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_i0vgs")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("2_ce4mk")
+stream = ExtResource("2_dij5c")
+autoplay = true
 max_distance = 30.0
 attenuation_filter_db = 0.0
 

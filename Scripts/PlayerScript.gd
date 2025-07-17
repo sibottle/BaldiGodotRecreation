@@ -10,6 +10,8 @@ const MOUSE_SENS = 0.01
 var jumprope = false
 var running = false
 
+var hugged = false
+
 var stamina = 100
 
 @onready var cam = get_node("Camera3D")
@@ -58,24 +60,25 @@ func _physics_process(delta):
 			velocity.y = JUMP_VELOCITY
 	else:
 		cam.basis = Basis(Vector3.UP, PI if Input.is_action_pressed("look_back") else 0.0)
-		# Get the input direction and handle the movement/deceleration.
-		# As good practice, you should replace UI actions with custom gameplay actions.
-		var input_dir = Input.get_vector("left", "right", "forward", "back")
-		var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-		if direction:
-			var speed = SPEED
-			if Input.is_action_pressed("run") and stamina > 0:
-				if abs(velocity.x+velocity.z) / 2 > 0.01:
-					running = true
-					stamina -= 0.2
-					speed = RUNSPEED
-					if stamina <= 0:
-						stamina = -5
-			velocity.x = direction.x * speed
-			velocity.z = direction.z * speed
-		else:
-			velocity.x = 0
-			velocity.z = 0
+		if not hugged:
+			# Get the input direction and handle the movement/deceleration.
+			# As good practice, you should replace UI actions with custom gameplay actions.
+			var input_dir = Input.get_vector("left", "right", "forward", "back")
+			var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+			if direction:
+				var speed = SPEED
+				if Input.is_action_pressed("run") and stamina > 0:
+					if abs(velocity.x+velocity.z) / 2 > 0.01:
+						running = true
+						stamina -= 0.2
+						speed = RUNSPEED
+						if stamina <= 0:
+							stamina = -5
+				velocity.x = direction.x * speed
+				velocity.z = direction.z * speed
+			else:
+				velocity.x = 0
+				velocity.z = 0
 	
 	if Input.is_action_just_pressed("interact"):
 		var space_state = get_world_3d().direct_space_state

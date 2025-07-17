@@ -14,8 +14,8 @@ var isOpen = false
 @onready var openSound = preload("res://Audio/Sounds/Doors/swingdoor_open.wav")
 @onready var NOP = preload("res://Audio/Characters/Baldi/BaldiTutor/BAL_Door.wav")
 
-@onready var closeMaterial = preload("res://Materials/swingDoorClose.tres")
-@onready var openMaterial = preload("res://Materials/swingDoorOpen.tres")
+@export var closeMaterial = preload("res://Materials/swingDoorClose.tres")
+@export var openMaterial = preload("res://Materials/swingDoorOpen.tres")
 
 @onready var GC = get_tree().get_first_node_in_group("GC")
 

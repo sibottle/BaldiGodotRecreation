@@ -20,14 +20,14 @@ radius = 0.125
 height = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1uvvk"]
-radius = 0.046
+radius = 0.125
 height = 0.5
 
 [node name="Playtime" type="CharacterBody3D" groups=["npc"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 14)
 collision_layer = 2
-collision_mask = 3
 script = ExtResource("1_xsj8t")
+wanderToRooms = false
 metadata/Npc = false
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
@@ -54,6 +54,7 @@ metadata/NPC = false
 [node name="PlaytimeTrigger" type="Area3D" parent="." groups=["npc"]]
 collision_layer = 2
 collision_mask = 4
+input_ray_pickable = false
 
 [node name="V" type="CollisionShape3D" parent="PlaytimeTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
@@ -65,6 +66,6 @@ autoplay = true
 max_distance = 10.0
 attenuation_filter_db = 0.0
 
-[node name="V2" type="CollisionShape3D" parent="."]
+[node name="V" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_1uvvk")
