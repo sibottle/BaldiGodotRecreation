@@ -70,4 +70,4 @@ func _process(delta):
 		rotate(Vector3.UP, 180 * delta)
 		crazyTime -= delta
 		
-	motorAudio.pitch_scale = (velocity.length() + 1) * delta
+	motorAudio.pitch_scale = velocity.length() + 1

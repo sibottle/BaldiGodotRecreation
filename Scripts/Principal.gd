@@ -49,6 +49,7 @@ var guiltType = GuiltTypes.RUNNING
 func _physics_process(delta):
 	if guiltSeen > 0.5:
 		angry = true
+		correct_player()
 	if guiltSeen > 0 && !seeingGuilt:
 		guiltSeen -= delta
 	seeingGuilt = false
