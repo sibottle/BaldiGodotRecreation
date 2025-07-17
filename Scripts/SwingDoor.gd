@@ -44,8 +44,13 @@ func _process(delta):
 	
 func _physics_process(delta: float) -> void:
 	for i in $Area3D.get_overlapping_bodies():
-		if i.is_in_group("npc") or i.is_in_group("player"):
-			doorOpen()
+		if i.is_in_group("player"):
+			if %GameController.noteBookCount >= requiredNotebooks:
+				doorOpen()
+				if GC.char_Baldi: GC.char_Baldi.hear(global_position, 1)
+		if i.is_in_group("npc"):
+			if %GameController.noteBookCount >= requiredNotebooks:
+				doorOpen()
 
 func doorOpen():
 	openTimer = 5
@@ -62,6 +67,7 @@ func _on_area_3d_body_entered(body):
 	if body.is_in_group("player"):
 		if %GameController.noteBookCount >= requiredNotebooks:
 			doorOpen()
+			if GC.char_Baldi: GC.char_Baldi.hear(global_position, 1)
 		else: 
 			Audio.stream = NOP
 			Audio.play()

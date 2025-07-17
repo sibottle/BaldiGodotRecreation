@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dwtkemc4tut0j"]
 
-[ext_resource type="Script" uid="uid://po8j76dl7k2w" path="res://Scripts/DoorScript.gd" id="1_vslb3"]
+[ext_resource type="Script" uid="uid://dsaeqnbt5tkjo" path="res://Scripts/DoorScript.gd" id="1_vslb3"]
 [ext_resource type="Texture2D" uid="uid://ps44mavikjkx" path="res://Textures/SchoolHouse/WhiteBrickWall.png" id="2_h4stj"]
 [ext_resource type="Material" uid="uid://dcsrqt1qf0sif" path="res://Materials/closedDoor.tres" id="3_tc50p"]
 
@@ -71,3 +71,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.25)
 shape = SubResource("BoxShape3D_5qlvt")
 
 [connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="area_exited" from="Area3D" to="." method="_on_area_3d_area_exited"]

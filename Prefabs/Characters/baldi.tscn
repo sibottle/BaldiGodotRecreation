@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ulqq6g2agmbk"]
+[gd_scene load_steps=11 format=3 uid="uid://ulqq6g2agmbk"]
 
 [ext_resource type="Script" uid="uid://c7h0opybcrat7" path="res://Scripts/Baldi.gd" id="1_0u8ls"]
 [ext_resource type="Texture2D" uid="uid://dtwl3k0cuuwk1" path="res://Textures/Character/Baldi/Baldi_Slap0000-sharedassets2.assets-283.png" id="2_oc4ti"]
@@ -35,8 +35,12 @@ animations = [{
 radius = 0.125
 height = 0.5
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8ang1"]
+radius = 0.046
+height = 0.5
+
 [node name="Baldi" type="CharacterBody3D" groups=["npc"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14)
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_0u8ls")
@@ -51,6 +55,8 @@ avoidance_enabled = true
 height = 0.5
 radius = 0.2
 neighbor_distance = 5.0
+use_3d_avoidance = true
+debug_enabled = true
 debug_use_custom = true
 debug_path_custom_color = Color(1, 0, 0, 1)
 debug_path_custom_point_size = 17.64
@@ -79,6 +85,6 @@ attenuation_filter_db = 0.0
 
 [node name="V" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
-shape = SubResource("CapsuleShape3D_i0vgs")
+shape = SubResource("CapsuleShape3D_8ang1")
 
 [connection signal="body_entered" from="BaldiTrigger" to="." method="_on_area_3d_body_entered"]

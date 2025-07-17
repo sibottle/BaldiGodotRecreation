@@ -94,8 +94,9 @@ func _physics_process(delta):
 		
 		if result:
 			if result.collider.get_parent().has_meta("blueDoor"):
-				result.collider.get_parent().doorOpen()
-				if GC.char_Baldi: GC.char_Baldi.hear(result.collider.global_position,1.0)
+				var door = result.collider.get_parent()
+				door.doorOpen()
+				if GC.char_Baldi and not door.locked: GC.char_Baldi.hear(result.collider.global_position,1.0)
 			elif result.collider.is_in_group("notebook"):
 				result.collider.Collect()
 			elif result.collider.is_in_group("Item"):

@@ -6,7 +6,7 @@ extends CharacterBody3D
 @export var acceleration := INF
 @export var turn_speed := INF
 
-@export var enabled = true
+@export var stopped = false
 
 var SeesPlayer := false
 
@@ -38,7 +38,7 @@ func _physics_process(delta):
 		if result.get("collider").has_meta("player"):
 			_OnSeePlayer()
 	
-	if not enabled: return
+	if stopped: return
 	
 	var direction = agent.get_next_path_position() - global_transform.origin
 	velocity = velocity.move_toward(direction.normalized() * speed,acceleration * delta)

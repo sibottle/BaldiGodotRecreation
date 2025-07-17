@@ -2,10 +2,13 @@ extends AudioStreamPlayer3D
 
 @onready var Queue = []
 
+func _ready():
+	finished.connect(_on_finished)
+
 func add(audio):
 	Queue.append(audio)
 	if not playing:
-		play()
+		playQueue()
 
 func playQueue() -> void:
 	stream = Queue[0]

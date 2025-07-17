@@ -39,7 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://b26ijhof81c7p" path="res://Textures/UI/YCTP2_NoButtons-sharedassets2.assets-344.png" id="28_bnc8w"]
 [ext_resource type="Texture2D" uid="uid://dbruy4nje3wvo" path="res://Textures/UI/Baldi/Bald_Frown0000-sharedassets2.assets-174.png" id="28_fb0uy"]
 [ext_resource type="Texture2D" uid="uid://cgdjnatha3jnf" path="res://Textures/UI/Baldi/Bald_Frown0001-sharedassets2.assets-182.png" id="29_engxy"]
-[ext_resource type="Script" uid="uid://cub6lylqjk7my" path="res://Scripts/MathGame.gd" id="30_nj28a"]
+[ext_resource type="Script" uid="uid://fyvb0jht4faj" path="res://Scripts/MathGame.gd" id="30_nj28a"]
 [ext_resource type="Texture2D" uid="uid://ovi0ppowfdpe" path="res://Textures/UI/Baldi/Bald_Frown0002-sharedassets2.assets-98.png" id="30_x76hv"]
 [ext_resource type="Texture2D" uid="uid://cat42pwu1johy" path="res://Textures/UI/Baldi/Bald_Frown0003-sharedassets2.assets-519.png" id="31_n5ejp"]
 [ext_resource type="Material" uid="uid://bkjmsproiptim" path="res://Materials/Posters&Chalkboards/Det_PT.tres" id="31_uviir"]
@@ -928,7 +928,7 @@ albedo_texture = ExtResource("13_bf5fn")
 texture_filter = 0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qla2b"]
-radius = 0.1
+radius = 0.2
 height = 0.5
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_hhrtx"]

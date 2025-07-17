@@ -2,14 +2,14 @@ extends "res://Scripts/Character.gd"
 
 var normalSpeed = 2
 var runSpeed = 3
+
 var guiltSeen = 0
 var angry = false
 var seeingGuilt = false
+var detentionTime = 0
 
 @onready var spawnPos = global_position
 @onready var playerSpawnPos = get_tree().get_first_node_in_group("DetentionSpawn").global_position
-
-@onready var Aud : AudioStreamPlayer3D = $AudioStreamPlayer3D
 
 @onready var Aud_Whistle = preload("res://Audio/Characters/Principal/PRI_Whistle.wav")
 @onready var Aud_No_Running = preload("res://Audio/Characters/Principal/RuleBroke/PRI_NoRunning.wav")
@@ -24,6 +24,14 @@ var seeingGuilt = false
 	preload("res://Audio/Characters/Principal/Times/PRI_45Sec.wav"),
 	preload("res://Audio/Characters/Principal/Times/PRI_60Sec.wav"),
 	preload("res://Audio/Characters/Principal/Times/PRI_99Sec.wav"),
+]
+
+@onready var Aud_Detention = preload("res://Audio/Characters/Principal/PRI_DetentionForYou.wav")
+
+@onready var Aud_Scold = [
+	preload("res://Audio/Characters/Principal/Scolds/PRI_KnowBetter.wav"),
+	preload("res://Audio/Characters/Principal/Scolds/PRI_WhenLearn.wav"),
+	preload("res://Audio/Characters/Principal/Scolds/PRI_YourParents.wav")
 ]
 
 @onready var Audio = $AudioStreamPlayer3D
@@ -82,9 +90,17 @@ func _OnWander():
 		Audio.add(Aud_Whistle)
 		
 func catch():
+	stopped = true
 	Player.global_transform.origin = playerSpawnPos
 	global_position = spawnPos
 	angry = false
 	guiltSeen = 0
 	
+	Audio.add(Aud_Times[detentionTime])
+	Audio.add(Aud_Detention)
+	Audio.add(Aud_Scold.pick_random())
+	
+	detentionTime = min(detentionTime + 1, 4)
+	
 	await get_tree().create_timer(5).timeout
+	stopped = false
