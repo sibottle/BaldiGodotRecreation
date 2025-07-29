@@ -11,12 +11,16 @@ config_version=5
 [application]
 
 config/name="Balds' basics"
-run/main_scene="res://Balids .tscn"
+run/main_scene="uid://d258ph6i0xcit"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/fullsize=false
 boot_splash/image="res://Textures/GodotEngine.png"
 config/icon="res://icon.svg"
+
+[autoload]
+
+Sensitivity="*res://Scripts/Sensitivity.gd"
 
 [display]
 

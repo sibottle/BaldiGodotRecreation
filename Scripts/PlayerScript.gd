@@ -5,7 +5,7 @@ class_name player
 @export var SPEED = 1
 @export var RUNSPEED = 1.6
 const JUMP_VELOCITY = 1
-const MOUSE_SENS = 0.01
+var MOUSE_SENS = Sensitivity.sens / 1000
 
 var jumprope = false
 var running = false

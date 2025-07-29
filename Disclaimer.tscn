@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://d258ph6i0xcit"]
+
+[ext_resource type="Script" uid="uid://dn12ep8q88law" path="res://Scripts/Disclaimer.gd" id="1_66cu8"]
+[ext_resource type="Texture2D" uid="uid://b6dmx1eqcvoif" path="res://Textures/Screens/WarningScreen.png" id="2_rll81"]
+[ext_resource type="FontFile" uid="uid://daa0oi7r01rb8" path="res://pixel-sans.ttf" id="2_yu4jm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_66cu8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -432.0
+offset_top = -323.0
+offset_right = 431.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rll81")
+expand_mode = 1
+
+[node name="DELETE MEH" type="Label" parent="TextureRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -271.0
+offset_top = -40.0
+offset_right = 271.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_yu4jm")
+theme_override_font_sizes/font_size = 42
+text = "
+
+
+
+
+wasnt able to properly crop the image from
+sprites resources, whoops
+
+
+
+
+(Press to continue)"
+horizontal_alignment = 1
+vertical_alignment = 1
