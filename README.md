@@ -1,4 +1,4 @@
-# THIS IS NO LONGER BRING WORKED ON. CHECK [THIS](https://gamebanana.com/tools/20791) OUT INSTEAD.
+# THIS IS NO LONGER BEING WORKED ON. CHECK [THIS](https://gamebanana.com/tools/20791) OUT INSTEAD.
 
 # BaldiGodotRecreation
 
